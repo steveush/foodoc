@@ -1,0 +1,46 @@
+{
+  "name": "foodoc",
+  "version": "0.0.1",
+  "description": "A Bootstrap and Handlebars based JSDoc3 template.",
+  "main": "./template/publish.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/steveush/foodoc.git"
+  },
+  "keywords": [
+    "jsdoc",
+    "template",
+    "fooplugins"
+  ],
+  "author": "Steve Usher",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/steveush/foodoc/issues"
+  },
+  "homepage": "https://github.com/steveush/foodoc#readme",
+  "devDependencies": {
+    "bootstrap": "^3.3.7",
+    "grunt-contrib-handlebars": "^1.0.0",
+    "grunt-jsdoc": "^2.1.0",
+    "jquery": "^3.1.1",
+    "moment": "^2.15.2"
+  },
+  "dependencies": {
+    "cheerio": "^0.22.0",
+    "extend": "^3.0.0",
+    "glob": "^7.1.1",
+    "grunt": "^1.0.1",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-cssmin": "^1.0.2",
+    "grunt-contrib-uglify": "^2.0.0",
+    "handlebars": "^4.0.5",
+    "handlebars-layouts": "^3.1.4",
+    "jsdoc": "^3.4.2",
+    "lunr": "^0.7.2",
+    "sanitize-html": "^1.13.0"
+  }
+}

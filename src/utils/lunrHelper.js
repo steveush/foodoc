@@ -92,8 +92,8 @@ exports.writeJSONSync = function(pretty){
 };
 
 exports.writeFilesSync = function(pretty){
-	var jsonFile = path.join(template.config.dir.static, 'js/lunr-data.json'),
-		dataFile = path.join(template.config.dir.static, 'js/lunr-data.js'),
+	var jsonFile = path.join(template.config.dir.output, 'js/lunr-data.json'),
+		dataFile = path.join(template.config.dir.output, 'js/lunr-data.js'),
 		data = {index: index, store: store},
 		json = pretty ? JSON.stringify(data, null, 2) : JSON.stringify(data);
 	fs.writeFileSync(jsonFile, json, "utf8");

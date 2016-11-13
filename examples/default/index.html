@@ -120,7 +120,12 @@
 <li>Makes use of the JSDoc <code>@summary</code> tag where appropriate, this tag now also supports markdown syntax.</li>
 </ul>
 <h3>What it looks like</h3><p>As this started off as a DocStrap modification I've used it's <code>fixtures</code> code to generate the sample documentation so you can compare the differences between the two. You can see an example of the documentation generated using this template at the below link:</p>
-<p>http://steveush.github.io/foodoc/examples/default</p>
+<ul>
+<li><a href="http://steveush.github.io/foodoc/examples/default">The default template options</a></li>
+<li><a href="http://steveush.github.io/foodoc/examples/inline">The template with the <code>inlineNav</code> option set to <code>true</code></a></li>
+<li><a href="http://steveush.github.io/foodoc/examples/logo-color">The template using the <code>systemLogo</code> and <code>systemColor</code> options</a></li>
+<li><a href="http://steveush.github.io/foodoc/examples/collapse">The template with the <code>collapseSymbols</code> option set to <code>false</code></a></li>
+</ul>
 <h2>Ooooh, I want it! How do I get it?</h2><p>If you manage your own version of jsdoc:</p>
 <pre class="prettyprint source lang-bash"><code>npm install foodoc</code></pre><p>When using <a href="http://gruntjs.com/">grunt</a>, please look at <a href="https://github.com/krampstudio/grunt-jsdoc">grunt-jsdoc</a> which you can use with FooDoc.</p>
 <h3>Command line example</h3><pre class="prettyprint source lang-bash"><code>jsdoc -c path/to/conf.json -t ./node_modules/foodoc/template -R README.md -r .</code></pre><p>The <code>-c</code> sets the config, the options you can supply in the templates object are listed below in the options.</p>

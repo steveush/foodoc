@@ -1,6 +1,6 @@
 {
   "name": "foodoc",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A Bootstrap and Handlebars based JSDoc3 template.",
   "main": "./template/publish.js",
   "scripts": {

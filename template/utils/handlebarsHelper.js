@@ -38,7 +38,7 @@ handlebars.registerHelper("symbol", function(doclet, options){
 	}
 	if (tmpl['symbol/'+kind]){
 		result = tmpl['symbol/'+kind](doclet, {data: options.hash});
-	} else if (template.kinds.pages.indexOf(kind) !== -1) {
+	} else if (template.kinds.pages.indexOf(kind) !== -1 && !options.hash.primary) {
 		result = tmpl['symbol/page'](doclet, {data: options.hash});
 	} else {
 		result = tmpl['symbol/inline'](doclet, {data: options.hash});

@@ -25,7 +25,7 @@ As this started off as a DocStrap modification I've used it's `fixtures` code to
 * [The default template options](http://steveush.github.io/foodoc/examples/default)
 * [The template with the `inlineNav` option set to `true`](http://steveush.github.io/foodoc/examples/inline)
 * [The template using the `systemLogo` and `systemColor` options](http://steveush.github.io/foodoc/examples/logo-color)
-* [The template with the `collapseSymbols` option set to `false`](http://steveush.github.io/foodoc/examples/inline)
+* [The template with the `collapseSymbols` option set to `false`](http://steveush.github.io/foodoc/examples/collapse)
 
 ## Ooooh, I want it! How do I get it?
 

@@ -4,11 +4,10 @@
 			<h2 class="{{kind}}">{{{primaryTitleHTML}}}</h2>
 		{{else if @list}}
 			<h4 id="{{id}}" class="{{kind}}">{{{listTitleHTML}}}</h4>
-			{{> tag/summary this}}
 		{{else}}
 			<h4 id="{{id}}" class="{{kind}}">{{{symbolTitleHTML}}}</h4>
-			{{> tag/summary this}}
 		{{/if}}
+		{{> tag/summary this}}
 	{{/block}}
 </dt>
 <dd class="symbol-details {{kind}}{{#if @options.collapseSymbols}}{{#unless (content "symbol-details")}}  collapsible-symbol{{#if @expanded}} expanded{{/if}}{{/unless}}{{/if}}"{{#if @expanded}} style="max-height: 9999px;"{{/if}}>

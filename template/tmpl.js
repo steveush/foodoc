@@ -26,10 +26,8 @@ Handlebars.registerPartial("site/layout", this["tmpl"]["site/layout"] = Handleba
     + ((stack1 = (helpers.json || (depth0 && depth0.json) || alias2).call(alias1,((stack1 = (depth0 != null ? depth0.doclet : depth0)) != null ? stack1.showTableOfContents : stack1),{"name":"json","hash":{},"data":data})) != null ? stack1 : "")
     + ";\r\n		</script>\r\n";
 },"2":function(container,depth0,helpers,partials,data) {
-    var helper;
-
-  return "			<link type=\"text/css\" rel=\"stylesheet\" href=\""
-    + container.escapeExpression(((helper = (helper = helpers.url || (depth0 != null ? depth0.url : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : {},{"name":"url","hash":{},"data":data}) : helper)))
+    return "			<link type=\"text/css\" rel=\"stylesheet\" href=\""
+    + container.escapeExpression(container.lambda(depth0, depth0))
     + "\">\r\n";
 },"4":function(container,depth0,helpers,partials,data) {
     var stack1, alias1=container.lambda, alias2=container.escapeExpression;
@@ -199,10 +197,8 @@ Handlebars.registerPartial("site/layout", this["tmpl"]["site/layout"] = Handleba
   return ((stack1 = container.invokePartial(partials["search/modal"],depth0,{"name":"search/modal","data":data,"indent":"\t\t","helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "")
     + "		<script src=\"js/lunr.min.js\"></script>\r\n";
 },"53":function(container,depth0,helpers,partials,data) {
-    var helper;
-
-  return "		<script src=\""
-    + container.escapeExpression(((helper = (helper = helpers.url || (depth0 != null ? depth0.url : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : {},{"name":"url","hash":{},"data":data}) : helper)))
+    return "		<script src=\""
+    + container.escapeExpression(container.lambda(depth0, depth0))
     + "\"></script>\r\n";
 },"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data,blockParams,depths) {
     var stack1, alias1=depth0 != null ? depth0 : {}, alias2=helpers.helperMissing;
@@ -305,7 +301,8 @@ Handlebars.registerPartial("symbol/inline", this["tmpl"]["symbol/inline"] = Hand
 },"5":function(container,depth0,helpers,partials,data) {
     var stack1;
 
-  return ((stack1 = helpers["if"].call(depth0 != null ? depth0 : {},(data && data.primary),{"name":"if","hash":{},"fn":container.program(6, data, 0),"inverse":container.program(8, data, 0),"data":data})) != null ? stack1 : "");
+  return ((stack1 = helpers["if"].call(depth0 != null ? depth0 : {},(data && data.primary),{"name":"if","hash":{},"fn":container.program(6, data, 0),"inverse":container.program(8, data, 0),"data":data})) != null ? stack1 : "")
+    + ((stack1 = container.invokePartial(partials["tag/summary"],depth0,{"name":"tag/summary","data":data,"indent":"\t\t","helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "");
 },"6":function(container,depth0,helpers,partials,data) {
     var stack1, helper, alias1=depth0 != null ? depth0 : {}, alias2=helpers.helperMissing, alias3="function";
 
@@ -327,8 +324,7 @@ Handlebars.registerPartial("symbol/inline", this["tmpl"]["symbol/inline"] = Hand
     + alias4(((helper = (helper = helpers.kind || (depth0 != null ? depth0.kind : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"kind","hash":{},"data":data}) : helper)))
     + "\">"
     + ((stack1 = ((helper = (helper = helpers.listTitleHTML || (depth0 != null ? depth0.listTitleHTML : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"listTitleHTML","hash":{},"data":data}) : helper))) != null ? stack1 : "")
-    + "</h4>\r\n"
-    + ((stack1 = container.invokePartial(partials["tag/summary"],depth0,{"name":"tag/summary","data":data,"indent":"\t\t\t","helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "");
+    + "</h4>\r\n";
 },"11":function(container,depth0,helpers,partials,data) {
     var stack1, helper, alias1=depth0 != null ? depth0 : {}, alias2=helpers.helperMissing, alias3="function", alias4=container.escapeExpression;
 
@@ -338,9 +334,7 @@ Handlebars.registerPartial("symbol/inline", this["tmpl"]["symbol/inline"] = Hand
     + alias4(((helper = (helper = helpers.kind || (depth0 != null ? depth0.kind : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"kind","hash":{},"data":data}) : helper)))
     + "\">"
     + ((stack1 = ((helper = (helper = helpers.symbolTitleHTML || (depth0 != null ? depth0.symbolTitleHTML : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"symbolTitleHTML","hash":{},"data":data}) : helper))) != null ? stack1 : "")
-    + "</h4>\r\n"
-    + ((stack1 = container.invokePartial(partials["tag/summary"],depth0,{"name":"tag/summary","data":data,"indent":"\t\t\t","helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "")
-    + "		";
+    + "</h4>\r\n		";
 },"13":function(container,depth0,helpers,partials,data) {
     var stack1, alias1=depth0 != null ? depth0 : {};
 

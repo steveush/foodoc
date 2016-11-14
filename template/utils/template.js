@@ -197,7 +197,7 @@ var generateDocs = exports.generateDocs = function(){
 				if (doclet.kind === 'list' && !doclet.members.length) return;
 
 				var output = path.join(config.dir.output, filename),
-					html = hbs.render(doclet, true);
+					html = hbs.render(doclet, doclet.kind !== 'source');
 
 				if (html === null) return;
 
@@ -223,7 +223,7 @@ exports.createCrumbs = function(doclet){
 		});
 		crumbs.push(doclet.title || doclet.name);
 	} else {
-		crumbs.push(helper.getAncestorLinks(raw.data, doclet) + doclet.name);
+		crumbs.push(doclet.ancestors.join('') + doclet.name);
 	}
 	return crumbs;
 };

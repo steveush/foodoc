@@ -1,5 +1,4 @@
 dl.symbol {
-	overflow: hidden;
 }
 dl.symbol dl.symbol {
 	margin-left: 15px;
@@ -29,6 +28,9 @@ dl.symbol dl.symbol {
 .symbol-title .signature-param {
 	color: #c7254e;
 }
+.symbol-details {
+	overflow: hidden;
+}
 
 .symbol-title.collapsible-symbol {
 	cursor: pointer;
@@ -41,7 +43,6 @@ dl.symbol dl.symbol {
 	opacity: 0.8;
 }
 .symbol-details.collapsible-symbol {
-	overflow: hidden;
 	max-height: 0;
 }
 .symbol-details.collapsible-symbol.transition {

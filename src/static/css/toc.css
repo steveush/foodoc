@@ -7,7 +7,7 @@
 
 /* First level of nav */
 .toc-nav {
-	margin-top: 20px;
+	margin-top: 5px;
 	padding-bottom: 10px;
 }
 
@@ -136,8 +136,8 @@
 	}
 	.toc.affix {
 		position: fixed; /* Undo the static from mobile first approach */
-		top: 82px;
-		height: calc(100% - 82px - 50px);
+		top: 67px;
+		height: calc(100% - 67px - 50px);
 	}
 	.toc.affix-bottom {
 		position: absolute; /* Undo the static from mobile first approach */

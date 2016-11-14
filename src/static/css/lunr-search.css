@@ -45,3 +45,14 @@ p.lunr-search-result-summary {
 	max-height: 48px;
 	text-overflow: ellipsis;
 }
+
+@media (min-width: 992px) {
+	.navbar-form {
+		width: 228px;/* 3 col */
+	}
+}
+@media (min-width: 1200px) {
+	.navbar-form {
+		width: 278px;/* 3 col*/
+	}
+}

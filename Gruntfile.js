@@ -140,7 +140,7 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-handlebars');
 	grunt.loadNpmTasks('grunt-jsdoc');
 
-	grunt.registerTask('template', ['clean', 'handlebars', 'copy', 'uglify', 'cssmin']);
+	grunt.registerTask('template', ['clean:template', 'handlebars', 'copy', 'uglify', 'cssmin']);
 
 	grunt.registerTask('all', ['template', 'jsdoc:default', 'jsdoc:inline', 'jsdoc:logo-color', 'jsdoc:collapse']);
 

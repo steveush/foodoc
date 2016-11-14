@@ -140,16 +140,18 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-handlebars');
 	grunt.loadNpmTasks('grunt-jsdoc');
 
-	grunt.registerTask('all', ['clean', 'handlebars', 'copy', 'uglify', 'cssmin', 'jsdoc:default', 'jsdoc:inline', 'jsdoc:logo-color', 'jsdoc:collapse']);
+	grunt.registerTask('template', ['clean', 'handlebars', 'copy', 'uglify', 'cssmin']);
 
-	grunt.registerTask('default', ['clean', 'handlebars', 'copy', 'uglify', 'cssmin', 'jsdoc:default']);
+	grunt.registerTask('all', ['template', 'jsdoc:default', 'jsdoc:inline', 'jsdoc:logo-color', 'jsdoc:collapse']);
 
-	grunt.registerTask('inline', ['clean', 'handlebars', 'copy', 'uglify', 'cssmin', 'jsdoc:inline']);
+	grunt.registerTask('default', ['template', 'jsdoc:default']);
 
-	grunt.registerTask('logo-color', ['clean', 'handlebars', 'copy', 'uglify', 'cssmin', 'jsdoc:logo-color']);
+	grunt.registerTask('inline', ['template', 'jsdoc:inline']);
 
-	grunt.registerTask('collapse', ['clean', 'handlebars', 'copy', 'uglify', 'cssmin', 'jsdoc:collapse']);
+	grunt.registerTask('logo-color', ['template', 'jsdoc:logo-color']);
 
-	grunt.registerTask('namespaced', ['clean', 'handlebars', 'copy', 'uglify', 'cssmin', 'jsdoc:namespaced']);
+	grunt.registerTask('collapse', ['template', 'jsdoc:collapse']);
+
+	grunt.registerTask('namespaced', ['template', 'jsdoc:namespaced']);
 
 };

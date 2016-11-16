@@ -63,9 +63,10 @@
 		<div class="row">
 			<div class="col-md-9 main-content">
 		<section class="readme-section">
-			<article><h1>FooDoc</h1><p>FooDoc is a <a href="http://twitter.github.io/bootstrap/index.html">Bootstrap</a> and <a href="http://handlebarsjs.com/">Handlebars</a> based template for <a href="http://usejsdoc.org/">JSDoc3</a>. A big thanks must go out to <a href="https://github.com/docstrap/docstrap">DocStrap</a> as it served as the inspiration for this project.</p>
+			<article><p><a href="https://nodei.co/npm/foodoc/"><img src="https://nodei.co/npm/foodoc.png?downloads=true" alt="NPM"></a></p>
+<p><a href="https://david-dm.org/steveush/foodoc"><img src="https://img.shields.io/david/steveush/foodoc.svg" alt="Dependency Status"></a> <a href="https://david-dm.org/steveush/foodoc#info=devDependencies"><img src="https://img.shields.io/david/dev/steveush/foodoc.svg" alt="devDependency Status"></a> <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=DHYUFBMRBJLTW"><img src="https://img.shields.io/badge/Donate-PayPal-brightgreen.svg" alt="Donate"></a></p>
+<h1>FooDoc</h1><p>FooDoc is a <a href="http://twitter.github.io/bootstrap/index.html">Bootstrap</a> and <a href="http://handlebarsjs.com/">Handlebars</a> based template for <a href="http://usejsdoc.org/">JSDoc3</a>. A big thanks must go out to <a href="https://github.com/docstrap/docstrap">DocStrap</a> as it served as the inspiration for this project.</p>
 <p>This project began as a simple modification of DocStrap. Removing the Bootswatch support in favor of my own CSS customizations but it ended up with me re-writing pretty much the entire template, even switching out the template engine to Handlebars.</p>
-<p><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=DHYUFBMRBJLTW"><img src="https://img.shields.io/badge/Donate-PayPal-green.svg" alt="Donate"></a></p>
 <h2>Features</h2><ul>
 <li>Right side Table of Contents which auto hides on pages it's not required on.</li>
 <li>Basic themeing is supported through the <code>systemColor</code> option and if required further customizations can be supplied using the <code>stylesheets</code> and <code>scripts</code> options.</li>
@@ -221,7 +222,33 @@
 <li><strong>description</strong><br>This is the HTML sanitized doclet description.</li>
 <li><strong>body</strong><br>This is the full text of the main content section of the generated HTML for the doclet. Any matches against this have the lowest possible weighting.</li>
 </ul>
-<h3>Why Prism instead of Sunlight?</h3><p>Quite simply Sunlight is no longer maintained and while it does work I prefer Prism which is actively maintained and follows HTML5 standards.</p></article>
+<h3>Why Prism instead of Sunlight?</h3><p>Quite simply Sunlight is no longer maintained and while it does work I prefer Prism which is actively maintained and follows HTML5 standards.</p>
+<h2>To Do</h2><ul>
+<li>Refactor and document the template source code. Now that I know how it all works I can slim down source code and then heavily document it so I can use it as the example documentation.</li>
+</ul>
+<h2>Changelog</h2><p>All releases prior to 1.0.0 are considered pre-release, i.e. I'm not finished changing stuff yet so anything can happen ;)</p>
+<h3>0.0.6</h3><ul>
+<li>Replaced Sunlight syntax highlighter with Prism as it is maintained and it's just generally better.</li>
+</ul>
+<h3>0.0.5</h3><ul>
+<li>Updated TOC to align with crumbs.</li>
+<li>Fixed anchor-links not showing on hover.</li>
+<li>Updated the search input size to match the TOC.</li>
+</ul>
+<h3>0.0.4</h3><ul>
+<li>Added missing {@run } javascript and css as well as some additional styling for related tutorials.</li>
+</ul>
+<h3>0.0.3</h3><ul>
+<li>Fixed page symbols not generating details correctly when displayed as primary header.</li>
+</ul>
+<h3>0.0.2</h3><ul>
+<li>Fixed missing moment.js dependency in the npm package.</li>
+<li>Added .npmignore to exclude the generated examples directory.</li>
+<li>Updated the lunrHelper.js to write files directly to the output directory instead of to the template/static one and then copying it across.</li>
+</ul>
+<h3>0.0.1</h3><ul>
+<li>Initial check in of template.</li>
+</ul></article>
 		</section>
 			</div>
 				<div class="col-md-3 side-content">

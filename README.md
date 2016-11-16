@@ -1,10 +1,12 @@
+[![NPM](https://nodei.co/npm/foodoc.png?downloads=true)](https://nodei.co/npm/foodoc/)
+
+[![Dependency Status](https://img.shields.io/david/steveush/foodoc.svg)](https://david-dm.org/steveush/foodoc) [![devDependency Status](https://img.shields.io/david/dev/steveush/foodoc.svg)](https://david-dm.org/steveush/foodoc#info=devDependencies) [![Donate](https://img.shields.io/badge/Donate-PayPal-brightgreen.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=DHYUFBMRBJLTW)
+
 # FooDoc
 
 FooDoc is a [Bootstrap](http://twitter.github.io/bootstrap/index.html) and [Handlebars](http://handlebarsjs.com/) based template for [JSDoc3](http://usejsdoc.org/). A big thanks must go out to [DocStrap](https://github.com/docstrap/docstrap) as it served as the inspiration for this project.
 
 This project began as a simple modification of DocStrap. Removing the Bootswatch support in favor of my own CSS customizations but it ended up with me re-writing pretty much the entire template, even switching out the template engine to Handlebars.
-
-[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=DHYUFBMRBJLTW)
 
 ## Features
 
@@ -258,3 +260,39 @@ var index = lunr(function(){
 ### Why Prism instead of Sunlight?
 
 Quite simply Sunlight is no longer maintained and while it does work I prefer Prism which is actively maintained and follows HTML5 standards.
+
+## To Do
+
+*   Refactor and document the template source code. Now that I know how it all works I can slim down source code and then heavily document it so I can use it as the example documentation.
+
+## Changelog
+
+All releases prior to 1.0.0 are considered pre-release, i.e. I'm not finished changing stuff yet so anything can happen ;)
+
+### 0.0.6
+
+*   Replaced Sunlight syntax highlighter with Prism as it is maintained and it's just generally better.
+
+### 0.0.5
+
+*   Updated TOC to align with crumbs.
+*   Fixed anchor-links not showing on hover.
+*   Updated the search input size to match the TOC.
+
+### 0.0.4
+
+*   Added missing {@run } javascript and css as well as some additional styling for related tutorials.
+
+### 0.0.3
+
+*   Fixed page symbols not generating details correctly when displayed as primary header.
+
+### 0.0.2
+
+*   Fixed missing moment.js dependency in the npm package.
+*   Added .npmignore to exclude the generated examples directory.
+*   Updated the lunrHelper.js to write files directly to the output directory instead of to the template/static one and then copying it across.
+
+### 0.0.1
+
+*   Initial check in of template.

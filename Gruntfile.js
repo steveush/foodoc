@@ -59,22 +59,37 @@ module.exports = function(grunt) {
 					{expand: true, flatten: true, src: ['node_modules/jquery/dist/jquery.min.js'], dest: 'template/static/js/', filter: 'isFile'}
 				]
 			},
+			clipboard: {
+				files : [
+					{expand: true, flatten: true, src: ['node_modules/clipboard/dist/clipboard.min.js'], dest: 'template/static/js/', filter: 'isFile'}
+				]
+			},
+			prism: {
+				files : [
+					{expand: true, flatten: true, src: ['node_modules/prismjs/prism.js'], dest: 'template/static/js/', filter: 'isFile'},
+					{expand: true, flatten: true, src: ['node_modules/prismjs/themes/prism.css'], dest: 'template/static/css/', filter: 'isFile'}
+				]
+			},
 			lunr: {
 				files : [
 					{expand: true, flatten: true, src: ['node_modules/lunr/lunr.min.js'], dest: 'template/static/js/', filter: 'isFile'}
-				]
-			},
-			sunlight: {
-				files : [
-					{expand: true, flatten: true, src: ['lib/sunlight/sunlight.min.js'], dest: 'template/static/js/', filter: 'isFile'},
-					{expand: true, flatten: true, src: ['lib/sunlight/sunlight.min.css'], dest: 'template/static/css/', filter: 'isFile'}
 				]
 			}
 		},
 		uglify: {
 			template: {
 				files: {
-					'template/static/js/template.min.js': ['src/static/js/*.js']
+					'template/static/js/template.min.js': [
+						'src/static/js/prism-line-numbers.js',
+						'src/static/js/prism-toolbar.js',
+						'src/static/js/prism-copy-to-clipboard.js',
+						'src/static/js/markdown-helpers.js',
+						'src/static/js/symbols.js',
+						'src/static/js/table-of-contents.js',
+						'src/static/js/lunr-search.js',
+						'src/static/js/example-run.js',
+						'src/static/js/google-analytics.js'
+					]
 				}
 			}
 		},
@@ -142,7 +157,7 @@ module.exports = function(grunt) {
 
 	grunt.registerTask('template', ['clean:template', 'handlebars', 'copy', 'uglify', 'cssmin']);
 
-	grunt.registerTask('all', ['template', 'jsdoc:default', 'jsdoc:inline', 'jsdoc:logo-color', 'jsdoc:collapse']);
+	grunt.registerTask('all', ['template', 'clean:examples', 'jsdoc:default', 'jsdoc:inline', 'jsdoc:logo-color', 'jsdoc:collapse']);
 
 	grunt.registerTask('default', ['template', 'jsdoc:default']);
 

@@ -23,9 +23,11 @@
   "homepage": "https://github.com/steveush/foodoc#readme",
   "devDependencies": {
     "bootstrap": "^3.3.7",
+    "clipboard": "^1.5.15",
     "grunt-contrib-handlebars": "^1.0.0",
     "grunt-jsdoc": "^2.1.0",
-    "jquery": "^3.1.1"
+    "jquery": "^3.1.1",
+    "prismjs": "^1.5.1"
   },
   "dependencies": {
     "cheerio": "^0.22.0",

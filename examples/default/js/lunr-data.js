@@ -15,6 +15,10 @@ window.lunrData = {
         "boost": 300
       },
       {
+        "name": "kind",
+        "boost": 110
+      },
+      {
         "name": "title",
         "boost": 100
       },
@@ -42,29 +46,35 @@ window.lunrData = {
           "handlebar",
           "index",
           "jsdoc3",
+          "readm",
           "templat"
         ],
         "undefined": [
           "car",
-          "drive"
+          "drive",
+          "tutori"
         ],
         "list_tutorial.html": [
           "avail",
+          "list",
           "list:tutori",
           "tutori"
         ],
         "list_class.html": [
           "class",
           "document",
+          "list",
           "list:class"
         ],
         "list_mixin.html": [
           "document",
+          "list",
           "list:mixin",
           "mixin"
         ],
         "list_module.html": [
           "document",
+          "list",
           "list:modul",
           "modul"
         ],
@@ -125,6 +135,7 @@ window.lunrData = {
           "last",
           "make",
           "mean",
+          "member",
           "method",
           "object",
           "on",
@@ -155,6 +166,7 @@ window.lunrData = {
           "kind",
           "later",
           "mean",
+          "member",
           "object",
           "on",
           "open",
@@ -171,6 +183,7 @@ window.lunrData = {
           "base#addopt",
           "class",
           "exist",
+          "function",
           "hash",
           "member",
           "option",
@@ -185,6 +198,7 @@ window.lunrData = {
           "base#adddefaultopt",
           "class",
           "default",
+          "function",
           "option",
           "set"
         ],
@@ -199,6 +213,7 @@ window.lunrData = {
           "disciplin",
           "dispos",
           "end",
+          "function",
           "have",
           "instanc",
           "maintain",
@@ -220,6 +235,7 @@ window.lunrData = {
           "class",
           "destroy",
           "event",
+          "function",
           "have",
           "instanc",
           "level",
@@ -232,6 +248,7 @@ window.lunrData = {
           "without"
         ],
         "module-ink_collector-CollectorBase.html": [
+          "class",
           "collector",
           "collectorbas",
           "ink/collector~collectorbas",
@@ -239,6 +256,7 @@ window.lunrData = {
         ],
         "module-ink_collector-OCollector.html": [
           "base",
+          "class",
           "collector",
           "ink/collector~ocollector",
           "module:ink/collector~ocollector",
@@ -248,6 +266,7 @@ window.lunrData = {
         "module-ink_collector-OCollector.html#length": [
           "collect",
           "length",
+          "member",
           "module:ink/collector~ocollector#length",
           "number",
           "size"
@@ -255,6 +274,7 @@ window.lunrData = {
         "module-ink_collector-OCollector.html#every": [
           "alias",
           "boolean",
+          "function",
           "item",
           "match",
           "module:ink/collector~ocollector#everi",
@@ -266,6 +286,7 @@ window.lunrData = {
         "module-ink_collector-OCollector.html#some": [
           "alias",
           "boolean",
+          "function",
           "item",
           "match",
           "module:ink/collector~ocollector#som",
@@ -276,6 +297,7 @@ window.lunrData = {
         ],
         "module-ink_collector-OCollector.html#unique": [
           "array",
+          "function",
           "match",
           "module:ink/collector~ocollector#uniqu",
           "qu",
@@ -288,6 +310,7 @@ window.lunrData = {
         "module-ink_collector-OCollector.html#all": [
           "alias",
           "boolean",
+          "function",
           "item",
           "match",
           "module:ink/collector~ocollector#al",
@@ -299,6 +322,7 @@ window.lunrData = {
         "module-ink_collector-OCollector.html#any": [
           "alias",
           "boolean",
+          "function",
           "item",
           "match",
           "module:ink/collector~ocollector#ani",
@@ -308,6 +332,7 @@ window.lunrData = {
           "true"
         ],
         "module-ink_collector-OCollector.html#remove": [
+          "function",
           "item",
           "match",
           "module:ink/collector~ocollector#remov",
@@ -323,6 +348,7 @@ window.lunrData = {
           "depend",
           "findonekey",
           "first",
+          "function",
           "index",
           "key",
           "match",
@@ -341,6 +367,7 @@ window.lunrData = {
           "alias",
           "findon",
           "first",
+          "function",
           "match",
           "module:ink/collector~ocollector#findon",
           "object",
@@ -354,6 +381,7 @@ window.lunrData = {
           "array",
           "find",
           "findkey",
+          "function",
           "hash",
           "index",
           "instead",
@@ -374,6 +402,7 @@ window.lunrData = {
         "module-ink_collector-OCollector.html#find": [
           "array",
           "find",
+          "function",
           "match",
           "module:ink/collector~ocollector#find",
           "qu",
@@ -381,6 +410,7 @@ window.lunrData = {
           "record"
         ],
         "module-ink_collector-OCollector.html#update": [
+          "function",
           "match",
           "module:ink/collector~ocollector#upd",
           "module:ink/probe.updateoper",
@@ -398,6 +428,7 @@ window.lunrData = {
           "acollector",
           "array",
           "base",
+          "class",
           "collector",
           "ink/collector~acollector",
           "module:ink/collector~acollector"
@@ -405,6 +436,7 @@ window.lunrData = {
         "module-ink_collector-ACollector.html#length": [
           "collect",
           "length",
+          "member",
           "module:ink/collector~acollector#length",
           "number",
           "size"
@@ -412,6 +444,7 @@ window.lunrData = {
         "module-ink_collector-ACollector.html#every": [
           "alias",
           "boolean",
+          "function",
           "item",
           "match",
           "module:ink/collector~acollector#everi",
@@ -423,6 +456,7 @@ window.lunrData = {
         "module-ink_collector-ACollector.html#some": [
           "alias",
           "boolean",
+          "function",
           "item",
           "match",
           "module:ink/collector~acollector#som",
@@ -433,6 +467,7 @@ window.lunrData = {
         ],
         "module-ink_collector-ACollector.html#unique": [
           "array",
+          "function",
           "match",
           "module:ink/collector~acollector#uniqu",
           "qu",
@@ -445,6 +480,7 @@ window.lunrData = {
         "module-ink_collector-ACollector.html#all": [
           "alias",
           "boolean",
+          "function",
           "item",
           "match",
           "module:ink/collector~acollector#al",
@@ -456,6 +492,7 @@ window.lunrData = {
         "module-ink_collector-ACollector.html#any": [
           "alias",
           "boolean",
+          "function",
           "item",
           "match",
           "module:ink/collector~acollector#ani",
@@ -465,6 +502,7 @@ window.lunrData = {
           "true"
         ],
         "module-ink_collector-ACollector.html#remove": [
+          "function",
           "item",
           "match",
           "module:ink/collector~acollector#remov",
@@ -480,6 +518,7 @@ window.lunrData = {
           "depend",
           "findonekey",
           "first",
+          "function",
           "index",
           "key",
           "match",
@@ -498,6 +537,7 @@ window.lunrData = {
           "alias",
           "findon",
           "first",
+          "function",
           "match",
           "module:ink/collector~acollector#findon",
           "object",
@@ -511,6 +551,7 @@ window.lunrData = {
           "array",
           "find",
           "findkey",
+          "function",
           "hash",
           "index",
           "instead",
@@ -531,6 +572,7 @@ window.lunrData = {
         "module-ink_collector-ACollector.html#find": [
           "array",
           "find",
+          "function",
           "match",
           "module:ink/collector~acollector#find",
           "qu",
@@ -538,6 +580,7 @@ window.lunrData = {
           "record"
         ],
         "module-ink_collector-ACollector.html#update": [
+          "function",
           "match",
           "module:ink/collector~acollector#upd",
           "module:ink/probe.updateoper",
@@ -554,6 +597,7 @@ window.lunrData = {
         "documents_model.html": [
           "anyth",
           "bear",
+          "class",
           "contain",
           "data",
           "documents/model",
@@ -578,6 +622,7 @@ window.lunrData = {
           "fill",
           "isnew",
           "it'",
+          "member",
           "true",
           "valu"
         ],
@@ -587,6 +632,7 @@ window.lunrData = {
           "empti",
           "instanc",
           "isempti",
+          "member",
           "return",
           "true"
         ],
@@ -596,6 +642,7 @@ window.lunrData = {
           "deepli",
           "documents/model.get",
           "event",
+          "function",
           "lt;static&gt",
           "nest",
           "object",
@@ -615,6 +662,7 @@ window.lunrData = {
           "don't",
           "exist",
           "filter",
+          "function",
           "interven",
           "lt;static&gt",
           "meant",
@@ -637,6 +685,7 @@ window.lunrData = {
         "documents_model.html#.any": [
           "boolean",
           "documents/model.ani",
+          "function",
           "item",
           "lt;static&gt",
           "match",
@@ -649,6 +698,7 @@ window.lunrData = {
         "documents_model.html#.all": [
           "boolean",
           "documents/model.al",
+          "function",
           "item",
           "lt;static&gt",
           "match",
@@ -660,6 +710,7 @@ window.lunrData = {
         ],
         "documents_model.html#.remove": [
           "documents/model.remov",
+          "function",
           "item",
           "lt;static&gt",
           "match",
@@ -675,6 +726,7 @@ window.lunrData = {
           "documents/model.findon",
           "findon",
           "first",
+          "function",
           "lt;static&gt",
           "match",
           "obj",
@@ -692,6 +744,7 @@ window.lunrData = {
           "documents/model.findonekey",
           "findonekey",
           "first",
+          "function",
           "index",
           "key",
           "lt;static&gt",
@@ -711,6 +764,7 @@ window.lunrData = {
           "documents/model.findkey",
           "find",
           "findkey",
+          "function",
           "hash",
           "index",
           "instead",
@@ -732,6 +786,7 @@ window.lunrData = {
           "array",
           "documents/model.find",
           "find",
+          "function",
           "lt;static&gt",
           "match",
           "obj",
@@ -741,6 +796,7 @@ window.lunrData = {
         ],
         "documents_model.html#.update": [
           "documents/model.upd",
+          "function",
           "lt;static&gt",
           "match",
           "module:documents/probe.updateoper",
@@ -758,6 +814,7 @@ window.lunrData = {
           "alias",
           "boolean",
           "documents/model.som",
+          "function",
           "item",
           "lt;static&gt",
           "match",
@@ -771,6 +828,7 @@ window.lunrData = {
           "alias",
           "boolean",
           "documents/model.everi",
+          "function",
           "item",
           "lt;static&gt",
           "match",
@@ -802,6 +860,7 @@ window.lunrData = {
           "field",
           "look",
           "lt;static&gt",
+          "member",
           "module:documents/probe.queryoperators.$eq",
           "perform",
           "queryoperators.$eq",
@@ -818,6 +877,7 @@ window.lunrData = {
           "comparison",
           "directli",
           "lt;static&gt",
+          "member",
           "module:documents/probe.queryoperators.$n",
           "ne",
           "otherwis",
@@ -846,6 +906,7 @@ window.lunrData = {
           "greater",
           "gt",
           "lt;static&gt",
+          "member",
           "module:documents/probe.queryoperators.$gt",
           "queryoperators.$gt",
           "see",
@@ -858,6 +919,7 @@ window.lunrData = {
           "greater",
           "gte",
           "lt;static&gt",
+          "member",
           "module:documents/probe.queryoperators.$gt",
           "queryoperators.$gt",
           "see",
@@ -869,6 +931,7 @@ window.lunrData = {
           "less",
           "lt",
           "lt;static&gt",
+          "member",
           "module:documents/probe.queryoperators.$lt",
           "queryoperators.$lt",
           "see",
@@ -881,6 +944,7 @@ window.lunrData = {
           "less",
           "lt;static&gt",
           "lte",
+          "member",
           "module:documents/probe.queryoperators.$lt",
           "queryoperators.$lt",
           "see",
@@ -890,6 +954,7 @@ window.lunrData = {
         "module-documents_probe.queryOperators.html#.$in": [
           "field",
           "lt;static&gt",
+          "member",
           "module:documents/probe.queryoperators.$in",
           "on",
           "queryoperators.$in",
@@ -903,6 +968,7 @@ window.lunrData = {
         "module-documents_probe.queryOperators.html#.$nin": [
           "field",
           "lt;static&gt",
+          "member",
           "module:documents/probe.queryoperators.$nin",
           "nin",
           "none",
@@ -919,6 +985,7 @@ window.lunrData = {
           "exists.{field",
           "field",
           "lt;static&gt",
+          "member",
           "module:documents/probe.queryoperators.$exist",
           "queryoperators.$exist",
           "see",
@@ -930,6 +997,7 @@ window.lunrData = {
           "equal",
           "field{field",
           "lt;static&gt",
+          "member",
           "mod",
           "module:documents/probe.queryoperators.$mod",
           "modulu",
@@ -944,6 +1012,7 @@ window.lunrData = {
           "field/array",
           "keys){'field|array",
           "lt;static&gt",
+          "member",
           "module:documents/probe.queryoperators.$s",
           "object",
           "queri",
@@ -958,6 +1027,7 @@ window.lunrData = {
           "express",
           "field{field",
           "lt;static&gt",
+          "member",
           "module:documents/probe.queryoperators.$regex",
           "option",
           "perform",
@@ -977,6 +1047,7 @@ window.lunrData = {
           "except",
           "lt;static&gt",
           "match",
+          "member",
           "module:documents/probe.queryoperators.$elemmatch",
           "object",
           "oper",
@@ -991,6 +1062,7 @@ window.lunrData = {
         "module-documents_probe.queryOperators.html#.$and": [
           "condit",
           "lt;static&gt",
+          "member",
           "met{$and",
           "module:documents/probe.queryoperators.$and",
           "queri",
@@ -1004,6 +1076,7 @@ window.lunrData = {
         "module-documents_probe.queryOperators.html#.$or": [
           "condit",
           "lt;static&gt",
+          "member",
           "met{$or",
           "module:documents/probe.queryoperators.$or",
           "queri",
@@ -1017,6 +1090,7 @@ window.lunrData = {
         "module-documents_probe.queryOperators.html#.$nor": [
           "condit",
           "lt;static&gt",
+          "member",
           "met{$nor",
           "module:documents/probe.queryoperators.$nor",
           "none",
@@ -1032,6 +1106,7 @@ window.lunrData = {
           "condit",
           "logic",
           "lt;static&gt",
+          "member",
           "module:documents/probe.queryoperators.$not",
           "query1",
           "query2",
@@ -1057,6 +1132,7 @@ window.lunrData = {
           "inc",
           "increment",
           "lt;static&gt",
+          "member",
           "module:documents/probe.updateoperators.$inc",
           "specifi",
           "take",
@@ -1070,6 +1146,7 @@ window.lunrData = {
           "field1",
           "form",
           "lt;static&gt",
+          "member",
           "module:documents/probe.updateoperators.$dec",
           "specifi",
           "take",
@@ -1080,6 +1157,7 @@ window.lunrData = {
           "field1",
           "form",
           "lt;static&gt",
+          "member",
           "module:documents/probe.updateoperators.$unset",
           "object",
           "quot;&quot",
@@ -1097,6 +1175,7 @@ window.lunrData = {
           "first",
           "last",
           "lt;static&gt",
+          "member",
           "module:documents/probe.updateoperators.$pop",
           "oper",
           "pass",
@@ -1114,6 +1193,7 @@ window.lunrData = {
           "lt;field&gt",
           "lt;static&gt",
           "lt;value&gt",
+          "member",
           "module:documents/probe.updateoperators.$push",
           "oper",
           "push",
@@ -1129,6 +1209,7 @@ window.lunrData = {
           "look",
           "lt;query&gt",
           "lt;static&gt",
+          "member",
           "module:documents/probe.updateoperators.$pul",
           "oper",
           "pull",
@@ -1139,6 +1220,7 @@ window.lunrData = {
         "base_chains.html": [
           "base/chain",
           "chain",
+          "class",
           "composit",
           "defin",
           "determin",
@@ -1172,6 +1254,7 @@ window.lunrData = {
           "last",
           "make",
           "mean",
+          "member",
           "method",
           "object",
           "on",
@@ -1205,6 +1288,7 @@ window.lunrData = {
           "last",
           "make",
           "mean",
+          "member",
           "method",
           "object",
           "on",
@@ -1231,6 +1315,7 @@ window.lunrData = {
           "kind",
           "later",
           "mean",
+          "member",
           "object",
           "on",
           "open",
@@ -1241,6 +1326,7 @@ window.lunrData = {
           "us"
         ],
         "module-mixins_signalable-Signal.html": [
+          "class",
           "deploy",
           "instanc",
           "itcreat",
@@ -1252,6 +1338,7 @@ window.lunrData = {
           "signal"
         ],
         "module-mixins_signalable-Signal.html#on": [
+          "function",
           "listen",
           "listenercontext",
           "module:mixins/signalable~signal#on",
@@ -1262,6 +1349,7 @@ window.lunrData = {
         ],
         "module-mixins_signalable-Signal.html#once": [
           "execut",
+          "function",
           "listen",
           "listenercontext",
           "module:mixins/signalable~signal#onc",
@@ -1284,12 +1372,14 @@ window.lunrData = {
           "attach",
           "boolean",
           "check",
+          "function",
           "listen",
           "listenercontext",
           "module:mixins/signalable~signal#ha",
           "signal"
         ],
         "module-mixins_signalable-Signal.html#toString": [
+          "function",
           "module:mixins/signalable~signal#tostr",
           "string",
           "tostr"
@@ -1313,6 +1403,7 @@ window.lunrData = {
           "cycl",
           "eitherand",
           "error",
+          "function",
           "log",
           "logger#sil",
           "minim",
@@ -1322,6 +1413,7 @@ window.lunrData = {
           "utils/logger.logger#sil"
         ],
         "utils_logger.Logger.html#all": [
+          "function",
           "level",
           "log",
           "logger#al",
@@ -1331,6 +1423,7 @@ window.lunrData = {
         "utils_logger.Logger.html#level": [
           "debug",
           "error",
+          "function",
           "info",
           "level",
           "log",
@@ -1344,6 +1437,7 @@ window.lunrData = {
         ],
         "utils_logger.Logger.html#trace": [
           "call",
+          "function",
           "log",
           "logger#trac",
           "trace",
@@ -1352,12 +1446,14 @@ window.lunrData = {
         "utils_logger.Logger.html#debug": [
           "call",
           "debug",
+          "function",
           "log",
           "logger#debug",
           "utils/logger.logger#debug"
         ],
         "utils_logger.Logger.html#info": [
           "call",
+          "function",
           "info",
           "log",
           "logger#info",
@@ -1365,6 +1461,7 @@ window.lunrData = {
         ],
         "utils_logger.Logger.html#warn": [
           "call",
+          "function",
           "log",
           "logger#warn",
           "utils/logger.logger#warn",
@@ -1373,6 +1470,7 @@ window.lunrData = {
         "utils_logger.Logger.html#error": [
           "call",
           "error",
+          "function",
           "log",
           "logger#error",
           "utils/logger.logger#error"
@@ -1394,6 +1492,7 @@ window.lunrData = {
           "easi",
           "helper",
           "method",
+          "mixin",
           "mixins/buss",
           "provid",
           "system"
@@ -1403,6 +1502,7 @@ window.lunrData = {
           "handl",
           "make",
           "mani",
+          "mixin",
           "mixins/signal",
           "object",
           "signal"
@@ -1416,6 +1516,7 @@ window.lunrData = {
           "element",
           "execut",
           "function",
+          "modul",
           "module:base/chain",
           "order",
           "primari"
@@ -1426,6 +1527,7 @@ window.lunrData = {
           "compos",
           "defin",
           "definit",
+          "modul",
           "module:bas",
           "system"
         ],
@@ -1439,6 +1541,7 @@ window.lunrData = {
           "documents/bind",
           "intercept",
           "look",
+          "modul",
           "module:documents/bind",
           "object",
           "oper",
@@ -1451,6 +1554,7 @@ window.lunrData = {
           "array",
           "collector",
           "ink/collector",
+          "modul",
           "module:ink/collector",
           "object"
         ],
@@ -1467,6 +1571,7 @@ window.lunrData = {
           "likethat",
           "memori",
           "model",
+          "modul",
           "module:documents/model",
           "pure",
           "save",
@@ -1478,6 +1583,7 @@ window.lunrData = {
           "documents/prob",
           "filter",
           "memori",
+          "modul",
           "module:documents/prob",
           "mongo",
           "notat",
@@ -1492,6 +1598,7 @@ window.lunrData = {
           "documents/schema",
           "enabl",
           "featur",
+          "modul",
           "module:documents/schema",
           "object",
           "schema",
@@ -1506,6 +1613,7 @@ window.lunrData = {
           "helper",
           "method",
           "mixins/buss",
+          "modul",
           "module:mixins/buss",
           "provid",
           "system"
@@ -1519,6 +1627,7 @@ window.lunrData = {
           "fire",
           "hard",
           "mixins/signal",
+          "modul",
           "module:mixins/signal",
           "object",
           "objectand",
@@ -1529,6 +1638,7 @@ window.lunrData = {
         "module-strings_format.html": [
           "helper",
           "method",
+          "modul",
           "module:strings/format",
           "string",
           "strings/format"
@@ -1538,6 +1648,7 @@ window.lunrData = {
           "decor",
           "http://pimterry.github.io/loglevel",
           "log",
+          "modul",
           "module:utils/logg",
           "papyru",
           "slightli",
@@ -2540,13 +2651,213 @@ window.lunrData = {
                       "docs": {},
                       "n": {
                         "docs": {
+                          "base.html#addOptions": {
+                            "ref": "base.html#addOptions",
+                            "tf": 110
+                          },
+                          "base.html#addDefaultOptions": {
+                            "ref": "base.html#addDefaultOptions",
+                            "tf": 110
+                          },
+                          "base.html#end": {
+                            "ref": "base.html#end",
+                            "tf": 110
+                          },
+                          "base.html#destroy": {
+                            "ref": "base.html#destroy",
+                            "tf": 110
+                          },
+                          "module-ink_collector-OCollector.html#every": {
+                            "ref": "module-ink_collector-OCollector.html#every",
+                            "tf": 110
+                          },
+                          "module-ink_collector-OCollector.html#some": {
+                            "ref": "module-ink_collector-OCollector.html#some",
+                            "tf": 110
+                          },
+                          "module-ink_collector-OCollector.html#unique": {
+                            "ref": "module-ink_collector-OCollector.html#unique",
+                            "tf": 110
+                          },
+                          "module-ink_collector-OCollector.html#all": {
+                            "ref": "module-ink_collector-OCollector.html#all",
+                            "tf": 110
+                          },
+                          "module-ink_collector-OCollector.html#any": {
+                            "ref": "module-ink_collector-OCollector.html#any",
+                            "tf": 110
+                          },
+                          "module-ink_collector-OCollector.html#remove": {
+                            "ref": "module-ink_collector-OCollector.html#remove",
+                            "tf": 110
+                          },
+                          "module-ink_collector-OCollector.html#findOneKey": {
+                            "ref": "module-ink_collector-OCollector.html#findOneKey",
+                            "tf": 110
+                          },
+                          "module-ink_collector-OCollector.html#findOne": {
+                            "ref": "module-ink_collector-OCollector.html#findOne",
+                            "tf": 110
+                          },
+                          "module-ink_collector-OCollector.html#findKeys": {
+                            "ref": "module-ink_collector-OCollector.html#findKeys",
+                            "tf": 110
+                          },
+                          "module-ink_collector-OCollector.html#find": {
+                            "ref": "module-ink_collector-OCollector.html#find",
+                            "tf": 110
+                          },
+                          "module-ink_collector-OCollector.html#update": {
+                            "ref": "module-ink_collector-OCollector.html#update",
+                            "tf": 110
+                          },
+                          "module-ink_collector-ACollector.html#every": {
+                            "ref": "module-ink_collector-ACollector.html#every",
+                            "tf": 110
+                          },
+                          "module-ink_collector-ACollector.html#some": {
+                            "ref": "module-ink_collector-ACollector.html#some",
+                            "tf": 110
+                          },
+                          "module-ink_collector-ACollector.html#unique": {
+                            "ref": "module-ink_collector-ACollector.html#unique",
+                            "tf": 110
+                          },
+                          "module-ink_collector-ACollector.html#all": {
+                            "ref": "module-ink_collector-ACollector.html#all",
+                            "tf": 110
+                          },
+                          "module-ink_collector-ACollector.html#any": {
+                            "ref": "module-ink_collector-ACollector.html#any",
+                            "tf": 110
+                          },
+                          "module-ink_collector-ACollector.html#remove": {
+                            "ref": "module-ink_collector-ACollector.html#remove",
+                            "tf": 110
+                          },
+                          "module-ink_collector-ACollector.html#findOneKey": {
+                            "ref": "module-ink_collector-ACollector.html#findOneKey",
+                            "tf": 110
+                          },
+                          "module-ink_collector-ACollector.html#findOne": {
+                            "ref": "module-ink_collector-ACollector.html#findOne",
+                            "tf": 110
+                          },
+                          "module-ink_collector-ACollector.html#findKeys": {
+                            "ref": "module-ink_collector-ACollector.html#findKeys",
+                            "tf": 110
+                          },
+                          "module-ink_collector-ACollector.html#find": {
+                            "ref": "module-ink_collector-ACollector.html#find",
+                            "tf": 110
+                          },
+                          "module-ink_collector-ACollector.html#update": {
+                            "ref": "module-ink_collector-ACollector.html#update",
+                            "tf": 110
+                          },
+                          "documents_model.html#.get": {
+                            "ref": "documents_model.html#.get",
+                            "tf": 110
+                          },
+                          "documents_model.html#.set": {
+                            "ref": "documents_model.html#.set",
+                            "tf": 110
+                          },
+                          "documents_model.html#.any": {
+                            "ref": "documents_model.html#.any",
+                            "tf": 110
+                          },
+                          "documents_model.html#.all": {
+                            "ref": "documents_model.html#.all",
+                            "tf": 110
+                          },
+                          "documents_model.html#.remove": {
+                            "ref": "documents_model.html#.remove",
+                            "tf": 110
+                          },
+                          "documents_model.html#.findOne": {
+                            "ref": "documents_model.html#.findOne",
+                            "tf": 110
+                          },
+                          "documents_model.html#.findOneKey": {
+                            "ref": "documents_model.html#.findOneKey",
+                            "tf": 110
+                          },
+                          "documents_model.html#.findKeys": {
+                            "ref": "documents_model.html#.findKeys",
+                            "tf": 110
+                          },
+                          "documents_model.html#.find": {
+                            "ref": "documents_model.html#.find",
+                            "tf": 110
+                          },
+                          "documents_model.html#.update": {
+                            "ref": "documents_model.html#.update",
+                            "tf": 110
+                          },
+                          "documents_model.html#.some": {
+                            "ref": "documents_model.html#.some",
+                            "tf": 110
+                          },
+                          "documents_model.html#.every": {
+                            "ref": "documents_model.html#.every",
+                            "tf": 110
+                          },
                           "base_chains.html": {
                             "ref": "base_chains.html",
                             "tf": 5.555555555555555
                           },
+                          "module-mixins_signalable-Signal.html#on": {
+                            "ref": "module-mixins_signalable-Signal.html#on",
+                            "tf": 110
+                          },
+                          "module-mixins_signalable-Signal.html#once": {
+                            "ref": "module-mixins_signalable-Signal.html#once",
+                            "tf": 110
+                          },
                           "module-mixins_signalable-Signal.html#off": {
                             "ref": "module-mixins_signalable-Signal.html#off",
-                            "tf": 33.33333333333333
+                            "tf": 143.33333333333331
+                          },
+                          "module-mixins_signalable-Signal.html#has": {
+                            "ref": "module-mixins_signalable-Signal.html#has",
+                            "tf": 110
+                          },
+                          "module-mixins_signalable-Signal.html#toString": {
+                            "ref": "module-mixins_signalable-Signal.html#toString",
+                            "tf": 110
+                          },
+                          "utils_logger.Logger.html#silent": {
+                            "ref": "utils_logger.Logger.html#silent",
+                            "tf": 110
+                          },
+                          "utils_logger.Logger.html#all": {
+                            "ref": "utils_logger.Logger.html#all",
+                            "tf": 110
+                          },
+                          "utils_logger.Logger.html#level": {
+                            "ref": "utils_logger.Logger.html#level",
+                            "tf": 110
+                          },
+                          "utils_logger.Logger.html#trace": {
+                            "ref": "utils_logger.Logger.html#trace",
+                            "tf": 110
+                          },
+                          "utils_logger.Logger.html#debug": {
+                            "ref": "utils_logger.Logger.html#debug",
+                            "tf": 110
+                          },
+                          "utils_logger.Logger.html#info": {
+                            "ref": "utils_logger.Logger.html#info",
+                            "tf": 110
+                          },
+                          "utils_logger.Logger.html#warn": {
+                            "ref": "utils_logger.Logger.html#warn",
+                            "tf": 110
+                          },
+                          "utils_logger.Logger.html#error": {
+                            "ref": "utils_logger.Logger.html#error",
+                            "tf": 110
                           },
                           "module-base_chains.html": {
                             "ref": "module-base_chains.html",
@@ -3417,6 +3728,514 @@ window.lunrData = {
             }
           }
         },
+        "r": {
+          "docs": {},
+          "e": {
+            "docs": {
+              "module-documents_probe.queryOperators.html#.$regex": {
+                "ref": "module-documents_probe.queryOperators.html#.$regex",
+                "tf": 5
+              }
+            },
+            "a": {
+              "docs": {},
+              "d": {
+                "docs": {},
+                "m": {
+                  "docs": {
+                    "index.html": {
+                      "ref": "index.html",
+                      "tf": 110
+                    }
+                  }
+                }
+              },
+              "c": {
+                "docs": {},
+                "h": {
+                  "docs": {
+                    "documents_model.html#.get": {
+                      "ref": "documents_model.html#.get",
+                      "tf": 7.6923076923076925
+                    },
+                    "module-documents_probe.html": {
+                      "ref": "module-documents_probe.html",
+                      "tf": 5
+                    }
+                  }
+                }
+              }
+            },
+            "o": {
+              "docs": {},
+              "p": {
+                "docs": {},
+                "e": {
+                  "docs": {},
+                  "n": {
+                    "docs": {
+                      "base.html#close": {
+                        "ref": "base.html#close",
+                        "tf": 1.0869565217391304
+                      },
+                      "base_chains.html#close": {
+                        "ref": "base_chains.html#close",
+                        "tf": 1.0869565217391304
+                      },
+                      "base_chains.html#end": {
+                        "ref": "base_chains.html#end",
+                        "tf": 1.6129032258064515
+                      }
+                    }
+                  }
+                },
+                "t": {
+                  "docs": {},
+                  "i": {
+                    "docs": {},
+                    "o": {
+                      "docs": {},
+                      "n": {
+                        "docs": {
+                          "module-documents_probe.queryOperators.html#.$regex": {
+                            "ref": "module-documents_probe.queryOperators.html#.$regex",
+                            "tf": 5
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "s": {
+              "docs": {},
+              "o": {
+                "docs": {},
+                "u": {
+                  "docs": {},
+                  "r": {
+                    "docs": {},
+                    "c": {
+                      "docs": {
+                        "base.html#close": {
+                          "ref": "base.html#close",
+                          "tf": 2.1739130434782608
+                        },
+                        "base.html#end": {
+                          "ref": "base.html#end",
+                          "tf": 2.1739130434782608
+                        },
+                        "base_chains.html#close": {
+                          "ref": "base_chains.html#close",
+                          "tf": 2.1739130434782608
+                        },
+                        "base_chains.html#end": {
+                          "ref": "base_chains.html#end",
+                          "tf": 1.6129032258064515
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "p": {
+                "docs": {},
+                "e": {
+                  "docs": {},
+                  "c": {
+                    "docs": {},
+                    "t": {
+                      "docs": {
+                        "module-ink_collector-OCollector.html#findOneKey": {
+                          "ref": "module-ink_collector-OCollector.html#findOneKey",
+                          "tf": 3.125
+                        },
+                        "module-ink_collector-ACollector.html#findOneKey": {
+                          "ref": "module-ink_collector-ACollector.html#findOneKey",
+                          "tf": 3.125
+                        },
+                        "documents_model.html#.findOneKey": {
+                          "ref": "documents_model.html#.findOneKey",
+                          "tf": 3.125
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "c": {
+              "docs": {},
+              "c": {
+                "docs": {},
+                "o": {
+                  "docs": {},
+                  "m": {
+                    "docs": {},
+                    "e": {
+                      "docs": {},
+                      "n": {
+                        "docs": {},
+                        "d": {
+                          "docs": {
+                            "base.html#end": {
+                              "ref": "base.html#end",
+                              "tf": 2.1739130434782608
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "o": {
+                "docs": {},
+                "r": {
+                  "docs": {},
+                  "d": {
+                    "docs": {
+                      "module-ink_collector-OCollector.html#unique": {
+                        "ref": "module-ink_collector-OCollector.html#unique",
+                        "tf": 8.333333333333332
+                      },
+                      "module-ink_collector-OCollector.html#findOneKey": {
+                        "ref": "module-ink_collector-OCollector.html#findOneKey",
+                        "tf": 3.125
+                      },
+                      "module-ink_collector-OCollector.html#findOne": {
+                        "ref": "module-ink_collector-OCollector.html#findOne",
+                        "tf": 7.142857142857142
+                      },
+                      "module-ink_collector-OCollector.html#findKeys": {
+                        "ref": "module-ink_collector-OCollector.html#findKeys",
+                        "tf": 4.166666666666666
+                      },
+                      "module-ink_collector-OCollector.html#find": {
+                        "ref": "module-ink_collector-OCollector.html#find",
+                        "tf": 12.5
+                      },
+                      "module-ink_collector-OCollector.html#update": {
+                        "ref": "module-ink_collector-OCollector.html#update",
+                        "tf": 5.555555555555555
+                      },
+                      "module-ink_collector-ACollector.html#unique": {
+                        "ref": "module-ink_collector-ACollector.html#unique",
+                        "tf": 8.333333333333332
+                      },
+                      "module-ink_collector-ACollector.html#findOneKey": {
+                        "ref": "module-ink_collector-ACollector.html#findOneKey",
+                        "tf": 3.125
+                      },
+                      "module-ink_collector-ACollector.html#findOne": {
+                        "ref": "module-ink_collector-ACollector.html#findOne",
+                        "tf": 7.142857142857142
+                      },
+                      "module-ink_collector-ACollector.html#findKeys": {
+                        "ref": "module-ink_collector-ACollector.html#findKeys",
+                        "tf": 4.166666666666666
+                      },
+                      "module-ink_collector-ACollector.html#find": {
+                        "ref": "module-ink_collector-ACollector.html#find",
+                        "tf": 12.5
+                      },
+                      "module-ink_collector-ACollector.html#update": {
+                        "ref": "module-ink_collector-ACollector.html#update",
+                        "tf": 5.555555555555555
+                      },
+                      "documents_model.html#.get": {
+                        "ref": "documents_model.html#.get",
+                        "tf": 33.33333333333333
+                      },
+                      "documents_model.html#.set": {
+                        "ref": "documents_model.html#.set",
+                        "tf": 21.21212121212121
+                      },
+                      "documents_model.html#.findOne": {
+                        "ref": "documents_model.html#.findOne",
+                        "tf": 7.142857142857142
+                      },
+                      "documents_model.html#.findOneKey": {
+                        "ref": "documents_model.html#.findOneKey",
+                        "tf": 3.125
+                      },
+                      "documents_model.html#.findKeys": {
+                        "ref": "documents_model.html#.findKeys",
+                        "tf": 4.166666666666666
+                      },
+                      "documents_model.html#.find": {
+                        "ref": "documents_model.html#.find",
+                        "tf": 12.5
+                      },
+                      "documents_model.html#.update": {
+                        "ref": "documents_model.html#.update",
+                        "tf": 5.555555555555555
+                      },
+                      "module-documents_probe.html": {
+                        "ref": "module-documents_probe.html",
+                        "tf": 5
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "f": {
+              "docs": {},
+              "e": {
+                "docs": {},
+                "r": {
+                  "docs": {
+                    "base.html#destroy": {
+                      "ref": "base.html#destroy",
+                      "tf": 2.631578947368421
+                    }
+                  }
+                }
+              }
+            },
+            "t": {
+              "docs": {},
+              "u": {
+                "docs": {},
+                "r": {
+                  "docs": {},
+                  "n": {
+                    "docs": {
+                      "module-ink_collector-OCollector.html#every": {
+                        "ref": "module-ink_collector-OCollector.html#every",
+                        "tf": 8.333333333333332
+                      },
+                      "module-ink_collector-OCollector.html#some": {
+                        "ref": "module-ink_collector-OCollector.html#some",
+                        "tf": 8.333333333333332
+                      },
+                      "module-ink_collector-OCollector.html#unique": {
+                        "ref": "module-ink_collector-OCollector.html#unique",
+                        "tf": 8.333333333333332
+                      },
+                      "module-ink_collector-OCollector.html#all": {
+                        "ref": "module-ink_collector-OCollector.html#all",
+                        "tf": 8.333333333333332
+                      },
+                      "module-ink_collector-OCollector.html#any": {
+                        "ref": "module-ink_collector-OCollector.html#any",
+                        "tf": 8.333333333333332
+                      },
+                      "module-ink_collector-OCollector.html#findOneKey": {
+                        "ref": "module-ink_collector-OCollector.html#findOneKey",
+                        "tf": 6.25
+                      },
+                      "module-ink_collector-OCollector.html#findOne": {
+                        "ref": "module-ink_collector-OCollector.html#findOne",
+                        "tf": 7.142857142857142
+                      },
+                      "module-ink_collector-OCollector.html#findKeys": {
+                        "ref": "module-ink_collector-OCollector.html#findKeys",
+                        "tf": 10.416666666666668
+                      },
+                      "module-ink_collector-ACollector.html#every": {
+                        "ref": "module-ink_collector-ACollector.html#every",
+                        "tf": 8.333333333333332
+                      },
+                      "module-ink_collector-ACollector.html#some": {
+                        "ref": "module-ink_collector-ACollector.html#some",
+                        "tf": 8.333333333333332
+                      },
+                      "module-ink_collector-ACollector.html#unique": {
+                        "ref": "module-ink_collector-ACollector.html#unique",
+                        "tf": 8.333333333333332
+                      },
+                      "module-ink_collector-ACollector.html#all": {
+                        "ref": "module-ink_collector-ACollector.html#all",
+                        "tf": 8.333333333333332
+                      },
+                      "module-ink_collector-ACollector.html#any": {
+                        "ref": "module-ink_collector-ACollector.html#any",
+                        "tf": 8.333333333333332
+                      },
+                      "module-ink_collector-ACollector.html#findOneKey": {
+                        "ref": "module-ink_collector-ACollector.html#findOneKey",
+                        "tf": 6.25
+                      },
+                      "module-ink_collector-ACollector.html#findOne": {
+                        "ref": "module-ink_collector-ACollector.html#findOne",
+                        "tf": 7.142857142857142
+                      },
+                      "module-ink_collector-ACollector.html#findKeys": {
+                        "ref": "module-ink_collector-ACollector.html#findKeys",
+                        "tf": 10.416666666666668
+                      },
+                      "documents_model.html#isEmpty": {
+                        "ref": "documents_model.html#isEmpty",
+                        "tf": 12.5
+                      },
+                      "documents_model.html#.any": {
+                        "ref": "documents_model.html#.any",
+                        "tf": 10
+                      },
+                      "documents_model.html#.all": {
+                        "ref": "documents_model.html#.all",
+                        "tf": 10
+                      },
+                      "documents_model.html#.findOne": {
+                        "ref": "documents_model.html#.findOne",
+                        "tf": 7.142857142857142
+                      },
+                      "documents_model.html#.findOneKey": {
+                        "ref": "documents_model.html#.findOneKey",
+                        "tf": 6.25
+                      },
+                      "documents_model.html#.findKeys": {
+                        "ref": "documents_model.html#.findKeys",
+                        "tf": 10.416666666666668
+                      },
+                      "documents_model.html#.some": {
+                        "ref": "documents_model.html#.some",
+                        "tf": 8.333333333333332
+                      },
+                      "documents_model.html#.every": {
+                        "ref": "documents_model.html#.every",
+                        "tf": 8.333333333333332
+                      },
+                      "module-documents_probe.queryOperators.html#.$and": {
+                        "ref": "module-documents_probe.queryOperators.html#.$and",
+                        "tf": 6.25
+                      },
+                      "module-documents_probe.queryOperators.html#.$or": {
+                        "ref": "module-documents_probe.queryOperators.html#.$or",
+                        "tf": 6.25
+                      },
+                      "module-documents_probe.queryOperators.html#.$nor": {
+                        "ref": "module-documents_probe.queryOperators.html#.$nor",
+                        "tf": 5.555555555555555
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "m": {
+              "docs": {},
+              "o": {
+                "docs": {},
+                "v": {
+                  "docs": {
+                    "module-ink_collector-OCollector.html#remove": {
+                      "ref": "module-ink_collector-OCollector.html#remove",
+                      "tf": 693.3333333333334
+                    },
+                    "module-ink_collector-ACollector.html#remove": {
+                      "ref": "module-ink_collector-ACollector.html#remove",
+                      "tf": 693.3333333333334
+                    },
+                    "documents_model.html#.remove": {
+                      "ref": "documents_model.html#.remove",
+                      "tf": 680
+                    },
+                    "module-documents_probe.updateOperators.html#.$unset": {
+                      "ref": "module-documents_probe.updateOperators.html#.$unset",
+                      "tf": 6.25
+                    },
+                    "module-documents_probe.updateOperators.html#.$pop": {
+                      "ref": "module-documents_probe.updateOperators.html#.$pop",
+                      "tf": 5
+                    },
+                    "module-documents_probe.updateOperators.html#.$pull": {
+                      "ref": "module-documents_probe.updateOperators.html#.$pull",
+                      "tf": 4.545454545454546
+                    }
+                  }
+                }
+              },
+              "a": {
+                "docs": {},
+                "i": {
+                  "docs": {},
+                  "n": {
+                    "docs": {},
+                    "d": {
+                      "docs": {
+                        "module-documents_probe.queryOperators.html#.$mod": {
+                          "ref": "module-documents_probe.queryOperators.html#.$mod",
+                          "tf": 6.25
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "g": {
+              "docs": {},
+              "e": {
+                "docs": {},
+                "x": {
+                  "docs": {
+                    "module-documents_probe.queryOperators.html#.$regex": {
+                      "ref": "module-documents_probe.queryOperators.html#.$regex",
+                      "tf": 655
+                    }
+                  }
+                }
+              },
+              "u": {
+                "docs": {},
+                "l": {
+                  "docs": {},
+                  "a": {
+                    "docs": {},
+                    "r": {
+                      "docs": {
+                        "module-documents_probe.queryOperators.html#.$regex": {
+                          "ref": "module-documents_probe.queryOperators.html#.$regex",
+                          "tf": 5
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "l": {
+              "docs": {},
+              "i": {
+                "docs": {
+                  "module-mixins_signalable.html": {
+                    "ref": "module-mixins_signalable.html",
+                    "tf": 3.3333333333333335
+                  }
+                }
+              }
+            }
+          },
+          "i": {
+            "docs": {},
+            "d": {
+              "docs": {
+                "base.html#destroy": {
+                  "ref": "base.html#destroy",
+                  "tf": 2.631578947368421
+                }
+              }
+            }
+          },
+          "a": {
+            "docs": {},
+            "i": {
+              "docs": {},
+              "s": {
+                "docs": {
+                  "module-mixins_signalable-Signal.html": {
+                    "ref": "module-mixins_signalable-Signal.html",
+                    "tf": 6.25
+                  }
+                }
+              }
+            }
+          }
+        },
         "t": {
           "docs": {},
           "e": {
@@ -3515,6 +4334,9 @@ window.lunrData = {
                   "docs": {},
                   "i": {
                     "docs": {
+                      "undefined": {
+                        "tf": 110
+                      },
                       "list_tutorial.html": {
                         "ref": "list_tutorial.html",
                         "tf": 635
@@ -4707,7 +5529,7 @@ window.lunrData = {
                     },
                     "base.html": {
                       "ref": "base.html",
-                      "tf": 2.857142857142857
+                      "tf": 112.85714285714286
                     },
                     "base.html#addOptions": {
                       "ref": "base.html#addOptions",
@@ -4725,17 +5547,41 @@ window.lunrData = {
                       "ref": "base.html#destroy",
                       "tf": 2.631578947368421
                     },
+                    "module-ink_collector-CollectorBase.html": {
+                      "ref": "module-ink_collector-CollectorBase.html",
+                      "tf": 110
+                    },
+                    "module-ink_collector-OCollector.html": {
+                      "ref": "module-ink_collector-OCollector.html",
+                      "tf": 110
+                    },
+                    "module-ink_collector-ACollector.html": {
+                      "ref": "module-ink_collector-ACollector.html",
+                      "tf": 110
+                    },
+                    "documents_model.html": {
+                      "ref": "documents_model.html",
+                      "tf": 110
+                    },
                     "module-documents_probe.queryOperators.html": {
                       "ref": "module-documents_probe.queryOperators.html",
-                      "tf": 10
+                      "tf": 120
                     },
                     "module-documents_probe.updateOperators.html": {
                       "ref": "module-documents_probe.updateOperators.html",
-                      "tf": 10
+                      "tf": 120
+                    },
+                    "base_chains.html": {
+                      "ref": "base_chains.html",
+                      "tf": 110
+                    },
+                    "module-mixins_signalable-Signal.html": {
+                      "ref": "module-mixins_signalable-Signal.html",
+                      "tf": 110
                     },
                     "utils_logger.Logger.html": {
                       "ref": "utils_logger.Logger.html",
-                      "tf": 11.538461538461538
+                      "tf": 121.53846153846153
                     },
                     "module-base.html": {
                       "ref": "module-base.html",
@@ -6992,7 +7838,24 @@ window.lunrData = {
             "s": {
               "docs": {},
               "t": {
-                "docs": {},
+                "docs": {
+                  "list_tutorial.html": {
+                    "ref": "list_tutorial.html",
+                    "tf": 110
+                  },
+                  "list_class.html": {
+                    "ref": "list_class.html",
+                    "tf": 110
+                  },
+                  "list_mixin.html": {
+                    "ref": "list_mixin.html",
+                    "tf": 110
+                  },
+                  "list_module.html": {
+                    "ref": "list_module.html",
+                    "tf": 110
+                  }
+                },
                 ":": {
                   "docs": {},
                   "t": {
@@ -7878,7 +8741,15 @@ window.lunrData = {
                     },
                     "documents_schema.html": {
                       "ref": "documents_schema.html",
-                      "tf": 6.25
+                      "tf": 116.25
+                    },
+                    "mixins_bussable.html": {
+                      "ref": "mixins_bussable.html",
+                      "tf": 110
+                    },
+                    "mixins_signalable.html": {
+                      "ref": "mixins_signalable.html",
+                      "tf": 110
                     }
                   },
                   "s": {
@@ -8001,6 +8872,50 @@ window.lunrData = {
                     "list_module.html": {
                       "ref": "list_module.html",
                       "tf": 635
+                    },
+                    "module-base_chains.html": {
+                      "ref": "module-base_chains.html",
+                      "tf": 110
+                    },
+                    "module-base.html": {
+                      "ref": "module-base.html",
+                      "tf": 110
+                    },
+                    "module-documents_binder.html": {
+                      "ref": "module-documents_binder.html",
+                      "tf": 110
+                    },
+                    "module-ink_collector.html": {
+                      "ref": "module-ink_collector.html",
+                      "tf": 110
+                    },
+                    "module-documents_model.html": {
+                      "ref": "module-documents_model.html",
+                      "tf": 110
+                    },
+                    "module-documents_probe.html": {
+                      "ref": "module-documents_probe.html",
+                      "tf": 110
+                    },
+                    "module-documents_schema.html": {
+                      "ref": "module-documents_schema.html",
+                      "tf": 110
+                    },
+                    "module-mixins_bussable.html": {
+                      "ref": "module-mixins_bussable.html",
+                      "tf": 110
+                    },
+                    "module-mixins_signalable.html": {
+                      "ref": "module-mixins_signalable.html",
+                      "tf": 110
+                    },
+                    "module-strings_format.html": {
+                      "ref": "module-strings_format.html",
+                      "tf": 110
+                    },
+                    "module-utils_logger.html": {
+                      "ref": "module-utils_logger.html",
+                      "tf": 110
                     }
                   },
                   "e": {
@@ -9755,6 +10670,181 @@ window.lunrData = {
                 }
               }
             },
+            "m": {
+              "docs": {},
+              "b": {
+                "docs": {},
+                "e": {
+                  "docs": {},
+                  "r": {
+                    "docs": {
+                      "base.html#close": {
+                        "ref": "base.html#close",
+                        "tf": 110
+                      },
+                      "base.html#open": {
+                        "ref": "base.html#open",
+                        "tf": 110
+                      },
+                      "base.html#addOptions": {
+                        "ref": "base.html#addOptions",
+                        "tf": 5.555555555555555
+                      },
+                      "module-ink_collector-OCollector.html#length": {
+                        "ref": "module-ink_collector-OCollector.html#length",
+                        "tf": 110
+                      },
+                      "module-ink_collector-ACollector.html#length": {
+                        "ref": "module-ink_collector-ACollector.html#length",
+                        "tf": 110
+                      },
+                      "documents_model.html#isNew": {
+                        "ref": "documents_model.html#isNew",
+                        "tf": 110
+                      },
+                      "documents_model.html#isEmpty": {
+                        "ref": "documents_model.html#isEmpty",
+                        "tf": 110
+                      },
+                      "module-documents_probe.queryOperators.html#.$eq": {
+                        "ref": "module-documents_probe.queryOperators.html#.$eq",
+                        "tf": 110
+                      },
+                      "module-documents_probe.queryOperators.html#.$ne": {
+                        "ref": "module-documents_probe.queryOperators.html#.$ne",
+                        "tf": 110
+                      },
+                      "module-documents_probe.queryOperators.html#.$all": {
+                        "ref": "module-documents_probe.queryOperators.html#.$all",
+                        "tf": 115.55555555555556
+                      },
+                      "module-documents_probe.queryOperators.html#.$gt": {
+                        "ref": "module-documents_probe.queryOperators.html#.$gt",
+                        "tf": 110
+                      },
+                      "module-documents_probe.queryOperators.html#.$gte": {
+                        "ref": "module-documents_probe.queryOperators.html#.$gte",
+                        "tf": 110
+                      },
+                      "module-documents_probe.queryOperators.html#.$lt": {
+                        "ref": "module-documents_probe.queryOperators.html#.$lt",
+                        "tf": 110
+                      },
+                      "module-documents_probe.queryOperators.html#.$lte": {
+                        "ref": "module-documents_probe.queryOperators.html#.$lte",
+                        "tf": 110
+                      },
+                      "module-documents_probe.queryOperators.html#.$in": {
+                        "ref": "module-documents_probe.queryOperators.html#.$in",
+                        "tf": 110
+                      },
+                      "module-documents_probe.queryOperators.html#.$nin": {
+                        "ref": "module-documents_probe.queryOperators.html#.$nin",
+                        "tf": 110
+                      },
+                      "module-documents_probe.queryOperators.html#.$exists": {
+                        "ref": "module-documents_probe.queryOperators.html#.$exists",
+                        "tf": 110
+                      },
+                      "module-documents_probe.queryOperators.html#.$mod": {
+                        "ref": "module-documents_probe.queryOperators.html#.$mod",
+                        "tf": 110
+                      },
+                      "module-documents_probe.queryOperators.html#.$size": {
+                        "ref": "module-documents_probe.queryOperators.html#.$size",
+                        "tf": 110
+                      },
+                      "module-documents_probe.queryOperators.html#.$regex": {
+                        "ref": "module-documents_probe.queryOperators.html#.$regex",
+                        "tf": 110
+                      },
+                      "module-documents_probe.queryOperators.html#.$elemMatch": {
+                        "ref": "module-documents_probe.queryOperators.html#.$elemMatch",
+                        "tf": 110
+                      },
+                      "module-documents_probe.queryOperators.html#.$and": {
+                        "ref": "module-documents_probe.queryOperators.html#.$and",
+                        "tf": 110
+                      },
+                      "module-documents_probe.queryOperators.html#.$or": {
+                        "ref": "module-documents_probe.queryOperators.html#.$or",
+                        "tf": 110
+                      },
+                      "module-documents_probe.queryOperators.html#.$nor": {
+                        "ref": "module-documents_probe.queryOperators.html#.$nor",
+                        "tf": 110
+                      },
+                      "module-documents_probe.queryOperators.html#.$not": {
+                        "ref": "module-documents_probe.queryOperators.html#.$not",
+                        "tf": 110
+                      },
+                      "module-documents_probe.updateOperators.html#.$inc": {
+                        "ref": "module-documents_probe.updateOperators.html#.$inc",
+                        "tf": 110
+                      },
+                      "module-documents_probe.updateOperators.html#.$dec": {
+                        "ref": "module-documents_probe.updateOperators.html#.$dec",
+                        "tf": 110
+                      },
+                      "module-documents_probe.updateOperators.html#.$unset": {
+                        "ref": "module-documents_probe.updateOperators.html#.$unset",
+                        "tf": 110
+                      },
+                      "module-documents_probe.updateOperators.html#.$pop": {
+                        "ref": "module-documents_probe.updateOperators.html#.$pop",
+                        "tf": 110
+                      },
+                      "module-documents_probe.updateOperators.html#.$push": {
+                        "ref": "module-documents_probe.updateOperators.html#.$push",
+                        "tf": 110
+                      },
+                      "module-documents_probe.updateOperators.html#.$pull": {
+                        "ref": "module-documents_probe.updateOperators.html#.$pull",
+                        "tf": 110
+                      },
+                      "base_chains.html#close": {
+                        "ref": "base_chains.html#close",
+                        "tf": 110
+                      },
+                      "base_chains.html#end": {
+                        "ref": "base_chains.html#end",
+                        "tf": 110
+                      },
+                      "base_chains.html#open": {
+                        "ref": "base_chains.html#open",
+                        "tf": 110
+                      },
+                      "utils_logger.Logger.html": {
+                        "ref": "utils_logger.Logger.html",
+                        "tf": 3.8461538461538463
+                      }
+                    }
+                  }
+                }
+              },
+              "o": {
+                "docs": {},
+                "r": {
+                  "docs": {},
+                  "i": {
+                    "docs": {
+                      "documents_model.html": {
+                        "ref": "documents_model.html",
+                        "tf": 2.941176470588235
+                      },
+                      "module-documents_model.html": {
+                        "ref": "module-documents_model.html",
+                        "tf": 2.941176470588235
+                      },
+                      "module-documents_probe.html": {
+                        "ref": "module-documents_probe.html",
+                        "tf": 5
+                      }
+                    }
+                  }
+                }
+              }
+            },
             "t": {
               "docs": {},
               "h": {
@@ -9839,53 +10929,6 @@ window.lunrData = {
                             "tf": 5.555555555555555
                           }
                         }
-                      }
-                    }
-                  }
-                }
-              }
-            },
-            "m": {
-              "docs": {},
-              "b": {
-                "docs": {},
-                "e": {
-                  "docs": {},
-                  "r": {
-                    "docs": {
-                      "base.html#addOptions": {
-                        "ref": "base.html#addOptions",
-                        "tf": 5.555555555555555
-                      },
-                      "module-documents_probe.queryOperators.html#.$all": {
-                        "ref": "module-documents_probe.queryOperators.html#.$all",
-                        "tf": 5.555555555555555
-                      },
-                      "utils_logger.Logger.html": {
-                        "ref": "utils_logger.Logger.html",
-                        "tf": 3.8461538461538463
-                      }
-                    }
-                  }
-                }
-              },
-              "o": {
-                "docs": {},
-                "r": {
-                  "docs": {},
-                  "i": {
-                    "docs": {
-                      "documents_model.html": {
-                        "ref": "documents_model.html",
-                        "tf": 2.941176470588235
-                      },
-                      "module-documents_model.html": {
-                        "ref": "module-documents_model.html",
-                        "tf": 2.941176470588235
-                      },
-                      "module-documents_probe.html": {
-                        "ref": "module-documents_probe.html",
-                        "tf": 5
                       }
                     }
                   }
@@ -12180,503 +13223,6 @@ window.lunrData = {
             }
           }
         },
-        "r": {
-          "docs": {},
-          "e": {
-            "docs": {
-              "module-documents_probe.queryOperators.html#.$regex": {
-                "ref": "module-documents_probe.queryOperators.html#.$regex",
-                "tf": 5
-              }
-            },
-            "o": {
-              "docs": {},
-              "p": {
-                "docs": {},
-                "e": {
-                  "docs": {},
-                  "n": {
-                    "docs": {
-                      "base.html#close": {
-                        "ref": "base.html#close",
-                        "tf": 1.0869565217391304
-                      },
-                      "base_chains.html#close": {
-                        "ref": "base_chains.html#close",
-                        "tf": 1.0869565217391304
-                      },
-                      "base_chains.html#end": {
-                        "ref": "base_chains.html#end",
-                        "tf": 1.6129032258064515
-                      }
-                    }
-                  }
-                },
-                "t": {
-                  "docs": {},
-                  "i": {
-                    "docs": {},
-                    "o": {
-                      "docs": {},
-                      "n": {
-                        "docs": {
-                          "module-documents_probe.queryOperators.html#.$regex": {
-                            "ref": "module-documents_probe.queryOperators.html#.$regex",
-                            "tf": 5
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            },
-            "s": {
-              "docs": {},
-              "o": {
-                "docs": {},
-                "u": {
-                  "docs": {},
-                  "r": {
-                    "docs": {},
-                    "c": {
-                      "docs": {
-                        "base.html#close": {
-                          "ref": "base.html#close",
-                          "tf": 2.1739130434782608
-                        },
-                        "base.html#end": {
-                          "ref": "base.html#end",
-                          "tf": 2.1739130434782608
-                        },
-                        "base_chains.html#close": {
-                          "ref": "base_chains.html#close",
-                          "tf": 2.1739130434782608
-                        },
-                        "base_chains.html#end": {
-                          "ref": "base_chains.html#end",
-                          "tf": 1.6129032258064515
-                        }
-                      }
-                    }
-                  }
-                }
-              },
-              "p": {
-                "docs": {},
-                "e": {
-                  "docs": {},
-                  "c": {
-                    "docs": {},
-                    "t": {
-                      "docs": {
-                        "module-ink_collector-OCollector.html#findOneKey": {
-                          "ref": "module-ink_collector-OCollector.html#findOneKey",
-                          "tf": 3.125
-                        },
-                        "module-ink_collector-ACollector.html#findOneKey": {
-                          "ref": "module-ink_collector-ACollector.html#findOneKey",
-                          "tf": 3.125
-                        },
-                        "documents_model.html#.findOneKey": {
-                          "ref": "documents_model.html#.findOneKey",
-                          "tf": 3.125
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            },
-            "c": {
-              "docs": {},
-              "c": {
-                "docs": {},
-                "o": {
-                  "docs": {},
-                  "m": {
-                    "docs": {},
-                    "e": {
-                      "docs": {},
-                      "n": {
-                        "docs": {},
-                        "d": {
-                          "docs": {
-                            "base.html#end": {
-                              "ref": "base.html#end",
-                              "tf": 2.1739130434782608
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              },
-              "o": {
-                "docs": {},
-                "r": {
-                  "docs": {},
-                  "d": {
-                    "docs": {
-                      "module-ink_collector-OCollector.html#unique": {
-                        "ref": "module-ink_collector-OCollector.html#unique",
-                        "tf": 8.333333333333332
-                      },
-                      "module-ink_collector-OCollector.html#findOneKey": {
-                        "ref": "module-ink_collector-OCollector.html#findOneKey",
-                        "tf": 3.125
-                      },
-                      "module-ink_collector-OCollector.html#findOne": {
-                        "ref": "module-ink_collector-OCollector.html#findOne",
-                        "tf": 7.142857142857142
-                      },
-                      "module-ink_collector-OCollector.html#findKeys": {
-                        "ref": "module-ink_collector-OCollector.html#findKeys",
-                        "tf": 4.166666666666666
-                      },
-                      "module-ink_collector-OCollector.html#find": {
-                        "ref": "module-ink_collector-OCollector.html#find",
-                        "tf": 12.5
-                      },
-                      "module-ink_collector-OCollector.html#update": {
-                        "ref": "module-ink_collector-OCollector.html#update",
-                        "tf": 5.555555555555555
-                      },
-                      "module-ink_collector-ACollector.html#unique": {
-                        "ref": "module-ink_collector-ACollector.html#unique",
-                        "tf": 8.333333333333332
-                      },
-                      "module-ink_collector-ACollector.html#findOneKey": {
-                        "ref": "module-ink_collector-ACollector.html#findOneKey",
-                        "tf": 3.125
-                      },
-                      "module-ink_collector-ACollector.html#findOne": {
-                        "ref": "module-ink_collector-ACollector.html#findOne",
-                        "tf": 7.142857142857142
-                      },
-                      "module-ink_collector-ACollector.html#findKeys": {
-                        "ref": "module-ink_collector-ACollector.html#findKeys",
-                        "tf": 4.166666666666666
-                      },
-                      "module-ink_collector-ACollector.html#find": {
-                        "ref": "module-ink_collector-ACollector.html#find",
-                        "tf": 12.5
-                      },
-                      "module-ink_collector-ACollector.html#update": {
-                        "ref": "module-ink_collector-ACollector.html#update",
-                        "tf": 5.555555555555555
-                      },
-                      "documents_model.html#.get": {
-                        "ref": "documents_model.html#.get",
-                        "tf": 33.33333333333333
-                      },
-                      "documents_model.html#.set": {
-                        "ref": "documents_model.html#.set",
-                        "tf": 21.21212121212121
-                      },
-                      "documents_model.html#.findOne": {
-                        "ref": "documents_model.html#.findOne",
-                        "tf": 7.142857142857142
-                      },
-                      "documents_model.html#.findOneKey": {
-                        "ref": "documents_model.html#.findOneKey",
-                        "tf": 3.125
-                      },
-                      "documents_model.html#.findKeys": {
-                        "ref": "documents_model.html#.findKeys",
-                        "tf": 4.166666666666666
-                      },
-                      "documents_model.html#.find": {
-                        "ref": "documents_model.html#.find",
-                        "tf": 12.5
-                      },
-                      "documents_model.html#.update": {
-                        "ref": "documents_model.html#.update",
-                        "tf": 5.555555555555555
-                      },
-                      "module-documents_probe.html": {
-                        "ref": "module-documents_probe.html",
-                        "tf": 5
-                      }
-                    }
-                  }
-                }
-              }
-            },
-            "f": {
-              "docs": {},
-              "e": {
-                "docs": {},
-                "r": {
-                  "docs": {
-                    "base.html#destroy": {
-                      "ref": "base.html#destroy",
-                      "tf": 2.631578947368421
-                    }
-                  }
-                }
-              }
-            },
-            "t": {
-              "docs": {},
-              "u": {
-                "docs": {},
-                "r": {
-                  "docs": {},
-                  "n": {
-                    "docs": {
-                      "module-ink_collector-OCollector.html#every": {
-                        "ref": "module-ink_collector-OCollector.html#every",
-                        "tf": 8.333333333333332
-                      },
-                      "module-ink_collector-OCollector.html#some": {
-                        "ref": "module-ink_collector-OCollector.html#some",
-                        "tf": 8.333333333333332
-                      },
-                      "module-ink_collector-OCollector.html#unique": {
-                        "ref": "module-ink_collector-OCollector.html#unique",
-                        "tf": 8.333333333333332
-                      },
-                      "module-ink_collector-OCollector.html#all": {
-                        "ref": "module-ink_collector-OCollector.html#all",
-                        "tf": 8.333333333333332
-                      },
-                      "module-ink_collector-OCollector.html#any": {
-                        "ref": "module-ink_collector-OCollector.html#any",
-                        "tf": 8.333333333333332
-                      },
-                      "module-ink_collector-OCollector.html#findOneKey": {
-                        "ref": "module-ink_collector-OCollector.html#findOneKey",
-                        "tf": 6.25
-                      },
-                      "module-ink_collector-OCollector.html#findOne": {
-                        "ref": "module-ink_collector-OCollector.html#findOne",
-                        "tf": 7.142857142857142
-                      },
-                      "module-ink_collector-OCollector.html#findKeys": {
-                        "ref": "module-ink_collector-OCollector.html#findKeys",
-                        "tf": 10.416666666666668
-                      },
-                      "module-ink_collector-ACollector.html#every": {
-                        "ref": "module-ink_collector-ACollector.html#every",
-                        "tf": 8.333333333333332
-                      },
-                      "module-ink_collector-ACollector.html#some": {
-                        "ref": "module-ink_collector-ACollector.html#some",
-                        "tf": 8.333333333333332
-                      },
-                      "module-ink_collector-ACollector.html#unique": {
-                        "ref": "module-ink_collector-ACollector.html#unique",
-                        "tf": 8.333333333333332
-                      },
-                      "module-ink_collector-ACollector.html#all": {
-                        "ref": "module-ink_collector-ACollector.html#all",
-                        "tf": 8.333333333333332
-                      },
-                      "module-ink_collector-ACollector.html#any": {
-                        "ref": "module-ink_collector-ACollector.html#any",
-                        "tf": 8.333333333333332
-                      },
-                      "module-ink_collector-ACollector.html#findOneKey": {
-                        "ref": "module-ink_collector-ACollector.html#findOneKey",
-                        "tf": 6.25
-                      },
-                      "module-ink_collector-ACollector.html#findOne": {
-                        "ref": "module-ink_collector-ACollector.html#findOne",
-                        "tf": 7.142857142857142
-                      },
-                      "module-ink_collector-ACollector.html#findKeys": {
-                        "ref": "module-ink_collector-ACollector.html#findKeys",
-                        "tf": 10.416666666666668
-                      },
-                      "documents_model.html#isEmpty": {
-                        "ref": "documents_model.html#isEmpty",
-                        "tf": 12.5
-                      },
-                      "documents_model.html#.any": {
-                        "ref": "documents_model.html#.any",
-                        "tf": 10
-                      },
-                      "documents_model.html#.all": {
-                        "ref": "documents_model.html#.all",
-                        "tf": 10
-                      },
-                      "documents_model.html#.findOne": {
-                        "ref": "documents_model.html#.findOne",
-                        "tf": 7.142857142857142
-                      },
-                      "documents_model.html#.findOneKey": {
-                        "ref": "documents_model.html#.findOneKey",
-                        "tf": 6.25
-                      },
-                      "documents_model.html#.findKeys": {
-                        "ref": "documents_model.html#.findKeys",
-                        "tf": 10.416666666666668
-                      },
-                      "documents_model.html#.some": {
-                        "ref": "documents_model.html#.some",
-                        "tf": 8.333333333333332
-                      },
-                      "documents_model.html#.every": {
-                        "ref": "documents_model.html#.every",
-                        "tf": 8.333333333333332
-                      },
-                      "module-documents_probe.queryOperators.html#.$and": {
-                        "ref": "module-documents_probe.queryOperators.html#.$and",
-                        "tf": 6.25
-                      },
-                      "module-documents_probe.queryOperators.html#.$or": {
-                        "ref": "module-documents_probe.queryOperators.html#.$or",
-                        "tf": 6.25
-                      },
-                      "module-documents_probe.queryOperators.html#.$nor": {
-                        "ref": "module-documents_probe.queryOperators.html#.$nor",
-                        "tf": 5.555555555555555
-                      }
-                    }
-                  }
-                }
-              }
-            },
-            "m": {
-              "docs": {},
-              "o": {
-                "docs": {},
-                "v": {
-                  "docs": {
-                    "module-ink_collector-OCollector.html#remove": {
-                      "ref": "module-ink_collector-OCollector.html#remove",
-                      "tf": 693.3333333333334
-                    },
-                    "module-ink_collector-ACollector.html#remove": {
-                      "ref": "module-ink_collector-ACollector.html#remove",
-                      "tf": 693.3333333333334
-                    },
-                    "documents_model.html#.remove": {
-                      "ref": "documents_model.html#.remove",
-                      "tf": 680
-                    },
-                    "module-documents_probe.updateOperators.html#.$unset": {
-                      "ref": "module-documents_probe.updateOperators.html#.$unset",
-                      "tf": 6.25
-                    },
-                    "module-documents_probe.updateOperators.html#.$pop": {
-                      "ref": "module-documents_probe.updateOperators.html#.$pop",
-                      "tf": 5
-                    },
-                    "module-documents_probe.updateOperators.html#.$pull": {
-                      "ref": "module-documents_probe.updateOperators.html#.$pull",
-                      "tf": 4.545454545454546
-                    }
-                  }
-                }
-              },
-              "a": {
-                "docs": {},
-                "i": {
-                  "docs": {},
-                  "n": {
-                    "docs": {},
-                    "d": {
-                      "docs": {
-                        "module-documents_probe.queryOperators.html#.$mod": {
-                          "ref": "module-documents_probe.queryOperators.html#.$mod",
-                          "tf": 6.25
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            },
-            "a": {
-              "docs": {},
-              "c": {
-                "docs": {},
-                "h": {
-                  "docs": {
-                    "documents_model.html#.get": {
-                      "ref": "documents_model.html#.get",
-                      "tf": 7.6923076923076925
-                    },
-                    "module-documents_probe.html": {
-                      "ref": "module-documents_probe.html",
-                      "tf": 5
-                    }
-                  }
-                }
-              }
-            },
-            "g": {
-              "docs": {},
-              "e": {
-                "docs": {},
-                "x": {
-                  "docs": {
-                    "module-documents_probe.queryOperators.html#.$regex": {
-                      "ref": "module-documents_probe.queryOperators.html#.$regex",
-                      "tf": 655
-                    }
-                  }
-                }
-              },
-              "u": {
-                "docs": {},
-                "l": {
-                  "docs": {},
-                  "a": {
-                    "docs": {},
-                    "r": {
-                      "docs": {
-                        "module-documents_probe.queryOperators.html#.$regex": {
-                          "ref": "module-documents_probe.queryOperators.html#.$regex",
-                          "tf": 5
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            },
-            "l": {
-              "docs": {},
-              "i": {
-                "docs": {
-                  "module-mixins_signalable.html": {
-                    "ref": "module-mixins_signalable.html",
-                    "tf": 3.3333333333333335
-                  }
-                }
-              }
-            }
-          },
-          "i": {
-            "docs": {},
-            "d": {
-              "docs": {
-                "base.html#destroy": {
-                  "ref": "base.html#destroy",
-                  "tf": 2.631578947368421
-                }
-              }
-            }
-          },
-          "a": {
-            "docs": {},
-            "i": {
-              "docs": {},
-              "s": {
-                "docs": {
-                  "module-mixins_signalable-Signal.html": {
-                    "ref": "module-mixins_signalable-Signal.html",
-                    "tf": 6.25
-                  }
-                }
-              }
-            }
-          }
-        },
         "u": {
           "docs": {},
           "n": {
@@ -13780,7 +14326,7 @@ window.lunrData = {
           }
         }
       },
-      "length": 1287
+      "length": 1396
     },
     "corpusTokens": [
       "1",
@@ -13994,6 +14540,7 @@ window.lunrData = {
       "level.se",
       "levelso",
       "likethat",
+      "list",
       "list:class",
       "list:mixin",
       "list:modul",
@@ -14187,6 +14734,7 @@ window.lunrData = {
       "rais",
       "re",
       "reach",
+      "readm",
       "reccomend",
       "record",
       "refer",

@@ -17,7 +17,7 @@ Handlebars.registerPartial("site/layout", this["tmpl"]["site/layout"] = Handleba
 
   return "		<title>"
     + container.escapeExpression(container.lambda(((stack1 = (depth0 != null ? depth0.doclet : depth0)) != null ? stack1.pageTitle : stack1), depth0))
-    + "</title>\r\n		<!--[if lt IE 9]>\r\n		<script src=\"//html5shiv.googlecode.com/svn/trunk/html5.js\"></script>\r\n		<![endif]-->\r\n		<link href=\"https://fonts.googleapis.com/css?family=PT+Mono\" rel=\"stylesheet\">\r\n		<link type=\"text/css\" rel=\"stylesheet\" href=\"css/bootstrap.min.css\">\r\n		<link type=\"text/css\" rel=\"stylesheet\" href=\"css/sunlight.min.css\">\r\n		<link type=\"text/css\" rel=\"stylesheet\" href=\"css/template.min.css\">\r\n"
+    + "</title>\r\n		<!--[if lt IE 9]>\r\n		<script src=\"//html5shiv.googlecode.com/svn/trunk/html5.js\"></script>\r\n		<![endif]-->\r\n		<link href=\"https://fonts.googleapis.com/css?family=PT+Mono\" rel=\"stylesheet\">\r\n		<link type=\"text/css\" rel=\"stylesheet\" href=\"css/bootstrap.min.css\">\r\n		<link type=\"text/css\" rel=\"stylesheet\" href=\"css/prism.css\">\r\n		<link type=\"text/css\" rel=\"stylesheet\" href=\"css/template.min.css\">\r\n"
     + ((stack1 = helpers.each.call(alias1,((stack1 = (depth0 != null ? depth0.options : depth0)) != null ? stack1.stylesheets : stack1),{"name":"each","hash":{},"fn":container.program(2, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
     + ((stack1 = helpers["if"].call(alias1,((stack1 = (depth0 != null ? depth0.options : depth0)) != null ? stack1.systemColor : stack1),{"name":"if","hash":{},"fn":container.program(4, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
     + "		<script type=\"text/javascript\">\r\n			window.TEMPLATE_OPTIONS = "
@@ -32,11 +32,13 @@ Handlebars.registerPartial("site/layout", this["tmpl"]["site/layout"] = Handleba
 },"4":function(container,depth0,helpers,partials,data) {
     var stack1, alias1=container.lambda, alias2=container.escapeExpression;
 
-  return "			<style>\r\n				.page-header {\r\n					background-color: "
+  return "			<style>\r\n				.page-header,\r\n				pre.code-toolbar > .toolbar:hover {\r\n					background-color: "
     + alias2(alias1(((stack1 = (depth0 != null ? depth0.options : depth0)) != null ? stack1.systemColor : stack1), depth0))
-    + ";\r\n				}\r\n				.callout-primary,\r\n				.toc .nav > li > a:hover,\r\n				.toc .nav > li > a:focus,\r\n				.toc .nav > li.active > a,\r\n				.toc .nav > li.active > a:hover,\r\n				.toc .nav > li.active > a:focus {\r\n					border-left-color: "
+    + ";\r\n				}\r\n				.callout-primary,\r\n				.toc .nav > li > a:hover,\r\n				.toc .nav > li > a:focus,\r\n				.toc .nav > li.active > a,\r\n				.toc .nav > li.active > a:hover,\r\n				.toc .nav > li.active > a:focus,\r\n				pre.code-toolbar > .toolbar:hover {\r\n					border-left-color: "
     + alias2(alias1(((stack1 = (depth0 != null ? depth0.options : depth0)) != null ? stack1.systemColor : stack1), depth0))
-    + ";\r\n				}\r\n				.callout-primary h5,\r\n				.symbol-title.collapsible-symbol .toggle-icon,\r\n				.toc .nav > li > a:hover,\r\n				.toc .nav > li > a:focus,\r\n				.toc .nav > li.active > a,\r\n				.toc .nav > li.active > a:hover,\r\n				.toc .nav > li.active > a:focus {\r\n					color: "
+    + ";\r\n				}\r\n				pre.code-toolbar > .toolbar:hover {\r\n					border-bottom-color: "
+    + alias2(alias1(((stack1 = (depth0 != null ? depth0.options : depth0)) != null ? stack1.systemColor : stack1), depth0))
+    + ";\r\n				}\r\n				.callout-primary h5,\r\n				.symbol-title.collapsible-symbol .toggle-icon,\r\n				.breadcrumb li a,\r\n				.toc .nav > li > a:hover,\r\n				.toc .nav > li > a:focus,\r\n				.toc .nav > li.active > a,\r\n				.toc .nav > li.active > a:hover,\r\n				.toc .nav > li.active > a:focus {\r\n					color: "
     + alias2(alias1(((stack1 = (depth0 != null ? depth0.options : depth0)) != null ? stack1.systemColor : stack1), depth0))
     + ";\r\n				}\r\n			</style>\r\n";
 },"6":function(container,depth0,helpers,partials,data) {
@@ -188,9 +190,9 @@ Handlebars.registerPartial("site/layout", this["tmpl"]["site/layout"] = Handleba
 },"49":function(container,depth0,helpers,partials,data) {
     var stack1;
 
-  return "		<div>\r\n			<pre class=\"sunlight-highlight-javascript\">"
+  return "		<div>\r\n			<pre class=\"prettyprint source language-javascript\"><code class=\"language-javascript\">"
     + ((stack1 = (helpers.json || (depth0 && depth0.json) || helpers.helperMissing).call(depth0 != null ? depth0 : {},(depth0 != null ? depth0.doclet : depth0),{"name":"json","hash":{"pretty":true},"data":data})) != null ? stack1 : "")
-    + "</pre>\r\n		</div>\r\n";
+    + "</code></pre>\r\n		</div>\r\n";
 },"51":function(container,depth0,helpers,partials,data) {
     var stack1;
 
@@ -219,7 +221,7 @@ Handlebars.registerPartial("site/layout", this["tmpl"]["site/layout"] = Handleba
     + ((stack1 = (helpers.block || (depth0 && depth0.block) || alias2).call(alias1,"footer",{"name":"block","hash":{},"fn":container.program(42, data, 0, blockParams, depths),"inverse":container.noop,"data":data})) != null ? stack1 : "")
     + "	</footer>\r\n"
     + ((stack1 = helpers["if"].call(alias1,((stack1 = (depth0 != null ? depth0.config : depth0)) != null ? stack1.debug : stack1),{"name":"if","hash":{},"fn":container.program(49, data, 0, blockParams, depths),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + "	<script src=\"js/jquery.min.js\"></script>\r\n	<script src=\"js/bootstrap.min.js\"></script>\r\n	<script src=\"js/sunlight.min.js\"></script>\r\n	<script src=\"js/template.min.js\"></script>\r\n"
+    + "	<script src=\"js/jquery.min.js\"></script>\r\n	<script src=\"js/bootstrap.min.js\"></script>\r\n	<script src=\"js/clipboard.min.js\"></script>\r\n	<script src=\"js/prism.js\"></script>\r\n	<script src=\"js/template.min.js\"></script>\r\n"
     + ((stack1 = helpers["if"].call(alias1,((stack1 = (depth0 != null ? depth0.options : depth0)) != null ? stack1.search : stack1),{"name":"if","hash":{},"fn":container.program(51, data, 0, blockParams, depths),"inverse":container.noop,"data":data})) != null ? stack1 : "")
     + ((stack1 = helpers.each.call(alias1,((stack1 = (depth0 != null ? depth0.options : depth0)) != null ? stack1.scripts : stack1),{"name":"each","hash":{},"fn":container.program(53, data, 0, blockParams, depths),"inverse":container.noop,"data":data})) != null ? stack1 : "")
     + "</body>\r\n</html>";
@@ -354,7 +356,7 @@ Handlebars.registerPartial("symbol/inline", this["tmpl"]["symbol/inline"] = Hand
     + ((stack1 = container.invokePartial(partials["tag/prop"],depth0,{"name":"tag/prop","data":data,"indent":"\t\t\t","helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "")
     + ((stack1 = container.invokePartial(partials["tag/returns"],depth0,{"name":"tag/returns","data":data,"indent":"\t\t\t","helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "")
     + ((stack1 = container.invokePartial(partials["tag/requires"],depth0,{"name":"tag/requires","data":data,"indent":"\t\t\t","helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "")
-    + ((stack1 = container.invokePartial(partials["tag/example"],depth0,{"name":"tag/example","data":data,"indent":"\t\t\t","helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "")
+    + ((stack1 = container.invokePartial(partials["tag/example"],depth0,{"name":"tag/example","hash":{"options":(data && data.options)},"data":data,"indent":"\t\t\t","helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "")
     + ((stack1 = container.invokePartial(partials["tag/fires"],depth0,{"name":"tag/fires","data":data,"indent":"\t\t\t","helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "")
     + ((stack1 = container.invokePartial(partials["tag/exceptions"],depth0,{"name":"tag/exceptions","data":data,"indent":"\t\t\t","helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "")
     + ((stack1 = container.invokePartial(partials["tag/details"],depth0,{"name":"tag/details","hash":{"options":(data && data.options)},"data":data,"indent":"\t\t\t","helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "");
@@ -676,11 +678,13 @@ Handlebars.registerPartial("tag/example", this["tmpl"]["tag/example"] = Handleba
     var stack1, helper, alias1=depth0 != null ? depth0 : {}, alias2=helpers.helperMissing, alias3="function", alias4=container.escapeExpression;
 
   return ((stack1 = helpers["if"].call(alias1,(depth0 != null ? depth0.caption : depth0),{"name":"if","hash":{},"fn":container.program(4, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + "		<div class=\"example-code\">\r\n			<pre class=\"sunlight-highlight-"
+    + "		<div class=\"example-code\">\r\n			<pre class=\"prettyprint source language-"
+    + alias4(((helper = (helper = helpers.lang || (depth0 != null ? depth0.lang : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"lang","hash":{},"data":data}) : helper)))
+    + "\"><code class=\"language-"
     + alias4(((helper = (helper = helpers.lang || (depth0 != null ? depth0.lang : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"lang","hash":{},"data":data}) : helper)))
     + "\">"
     + alias4(((helper = (helper = helpers.code || (depth0 != null ? depth0.code : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"code","hash":{},"data":data}) : helper)))
-    + "</pre>\r\n		</div>\r\n"
+    + "</code></pre>\r\n		</div>\r\n"
     + ((stack1 = helpers["if"].call(alias1,(depth0 != null ? depth0.run : depth0),{"name":"if","hash":{},"fn":container.program(6, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "");
 },"4":function(container,depth0,helpers,partials,data) {
     var stack1, helper;
@@ -1057,13 +1061,13 @@ this["tmpl"]["source"] = Handlebars.template({"1":function(container,depth0,help
 
   return "		<section class=\"source-section\">\r\n			<article>"
     + ((stack1 = alias1(((stack1 = (depth0 != null ? depth0.doclet : depth0)) != null ? stack1.contents : stack1), depth0)) != null ? stack1 : "")
-    + "</article>\r\n			<pre class=\"sunlight-highlight-javascript"
+    + "</article>\r\n			<pre class=\"prettyprint source language-javascript"
     + ((stack1 = helpers["if"].call(depth0 != null ? depth0 : {},((stack1 = (depth0 != null ? depth0.options : depth0)) != null ? stack1.linenums : stack1),{"name":"if","hash":{},"fn":container.program(3, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + "\">"
+    + "\"><code class=\"language-javascript\">"
     + ((stack1 = alias1(((stack1 = (depth0 != null ? depth0.doclet : depth0)) != null ? stack1.code : stack1), depth0)) != null ? stack1 : "")
-    + "</pre>\r\n		</section>\r\n";
+    + "</code></pre>\r\n		</section>\r\n";
 },"3":function(container,depth0,helpers,partials,data) {
-    return " linenums";
+    return " line-numbers";
 },"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
     var stack1;
 

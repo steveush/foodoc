@@ -5,7 +5,7 @@ Mauris sit amet risus non ligula lacinia iaculis. Sed ornare tellus velit, vel e
 Quisque elementum sapien id neque volutpat cursus non mattis velit.
 
 
-```
+```javascript
 $mod       : function ( qu, value ) {
 		var operands = sys.flatten( qu.operands );
 		if ( operands.length !== 2 ) {
@@ -15,16 +15,6 @@ $mod       : function ( qu, value ) {
 		var rem = operands[1];
 		return value % mod === rem;
 	},
-
-```
-
-
-```
-{@lang bash}
-#!/bin/bash
-echo Please, enter your firstname and lastname
-read FN LN
-echo "Hi! $LN, $FN !"
 ```
 
 ```bash
@@ -41,7 +31,36 @@ echo "Hi! $LN, $FN !"
 ```
 
 ```css
-.my-class {
-    display: block;
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url('../fonts/glyphicons-halflings-regular.eot');
+  src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+}
+.glyphicon {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
 }
 ```

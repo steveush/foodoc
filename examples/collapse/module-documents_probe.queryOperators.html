@@ -9,7 +9,7 @@
 		<![endif]-->
 		<link href="https://fonts.googleapis.com/css?family=PT+Mono" rel="stylesheet">
 		<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
-		<link type="text/css" rel="stylesheet" href="css/sunlight.min.css">
+		<link type="text/css" rel="stylesheet" href="css/prism.css">
 		<link type="text/css" rel="stylesheet" href="css/template.min.css">
 		<script type="text/javascript">
 			window.TEMPLATE_OPTIONS = {"includeDate":true,"dateFormat":"Do MMM YYYY","systemName":"FooDoc","systemSummary":"A Bootstrap and Handlebars based template for JSDoc3.","systemLogo":"","systemColor":"","navMembers":[{"kind":"class","title":"Classes","summary":"All documented classes."},{"kind":"external","title":"Externals","summary":"All documented external members."},{"kind":"global","title":"Globals","summary":"All documented globals."},{"kind":"mixin","title":"Mixins","summary":"All documented mixins."},{"kind":"interface","title":"Interfaces","summary":"All documented interfaces."},{"kind":"module","title":"Modules","summary":"All documented modules."},{"kind":"namespace","title":"Namespaces","summary":"All documented namespaces."},{"kind":"tutorial","title":"Tutorials","summary":"All available tutorials."}],"footer":"","copyright":"FooDoc Copyright © 2016 The contributors to the JSDoc3 and FooDoc projects.","linenums":true,"collapseSymbols":false,"inverseNav":true,"inlineNav":false,"outputSourceFiles":true,"sourceRootPath":null,"disablePackagePath":true,"outputSourcePath":false,"showTableOfContents":true,"analytics":null,"methodHeadingReturns":true,"sort":"linenum, longname, version, since","search":true,"readmeTargets":[],"stylesheets":[],"scripts":[],"monospaceLinks":false,"cleverLinks":false};
@@ -136,7 +136,7 @@
 							<div class="form-group">
 								<label class="col-sm-3 control-label">Source</label>
 								<div class="col-sm-9">
-									<p class="form-control-static"><a href="documents_probe.js.html">documents/probe.js</a>, <a href="documents_probe.js.html#sunlight-1-line-999">line 999</a></p>
+									<p class="form-control-static"><a href="documents_probe.js.html">documents/probe.js</a>, <a href="documents_probe.js.html#line-999">line 999</a></p>
 								</div>
 							</div>
 			
@@ -158,7 +158,7 @@
 	<div class="symbol-details-inner">
 			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p><code>$eq</code> performs a <code>===</code> comparison by comparing the value directly if it is an atomic value.<br>otherwise if it is an array, it checks to see if the value looked for is in the array.<br><code>{field: value}</code> or <code>{field: {$eq : value}}</code> or <code>{array: value}</code> or <code>{array: {$eq : value}}</code></p></div>
 			</div>			<div class="callout callout-example"><h5>Examples</h5>		<div class="example-code">
-						<pre class="sunlight-highlight-javascript">var probe &#x3D; require(&quot;documents/probe&quot;);probe.find( data, {categories : &quot;cat1&quot;} );// is the same asprobe.find( data, {categories : {$eq: &quot;cat1&quot;}} );</pre>
+						<pre class="prettyprint source language-javascript"><code class="language-javascript">var probe &#x3D; require(&quot;documents/probe&quot;);probe.find( data, {categories : &quot;cat1&quot;} );// is the same asprobe.find( data, {categories : {$eq: &quot;cat1&quot;}} );</code></pre>
 					</div>
 			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
 			
@@ -180,7 +180,7 @@
 							<div class="form-group">
 								<label class="col-sm-3 control-label">Source</label>
 								<div class="col-sm-9">
-									<p class="form-control-static"><a href="documents_probe.js.html">documents/probe.js</a>, <a href="documents_probe.js.html#sunlight-1-line-347">line 347</a></p>
+									<p class="form-control-static"><a href="documents_probe.js.html">documents/probe.js</a>, <a href="documents_probe.js.html#line-347">line 347</a></p>
 								</div>
 							</div>
 			
@@ -198,7 +198,7 @@
 	<div class="symbol-details-inner">
 			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p><code>$ne</code> performs a <code>!==</code> comparison by comparing the value directly if it is an atomic value. Otherwise, if it is an array<br>this is performs a &quot;not in array&quot;.<br>'{field: {$ne : value}}<code>or '{array: {$ne : value}}</code></p></div>
 			</div>			<div class="callout callout-example"><h5>Examples</h5>		<div class="example-code">
-						<pre class="sunlight-highlight-javascript">var probe &#x3D; require(&quot;documents/probe&quot;);probe.find( data, {&quot;name.first&quot; : {$ne : &quot;Sheryl&quot;}} );</pre>
+						<pre class="prettyprint source language-javascript"><code class="language-javascript">var probe &#x3D; require(&quot;documents/probe&quot;);probe.find( data, {&quot;name.first&quot; : {$ne : &quot;Sheryl&quot;}} );</code></pre>
 					</div>
 			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
 			
@@ -220,7 +220,7 @@
 							<div class="form-group">
 								<label class="col-sm-3 control-label">Source</label>
 								<div class="col-sm-9">
-									<p class="form-control-static"><a href="documents_probe.js.html">documents/probe.js</a>, <a href="documents_probe.js.html#sunlight-1-line-369">line 369</a></p>
+									<p class="form-control-static"><a href="documents_probe.js.html">documents/probe.js</a>, <a href="documents_probe.js.html#line-369">line 369</a></p>
 								</div>
 							</div>
 			
@@ -238,7 +238,7 @@
 	<div class="symbol-details-inner">
 			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p><code>$all</code> checks to see if all of the members of the query are included in an array<br><code>{array: {$all: [val1, val2, val3]}}</code></p></div>
 			</div>			<div class="callout callout-example"><h5>Examples</h5>		<div class="example-code">
-						<pre class="sunlight-highlight-javascript">var probe &#x3D; require(&quot;documents/probe&quot;);probe.find( data, {&quot;categories&quot; : {$all : [&quot;cat4&quot;, &quot;cat2&quot;, &quot;cat1&quot;]}} );</pre>
+						<pre class="prettyprint source language-javascript"><code class="language-javascript">var probe &#x3D; require(&quot;documents/probe&quot;);probe.find( data, {&quot;categories&quot; : {$all : [&quot;cat4&quot;, &quot;cat2&quot;, &quot;cat1&quot;]}} );</code></pre>
 					</div>
 			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
 			
@@ -260,7 +260,7 @@
 							<div class="form-group">
 								<label class="col-sm-3 control-label">Source</label>
 								<div class="col-sm-9">
-									<p class="form-control-static"><a href="documents_probe.js.html">documents/probe.js</a>, <a href="documents_probe.js.html#sunlight-1-line-389">line 389</a></p>
+									<p class="form-control-static"><a href="documents_probe.js.html">documents/probe.js</a>, <a href="documents_probe.js.html#line-389">line 389</a></p>
 								</div>
 							</div>
 			
@@ -278,7 +278,7 @@
 	<div class="symbol-details-inner">
 			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p><code>$gt</code> Sees if a field is greater than the value<br><code>{field: {$gt: value}}</code></p></div>
 			</div>			<div class="callout callout-example"><h5>Examples</h5>		<div class="example-code">
-						<pre class="sunlight-highlight-javascript">var probe &#x3D; require(&quot;documents/probe&quot;);probe.find( data, {&quot;age&quot; : {$gt : 24}} );</pre>
+						<pre class="prettyprint source language-javascript"><code class="language-javascript">var probe &#x3D; require(&quot;documents/probe&quot;);probe.find( data, {&quot;age&quot; : {$gt : 24}} );</code></pre>
 					</div>
 			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
 			
@@ -300,7 +300,7 @@
 							<div class="form-group">
 								<label class="col-sm-3 control-label">Source</label>
 								<div class="col-sm-9">
-									<p class="form-control-static"><a href="documents_probe.js.html">documents/probe.js</a>, <a href="documents_probe.js.html#sunlight-1-line-409">line 409</a></p>
+									<p class="form-control-static"><a href="documents_probe.js.html">documents/probe.js</a>, <a href="documents_probe.js.html#line-409">line 409</a></p>
 								</div>
 							</div>
 			
@@ -318,7 +318,7 @@
 	<div class="symbol-details-inner">
 			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p><code>$gte</code> Sees if a field is greater than or equal to the value<br><code>{field: {$gte: value}}</code></p></div>
 			</div>			<div class="callout callout-example"><h5>Examples</h5>		<div class="example-code">
-						<pre class="sunlight-highlight-javascript">var probe &#x3D; require(&quot;documents/probe&quot;);probe.find( data, {&quot;age&quot; : {$gte : 50}} );</pre>
+						<pre class="prettyprint source language-javascript"><code class="language-javascript">var probe &#x3D; require(&quot;documents/probe&quot;);probe.find( data, {&quot;age&quot; : {$gte : 50}} );</code></pre>
 					</div>
 			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
 			
@@ -340,7 +340,7 @@
 							<div class="form-group">
 								<label class="col-sm-3 control-label">Source</label>
 								<div class="col-sm-9">
-									<p class="form-control-static"><a href="documents_probe.js.html">documents/probe.js</a>, <a href="documents_probe.js.html#sunlight-1-line-422">line 422</a></p>
+									<p class="form-control-static"><a href="documents_probe.js.html">documents/probe.js</a>, <a href="documents_probe.js.html#line-422">line 422</a></p>
 								</div>
 							</div>
 			
@@ -358,7 +358,7 @@
 	<div class="symbol-details-inner">
 			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p><code>$lt</code> Sees if a field is less than the value<br><code>{field: {$lt: value}}</code></p></div>
 			</div>			<div class="callout callout-example"><h5>Examples</h5>		<div class="example-code">
-						<pre class="sunlight-highlight-javascript">var probe &#x3D; require(&quot;documents/probe&quot;);probe.find( data, {&quot;age&quot; : {$lt : 24}} );</pre>
+						<pre class="prettyprint source language-javascript"><code class="language-javascript">var probe &#x3D; require(&quot;documents/probe&quot;);probe.find( data, {&quot;age&quot; : {$lt : 24}} );</code></pre>
 					</div>
 			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
 			
@@ -380,7 +380,7 @@
 							<div class="form-group">
 								<label class="col-sm-3 control-label">Source</label>
 								<div class="col-sm-9">
-									<p class="form-control-static"><a href="documents_probe.js.html">documents/probe.js</a>, <a href="documents_probe.js.html#sunlight-1-line-435">line 435</a></p>
+									<p class="form-control-static"><a href="documents_probe.js.html">documents/probe.js</a>, <a href="documents_probe.js.html#line-435">line 435</a></p>
 								</div>
 							</div>
 			
@@ -398,7 +398,7 @@
 	<div class="symbol-details-inner">
 			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p><code>$lte</code> Sees if a field is less than or equal to the value<br><code>{field: {$lte: value}}</code></p></div>
 			</div>			<div class="callout callout-example"><h5>Examples</h5>		<div class="example-code">
-						<pre class="sunlight-highlight-javascript">var probe &#x3D; require(&quot;documents/probe&quot;);probe.find( data, {&quot;age&quot; : {$lte : 50}} );</pre>
+						<pre class="prettyprint source language-javascript"><code class="language-javascript">var probe &#x3D; require(&quot;documents/probe&quot;);probe.find( data, {&quot;age&quot; : {$lte : 50}} );</code></pre>
 					</div>
 			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
 			
@@ -420,7 +420,7 @@
 							<div class="form-group">
 								<label class="col-sm-3 control-label">Source</label>
 								<div class="col-sm-9">
-									<p class="form-control-static"><a href="documents_probe.js.html">documents/probe.js</a>, <a href="documents_probe.js.html#sunlight-1-line-448">line 448</a></p>
+									<p class="form-control-static"><a href="documents_probe.js.html">documents/probe.js</a>, <a href="documents_probe.js.html#line-448">line 448</a></p>
 								</div>
 							</div>
 			
@@ -438,7 +438,7 @@
 	<div class="symbol-details-inner">
 			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p><code>$in</code> Sees if a field has one of the values in the query<br><code>{field: {$in: [test1, test2, test3,...]}}</code></p></div>
 			</div>			<div class="callout callout-example"><h5>Examples</h5>		<div class="example-code">
-						<pre class="sunlight-highlight-javascript">var probe &#x3D; require(&quot;documents/probe&quot;);probe.find( data, {&quot;age&quot; : {$in : [24, 28, 60]}} );</pre>
+						<pre class="prettyprint source language-javascript"><code class="language-javascript">var probe &#x3D; require(&quot;documents/probe&quot;);probe.find( data, {&quot;age&quot; : {$in : [24, 28, 60]}} );</code></pre>
 					</div>
 			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
 			
@@ -460,7 +460,7 @@
 							<div class="form-group">
 								<label class="col-sm-3 control-label">Source</label>
 								<div class="col-sm-9">
-									<p class="form-control-static"><a href="documents_probe.js.html">documents/probe.js</a>, <a href="documents_probe.js.html#sunlight-1-line-461">line 461</a></p>
+									<p class="form-control-static"><a href="documents_probe.js.html">documents/probe.js</a>, <a href="documents_probe.js.html#line-461">line 461</a></p>
 								</div>
 							</div>
 			
@@ -478,7 +478,7 @@
 	<div class="symbol-details-inner">
 			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p><code>$nin</code> Sees if a field has none of the values in the query<br><code>{field: {$nin: [test1, test2, test3,...]}}</code></p></div>
 			</div>			<div class="callout callout-example"><h5>Examples</h5>		<div class="example-code">
-						<pre class="sunlight-highlight-javascript">var probe &#x3D; require(&quot;documents/probe&quot;);probe.find( data, {&quot;age&quot; : {$nin : [24, 28, 60]}} );</pre>
+						<pre class="prettyprint source language-javascript"><code class="language-javascript">var probe &#x3D; require(&quot;documents/probe&quot;);probe.find( data, {&quot;age&quot; : {$nin : [24, 28, 60]}} );</code></pre>
 					</div>
 			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
 			
@@ -500,7 +500,7 @@
 							<div class="form-group">
 								<label class="col-sm-3 control-label">Source</label>
 								<div class="col-sm-9">
-									<p class="form-control-static"><a href="documents_probe.js.html">documents/probe.js</a>, <a href="documents_probe.js.html#sunlight-1-line-477">line 477</a></p>
+									<p class="form-control-static"><a href="documents_probe.js.html">documents/probe.js</a>, <a href="documents_probe.js.html#line-477">line 477</a></p>
 								</div>
 							</div>
 			
@@ -518,7 +518,7 @@
 	<div class="symbol-details-inner">
 			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p><code>$exists</code> Sees if a field exists.<br><code>{field: {$exists: true|false}}</code></p></div>
 			</div>			<div class="callout callout-example"><h5>Examples</h5>		<div class="example-code">
-						<pre class="sunlight-highlight-javascript">var probe &#x3D; require(&quot;documents/probe&quot;);probe.find( data, {&quot;name.middle&quot; : {$exists : true}} );</pre>
+						<pre class="prettyprint source language-javascript"><code class="language-javascript">var probe &#x3D; require(&quot;documents/probe&quot;);probe.find( data, {&quot;name.middle&quot; : {$exists : true}} );</code></pre>
 					</div>
 			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
 			
@@ -540,7 +540,7 @@
 							<div class="form-group">
 								<label class="col-sm-3 control-label">Source</label>
 								<div class="col-sm-9">
-									<p class="form-control-static"><a href="documents_probe.js.html">documents/probe.js</a>, <a href="documents_probe.js.html#sunlight-1-line-493">line 493</a></p>
+									<p class="form-control-static"><a href="documents_probe.js.html">documents/probe.js</a>, <a href="documents_probe.js.html#line-493">line 493</a></p>
 								</div>
 							</div>
 			
@@ -558,7 +558,7 @@
 	<div class="symbol-details-inner">
 			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Checks equality to a modulus operation on a field<br><code>{field: {$mod: [divisor, remainder]}}</code></p></div>
 			</div>			<div class="callout callout-example"><h5>Examples</h5>		<div class="example-code">
-						<pre class="sunlight-highlight-javascript">var probe &#x3D; require(&quot;documents/probe&quot;);probe.find( data, {&quot;age&quot; : {$mod : [2, 0]}} );</pre>
+						<pre class="prettyprint source language-javascript"><code class="language-javascript">var probe &#x3D; require(&quot;documents/probe&quot;);probe.find( data, {&quot;age&quot; : {$mod : [2, 0]}} );</code></pre>
 					</div>
 			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
 			
@@ -580,7 +580,7 @@
 							<div class="form-group">
 								<label class="col-sm-3 control-label">Source</label>
 								<div class="col-sm-9">
-									<p class="form-control-static"><a href="documents_probe.js.html">documents/probe.js</a>, <a href="documents_probe.js.html#sunlight-1-line-506">line 506</a></p>
+									<p class="form-control-static"><a href="documents_probe.js.html">documents/probe.js</a>, <a href="documents_probe.js.html#line-506">line 506</a></p>
 								</div>
 							</div>
 			
@@ -598,7 +598,7 @@
 	<div class="symbol-details-inner">
 			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Compares the size of the field/array to the query. This can be used on arrays, strings and objects (where it will count keys)<br><code>{'field|array</code>: {$size: value}}`</p></div>
 			</div>			<div class="callout callout-example"><h5>Examples</h5>		<div class="example-code">
-						<pre class="sunlight-highlight-javascript">var probe &#x3D; require(&quot;documents/probe&quot;);probe.find( data, {attr : {$size : 3}} );</pre>
+						<pre class="prettyprint source language-javascript"><code class="language-javascript">var probe &#x3D; require(&quot;documents/probe&quot;);probe.find( data, {attr : {$size : 3}} );</code></pre>
 					</div>
 			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
 			
@@ -620,7 +620,7 @@
 							<div class="form-group">
 								<label class="col-sm-3 control-label">Source</label>
 								<div class="col-sm-9">
-									<p class="form-control-static"><a href="documents_probe.js.html">documents/probe.js</a>, <a href="documents_probe.js.html#sunlight-1-line-525">line 525</a></p>
+									<p class="form-control-static"><a href="documents_probe.js.html">documents/probe.js</a>, <a href="documents_probe.js.html#line-525">line 525</a></p>
 								</div>
 							</div>
 			
@@ -638,7 +638,7 @@
 	<div class="symbol-details-inner">
 			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Performs a regular expression test againts the field<br><code>{field: {$regex: re, $options: reOptions}}</code></p></div>
 			</div>			<div class="callout callout-example"><h5>Examples</h5>		<div class="example-code">
-						<pre class="sunlight-highlight-javascript">var probe &#x3D; require(&quot;documents/probe&quot;);probe.find( data, {&quot;name.first&quot; : {$regex : &quot;m*&quot;, $options : &quot;i&quot;}} );</pre>
+						<pre class="prettyprint source language-javascript"><code class="language-javascript">var probe &#x3D; require(&quot;documents/probe&quot;);probe.find( data, {&quot;name.first&quot; : {$regex : &quot;m*&quot;, $options : &quot;i&quot;}} );</code></pre>
 					</div>
 			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
 			
@@ -660,7 +660,7 @@
 							<div class="form-group">
 								<label class="col-sm-3 control-label">Source</label>
 								<div class="col-sm-9">
-									<p class="form-control-static"><a href="documents_probe.js.html">documents/probe.js</a>, <a href="documents_probe.js.html#sunlight-1-line-538">line 538</a></p>
+									<p class="form-control-static"><a href="documents_probe.js.html">documents/probe.js</a>, <a href="documents_probe.js.html#line-538">line 538</a></p>
 								</div>
 							</div>
 			
@@ -678,7 +678,7 @@
 	<div class="symbol-details-inner">
 			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>This is like $all except that it works with an array of objects or value. It checks to see the array matches all<br>of the conditions of the query<br><code>{array: {$elemMatch: {path: value, path: {$operation: value2}}}</code></p></div>
 			</div>			<div class="callout callout-example"><h5>Examples</h5>		<div class="example-code">
-						<pre class="sunlight-highlight-javascript">var probe &#x3D; require(&quot;documents/probe&quot;);probe.find( data, {attr : {$elemMatch : [ {color : &quot;red&quot;, &quot;hand&quot; : &quot;left&quot;}]}} );</pre>
+						<pre class="prettyprint source language-javascript"><code class="language-javascript">var probe &#x3D; require(&quot;documents/probe&quot;);probe.find( data, {attr : {$elemMatch : [ {color : &quot;red&quot;, &quot;hand&quot; : &quot;left&quot;}]}} );</code></pre>
 					</div>
 			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
 			
@@ -700,7 +700,7 @@
 							<div class="form-group">
 								<label class="col-sm-3 control-label">Source</label>
 								<div class="col-sm-9">
-									<p class="form-control-static"><a href="documents_probe.js.html">documents/probe.js</a>, <a href="documents_probe.js.html#sunlight-1-line-552">line 552</a></p>
+									<p class="form-control-static"><a href="documents_probe.js.html">documents/probe.js</a>, <a href="documents_probe.js.html#line-552">line 552</a></p>
 								</div>
 							</div>
 			
@@ -718,7 +718,7 @@
 	<div class="symbol-details-inner">
 			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Returns true if all of the conditions of the query are met<br><code>{$and: [query1, query2, query3]}</code></p></div>
 			</div>			<div class="callout callout-example"><h5>Examples</h5>		<div class="example-code">
-						<pre class="sunlight-highlight-javascript">var probe &#x3D; require(&quot;documents/probe&quot;);probe.find( data, {$and : [     {&quot;name.first&quot; : &quot;Mildred&quot;},     {&quot;name.last&quot; : &quot;Graves&quot;}]} );</pre>
+						<pre class="prettyprint source language-javascript"><code class="language-javascript">var probe &#x3D; require(&quot;documents/probe&quot;);probe.find( data, {$and : [     {&quot;name.first&quot; : &quot;Mildred&quot;},     {&quot;name.last&quot; : &quot;Graves&quot;}]} );</code></pre>
 					</div>
 			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
 			
@@ -740,7 +740,7 @@
 							<div class="form-group">
 								<label class="col-sm-3 control-label">Source</label>
 								<div class="col-sm-9">
-									<p class="form-control-static"><a href="documents_probe.js.html">documents/probe.js</a>, <a href="documents_probe.js.html#sunlight-1-line-579">line 579</a></p>
+									<p class="form-control-static"><a href="documents_probe.js.html">documents/probe.js</a>, <a href="documents_probe.js.html#line-579">line 579</a></p>
 								</div>
 							</div>
 			
@@ -758,7 +758,7 @@
 	<div class="symbol-details-inner">
 			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Returns true if any of the conditions of the query are met<br><code>{$or: [query1, query2, query3]}</code></p></div>
 			</div>			<div class="callout callout-example"><h5>Examples</h5>		<div class="example-code">
-						<pre class="sunlight-highlight-javascript">var probe &#x3D; require(&quot;documents/probe&quot;);probe.find( data, {$or : [     &quot;age&quot; : {$in : [24, 28, 60]}},     {categories : &quot;cat1&quot;}]} );</pre>
+						<pre class="prettyprint source language-javascript"><code class="language-javascript">var probe &#x3D; require(&quot;documents/probe&quot;);probe.find( data, {$or : [     &quot;age&quot; : {$in : [24, 28, 60]}},     {categories : &quot;cat1&quot;}]} );</code></pre>
 					</div>
 			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
 			
@@ -780,7 +780,7 @@
 							<div class="form-group">
 								<label class="col-sm-3 control-label">Source</label>
 								<div class="col-sm-9">
-									<p class="form-control-static"><a href="documents_probe.js.html">documents/probe.js</a>, <a href="documents_probe.js.html#sunlight-1-line-608">line 608</a></p>
+									<p class="form-control-static"><a href="documents_probe.js.html">documents/probe.js</a>, <a href="documents_probe.js.html#line-608">line 608</a></p>
 								</div>
 							</div>
 			
@@ -798,7 +798,7 @@
 	<div class="symbol-details-inner">
 			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Returns true if none of the conditions of the query are met<br><code>{$nor: [query1, query2, query3]}</code></p></div>
 			</div>			<div class="callout callout-example"><h5>Examples</h5>		<div class="example-code">
-						<pre class="sunlight-highlight-javascript">var probe &#x3D; require(&quot;documents/probe&quot;);probe.find( data, {$nor : [     {&quot;age&quot; : {$in : [24, 28, 60]}},     {categories : &quot;cat1&quot;}]} );</pre>
+						<pre class="prettyprint source language-javascript"><code class="language-javascript">var probe &#x3D; require(&quot;documents/probe&quot;);probe.find( data, {$nor : [     {&quot;age&quot; : {$in : [24, 28, 60]}},     {categories : &quot;cat1&quot;}]} );</code></pre>
 					</div>
 			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
 			
@@ -820,7 +820,7 @@
 							<div class="form-group">
 								<label class="col-sm-3 control-label">Source</label>
 								<div class="col-sm-9">
-									<p class="form-control-static"><a href="documents_probe.js.html">documents/probe.js</a>, <a href="documents_probe.js.html#sunlight-1-line-635">line 635</a></p>
+									<p class="form-control-static"><a href="documents_probe.js.html">documents/probe.js</a>, <a href="documents_probe.js.html#line-635">line 635</a></p>
 								</div>
 							</div>
 			
@@ -838,7 +838,7 @@
 	<div class="symbol-details-inner">
 			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Logical NOT on the conditions of the query<br><code>{$not: [query1, query2, query3]}</code></p></div>
 			</div>			<div class="callout callout-example"><h5>Examples</h5>		<div class="example-code">
-						<pre class="sunlight-highlight-javascript">var probe &#x3D; require(&quot;documents/probe&quot;);probe.find( data, {$not : {&quot;age&quot; : {$lt : 24}}} );</pre>
+						<pre class="prettyprint source language-javascript"><code class="language-javascript">var probe &#x3D; require(&quot;documents/probe&quot;);probe.find( data, {$not : {&quot;age&quot; : {$lt : 24}}} );</code></pre>
 					</div>
 			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
 			
@@ -860,7 +860,7 @@
 							<div class="form-group">
 								<label class="col-sm-3 control-label">Source</label>
 								<div class="col-sm-9">
-									<p class="form-control-static"><a href="documents_probe.js.html">documents/probe.js</a>, <a href="documents_probe.js.html#sunlight-1-line-662">line 662</a></p>
+									<p class="form-control-static"><a href="documents_probe.js.html">documents/probe.js</a>, <a href="documents_probe.js.html#line-662">line 662</a></p>
 								</div>
 							</div>
 			
@@ -881,11 +881,12 @@
 	</div>
 	<footer>
 				<div class="copyright">FooDoc Copyright © 2016 The contributors to the JSDoc3 and FooDoc projects.</div>
-			<div class="generated-by">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.3</a> on 14th Nov 2016 using the <a href="https://github.com/steveush/foodoc">FooDoc template</a>.</div>
+			<div class="generated-by">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.3</a> on 16th Nov 2016 using the <a href="https://github.com/steveush/foodoc">FooDoc template</a>.</div>
 	</footer>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
-	<script src="js/sunlight.min.js"></script>
+	<script src="js/clipboard.min.js"></script>
+	<script src="js/prism.js"></script>
 	<script src="js/template.min.js"></script>
 		<!-- start:lunr-search-modal.hbs -->
 		<div class="modal fade" id="lunr-search-modal">

@@ -10,14 +10,15 @@
 		<![endif]-->
 		<link href="https://fonts.googleapis.com/css?family=PT+Mono" rel="stylesheet">
 		<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
-		<link type="text/css" rel="stylesheet" href="css/sunlight.min.css">
+		<link type="text/css" rel="stylesheet" href="css/prism.css">
 		<link type="text/css" rel="stylesheet" href="css/template.min.css">
 		{{#each options.stylesheets}}
 			<link type="text/css" rel="stylesheet" href="{{.}}">
 		{{/each}}
 		{{#if options.systemColor}}
 			<style>
-				.page-header {
+				.page-header,
+				pre.code-toolbar > .toolbar:hover {
 					background-color: {{options.systemColor}};
 				}
 				.callout-primary,
@@ -25,11 +26,16 @@
 				.toc .nav > li > a:focus,
 				.toc .nav > li.active > a,
 				.toc .nav > li.active > a:hover,
-				.toc .nav > li.active > a:focus {
+				.toc .nav > li.active > a:focus,
+				pre.code-toolbar > .toolbar:hover {
 					border-left-color: {{options.systemColor}};
+				}
+				pre.code-toolbar > .toolbar:hover {
+					border-bottom-color: {{options.systemColor}};
 				}
 				.callout-primary h5,
 				.symbol-title.collapsible-symbol .toggle-icon,
+				.breadcrumb li a,
 				.toc .nav > li > a:hover,
 				.toc .nav > li > a:focus,
 				.toc .nav > li.active > a,
@@ -183,12 +189,13 @@
 	</footer>
 	{{#if config.debug}}
 		<div>
-			<pre class="sunlight-highlight-javascript">{{{json doclet pretty=true}}}</pre>
+			<pre class="prettyprint source language-javascript"><code class="language-javascript">{{{json doclet pretty=true}}}</code></pre>
 		</div>
 	{{/if}}
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
-	<script src="js/sunlight.min.js"></script>
+	<script src="js/clipboard.min.js"></script>
+	<script src="js/prism.js"></script>
 	<script src="js/template.min.js"></script>
 	{{#if options.search}}
 		{{> search/modal}}

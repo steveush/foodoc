@@ -204,7 +204,7 @@ exports.registerSources = function () {
 				doclet.source = pathToLongname[doclet.meta.filepath];
 				doclet.sourcelink = helper.linkto(doclet.source);
 				if (template.options.linenums) {
-					doclet.sourcelink += ', ' + helper.linkto(doclet.source, 'line ' + doclet.meta.lineno, null, 'sunlight-1-line-' + doclet.meta.lineno);
+					doclet.sourcelink += ', ' + helper.linkto(doclet.source, 'line ' + doclet.meta.lineno, null, 'line-' + doclet.meta.lineno);
 				}
 			}
 			doclet.hasSource = !!(doclet.source && (template.options.outputSourceFiles || template.options.outputSourcePath));

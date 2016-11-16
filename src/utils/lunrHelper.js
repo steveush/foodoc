@@ -11,6 +11,7 @@ var index = exports.index = lunr(function(){
 	this.field('longname', {boost: 1000});
 	this.field('name', {boost: 500});
 	this.field('tags', {boost: 300});
+	this.field('kind', {boost: 110});
 	this.field('title', {boost: 100});
 	this.field('summary', {boost: 70});
 	this.field('description', {boost: 50});
@@ -54,9 +55,7 @@ var tags = function(doclet){
 var parseBody = function(html){
 	if (!html || typeof html !== 'string') return;
 	var $ = cheerio.load(html);
-	return $('#main').find('h1,h2,h3,h4,h5,p,a,span,.lunr-include').map(function(i, el){
-		return String.prototype.trim.call($(el).text());
-	}).get().join(' ');
+	return $('#main').text().replace(/\s+/g, ' ').trim();
 };
 
 var add = exports.add = function(doclet, html){
@@ -83,12 +82,6 @@ var add = exports.add = function(doclet, html){
 			add(typedef);
 		});
 	}
-};
-
-exports.writeJSONSync = function(pretty){
-	var file = path.join(template.config.dir.output, 'lunr.json'),
-		contents = {index: index, store: store};
-	fs.writeFileSync(file, pretty ? JSON.stringify(contents, null, 2) : JSON.stringify(contents), "utf8");
 };
 
 exports.writeFilesSync = function(pretty){

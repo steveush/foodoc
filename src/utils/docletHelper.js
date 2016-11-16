@@ -94,15 +94,11 @@ exports.getExamples = function (doclet) {
 			example = example.replace(caption[0], "");
 			result.caption = markdown(caption[1]); // parse markdown and set result value
 		}
-		// parse lang supplied using the {@lang <string>} inner tag, this should be a sunlight.js supported language to get syntax highlighting.
-		// NOTE: If supplied html as the lang this will automatically switch it to xml which sunlight supports.
+		// parse lang supplied using the {@lang <string>} inner tag, this should be a prism.js supported language to get syntax highlighting.
 		var lang = /\{@lang\s(.*?)}/.exec(example);
 		if (lang && lang[1]) {
 			example = example.replace(lang[0], "");
 			result.lang = lang[1];
-			if (result.lang === 'html'){
-				result.lang = 'xml';
-			}
 		}
 		// parse run supplied using the {@run <boolean>} inner tag, this allows the example to be executed with any console.log calls being piped into a textarea.
 		// NOTE: if lang !== 'javascript' the {@run} inner tag is simply removed from the example code, we only support running javascript.

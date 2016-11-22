@@ -269,6 +269,12 @@ Quite simply Sunlight is no longer maintained and while it does work I prefer Pr
 
 All releases prior to 1.0.0 are considered pre-release, i.e. I'm not finished changing stuff yet so anything can happen ;)
 
+### 0.0.7
+
+*   Fixed Prism CSS conflict with `.namespace` class.
+*   Updated Gruntfile to compile and minify all used prism files (including customized plugins) into single includes.
+*   Added in the Prism Normalize Whitespace plugin to perform some additional processing to clean up any extra whitespace in examples.
+
 ### 0.0.6
 
 *   Replaced Sunlight syntax highlighter with Prism as it is maintained and it's just generally better.

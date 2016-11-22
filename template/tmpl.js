@@ -17,7 +17,7 @@ Handlebars.registerPartial("site/layout", this["tmpl"]["site/layout"] = Handleba
 
   return "		<title>"
     + container.escapeExpression(container.lambda(((stack1 = (depth0 != null ? depth0.doclet : depth0)) != null ? stack1.pageTitle : stack1), depth0))
-    + "</title>\r\n		<!--[if lt IE 9]>\r\n		<script src=\"//html5shiv.googlecode.com/svn/trunk/html5.js\"></script>\r\n		<![endif]-->\r\n		<link href=\"https://fonts.googleapis.com/css?family=PT+Mono\" rel=\"stylesheet\">\r\n		<link type=\"text/css\" rel=\"stylesheet\" href=\"css/bootstrap.min.css\">\r\n		<link type=\"text/css\" rel=\"stylesheet\" href=\"css/prism.css\">\r\n		<link type=\"text/css\" rel=\"stylesheet\" href=\"css/template.min.css\">\r\n"
+    + "</title>\r\n		<!--[if lt IE 9]>\r\n		<script src=\"//html5shiv.googlecode.com/svn/trunk/html5.js\"></script>\r\n		<![endif]-->\r\n		<link href=\"https://fonts.googleapis.com/css?family=PT+Mono\" rel=\"stylesheet\">\r\n		<link type=\"text/css\" rel=\"stylesheet\" href=\"css/bootstrap.min.css\">\r\n		<link type=\"text/css\" rel=\"stylesheet\" href=\"css/prism.min.css\">\r\n		<link type=\"text/css\" rel=\"stylesheet\" href=\"css/template.min.css\">\r\n"
     + ((stack1 = helpers.each.call(alias1,((stack1 = (depth0 != null ? depth0.options : depth0)) != null ? stack1.stylesheets : stack1),{"name":"each","hash":{},"fn":container.program(2, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
     + ((stack1 = helpers["if"].call(alias1,((stack1 = (depth0 != null ? depth0.options : depth0)) != null ? stack1.systemColor : stack1),{"name":"if","hash":{},"fn":container.program(4, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
     + "		<script type=\"text/javascript\">\r\n			window.TEMPLATE_OPTIONS = "
@@ -221,7 +221,7 @@ Handlebars.registerPartial("site/layout", this["tmpl"]["site/layout"] = Handleba
     + ((stack1 = (helpers.block || (depth0 && depth0.block) || alias2).call(alias1,"footer",{"name":"block","hash":{},"fn":container.program(42, data, 0, blockParams, depths),"inverse":container.noop,"data":data})) != null ? stack1 : "")
     + "	</footer>\r\n"
     + ((stack1 = helpers["if"].call(alias1,((stack1 = (depth0 != null ? depth0.config : depth0)) != null ? stack1.debug : stack1),{"name":"if","hash":{},"fn":container.program(49, data, 0, blockParams, depths),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + "	<script src=\"js/jquery.min.js\"></script>\r\n	<script src=\"js/bootstrap.min.js\"></script>\r\n	<script src=\"js/clipboard.min.js\"></script>\r\n	<script src=\"js/prism.js\"></script>\r\n	<script src=\"js/template.min.js\"></script>\r\n"
+    + "	<script src=\"js/jquery.min.js\"></script>\r\n	<script src=\"js/bootstrap.min.js\"></script>\r\n	<script src=\"js/clipboard.min.js\"></script>\r\n	<script src=\"js/prism.min.js\"></script>\r\n	<script src=\"js/template.min.js\"></script>\r\n"
     + ((stack1 = helpers["if"].call(alias1,((stack1 = (depth0 != null ? depth0.options : depth0)) != null ? stack1.search : stack1),{"name":"if","hash":{},"fn":container.program(51, data, 0, blockParams, depths),"inverse":container.noop,"data":data})) != null ? stack1 : "")
     + ((stack1 = helpers.each.call(alias1,((stack1 = (depth0 != null ? depth0.options : depth0)) != null ? stack1.scripts : stack1),{"name":"each","hash":{},"fn":container.program(53, data, 0, blockParams, depths),"inverse":container.noop,"data":data})) != null ? stack1 : "")
     + "</body>\r\n</html>";

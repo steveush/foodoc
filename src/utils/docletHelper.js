@@ -89,20 +89,20 @@ exports.getExamples = function (doclet) {
 		}
 
 		// parse caption supplied using the {@caption <markdown>} inner tag
-		var caption = /^\s*?\{@caption\s(.*?)}/.exec(example);
+		var caption = /^\s*?\{@caption\s(.*?)}\s*?/.exec(example);
 		if (caption && caption[1]) {
 			example = example.replace(caption[0], "");
 			result.caption = markdown(caption[1]); // parse markdown and set result value
 		}
 		// parse lang supplied using the {@lang <string>} inner tag, this should be a prism.js supported language to get syntax highlighting.
-		var lang = /\{@lang\s(.*?)}/.exec(example);
+		var lang = /\s*?\{@lang\s(.*?)}\s*?/.exec(example);
 		if (lang && lang[1]) {
 			example = example.replace(lang[0], "");
 			result.lang = lang[1];
 		}
 		// parse run supplied using the {@run <boolean>} inner tag, this allows the example to be executed with any console.log calls being piped into a textarea.
 		// NOTE: if lang !== 'javascript' the {@run} inner tag is simply removed from the example code, we only support running javascript.
-		var run = /\{@run\s(.*?)}/.exec(example);
+		var run = /\s*?\{@run\s(.*?)}\s*?/.exec(example);
 		if (run && run[1]) {
 			example = example.replace(run[0], "");
 			// if the run tag is supplied it is always true regardless of the value so just test if the lang is javascript and use that value

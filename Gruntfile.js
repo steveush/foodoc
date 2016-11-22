@@ -77,12 +77,20 @@ module.exports = function(grunt) {
 			}
 		},
 		uglify: {
-			template: {
+			prism: { // prism requires it's own build as I've modified some plugins and use some default ones to.
 				files: {
-					'template/static/js/template.min.js': [
+					'template/static/js/prism.min.js': [
+						'node_modules/prismjs/prism.js',
+						'node_modules/prismjs/plugins/normalize-whitespace/prism-normalize-whitespace.js',
 						'src/static/js/prism-line-numbers.js',
 						'src/static/js/prism-toolbar.js',
 						'src/static/js/prism-copy-to-clipboard.js',
+					]
+				}
+			},
+			template: {
+				files: {
+					'template/static/js/template.min.js': [
 						'src/static/js/markdown-helpers.js',
 						'src/static/js/symbols.js',
 						'src/static/js/table-of-contents.js',
@@ -94,9 +102,31 @@ module.exports = function(grunt) {
 			}
 		},
 		cssmin: {
+			prism: {
+				files: {
+					'template/static/css/prism.min.css': [
+						'node_modules/prismjs/themes/prism.css',
+						'src/static/css/prism-theme-overrides.css',
+						'src/static/css/prism-line-numbers.css',
+						'src/static/css/prism-toolbar.css'
+					]
+				}
+			},
 			template: {
 				files: {
-					'template/static/css/template.min.css': ['src/static/css/*.css']
+					'template/static/css/template.min.css': [
+						'src/static/css/site.css',
+						'src/static/css/callout.css',
+						'src/static/css/page-header.css',
+						'src/static/css/symbols.css',
+						'src/static/css/tags.css',
+						'src/static/css/anchor-link.css',
+						'src/static/css/breadcrumbs.css',
+						'src/static/css/dummy-console.css',
+						'src/static/css/lunr-search.css',
+						'src/static/css/related-tutorials.css',
+						'src/static/css/toc.css'
+					]
 				}
 			}
 		},

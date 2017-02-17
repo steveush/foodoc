@@ -21,7 +21,8 @@
     "methodHeadingReturns": true,
     "sort": "linenum, longname, version, since",
     "search": true,
-    "readmeTargets": [],
+    "analytics": {"ua": null, "domain": null},
+    "favicon": null,
     "stylesheets": [],
     "scripts": []
   },

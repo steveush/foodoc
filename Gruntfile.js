@@ -187,7 +187,7 @@ module.exports = function(grunt) {
 
 	grunt.registerTask('template', ['clean:template', 'handlebars', 'copy', 'uglify', 'cssmin']);
 
-	grunt.registerTask('all', ['template', 'clean:examples', 'jsdoc:default', 'jsdoc:inline', 'jsdoc:logo-color', 'jsdoc:collapse']);
+	grunt.registerTask('all', ['template', 'clean:examples', 'jsdoc:default', 'jsdoc:inline', 'jsdoc:logo-color', 'jsdoc:collapse', 'jsdoc:namespaced']);
 
 	grunt.registerTask('default', ['template', 'jsdoc:default']);
 

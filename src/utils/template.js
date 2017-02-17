@@ -38,7 +38,7 @@ var options = exports.options = extend({
 	methodHeadingReturns: true,
 	sort: "linenum, longname, version, since",
 	search: true,
-	readmeTargets: [],
+	favicon: null,
 	stylesheets: [],
 	scripts: []
 }, env.conf.templates || {});
@@ -55,10 +55,19 @@ if (!options.navMembers.length){
 ];
 }
 
+var faviconTypes = {
+	'.ico': 'image/x-icon',
+	'.png': 'image/png',
+	'.jpg': 'image/jpeg',
+	'.jpeg': 'image/jpeg',
+	'.gif': 'image/gif'
+};
+
 var config = exports.config = {
 	debug: false,
 	version: env.version.number,
 	date: moment().format(options.dateFormat),
+	faviconType: options.favicon ? faviconTypes[path.extname(options.favicon)] : null,
 	dir: {
 		root: null,
 		tmpl: null,
@@ -164,6 +173,15 @@ var generateStaticFiles = exports.generateStaticFiles = function(){
 			fs.mkPath(config.dir.images);
 			fs.copyFileSync(options.systemLogo, config.dir.images);
 			options.systemLogo = 'img/'+path.basename(options.systemLogo);
+		}
+	}
+
+	// same for the favicon
+	if (options.favicon){
+		var stats = fs.lstatSync(options.favicon);
+		if (stats.isFile()){
+			fs.copyFileSync(options.favicon, env.opts.destination, 'favicon' + path.extname(options.favicon));
+			options.favicon = 'favicon' + path.extname(options.favicon);
 		}
 	}
 

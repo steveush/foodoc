@@ -50,6 +50,12 @@
 	position: relative;
 }
 
+#topNavigation .dropdown-menu {
+	max-height: 640px;
+	max-height: calc(100vh - 62px);
+	overflow-y: auto;
+}
+
 @media (min-width: 768px) {
 	.page-header {
 		padding-top: 60px;

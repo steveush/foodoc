@@ -84,8 +84,9 @@ FooDoc ships with a `conf.json` file in the template/ directory. It is just a re
 	"outputSourcePath"      : "{boolean}",
 	"sort"                  : "{boolean|string}",
 	"search"                : "{boolean}",
-    "stylesheets"           : "{array.<string>}",
-    "scripts"               : "{array.<string>}" 
+	"favicon"               : "{string}",
+	"stylesheets"           : "{array.<string>}",
+	"scripts"               : "{array.<string>}"
 }
 ```
 
@@ -147,6 +148,8 @@ FooDoc ships with a `conf.json` file in the template/ directory. It is just a re
     Specifies the sort order of the symbols on a page. They will still be grouped under there own headings (Classes, Members, Methods, etc.) but within these groups they are sorted using the supplied value. By default this sorts symbols first by where they were found in the original source code, then by there longname, then by there version and lastly by there since tag.
 *   __search - `true`__
     Whether or not to enable the lunr search component.
+*   __favicon - `null`__
+    An image or favicon that will be used as favicon.
 *   __stylesheets - `[]`__
     An array of stylesheet urls to include in every page.
 *   __scripts - `[]`__

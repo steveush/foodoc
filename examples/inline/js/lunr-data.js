@@ -614,6 +614,36 @@ window.lunrData = {
           "usabl",
           "verb"
         ],
+        "documents_model.html#_idField": [
+          "_idfield",
+          "advantag",
+          "documents/model#_idfield",
+          "field",
+          "identifi",
+          "lt;private&gt",
+          "member",
+          "name",
+          "oper",
+          "provid",
+          "record",
+          "string",
+          "take",
+          "uniqu"
+        ],
+        "documents_model.html#_pkey": [
+          "_pkey",
+          "documents/model#_idfield",
+          "documents/model#_pkey",
+          "fill",
+          "found",
+          "key",
+          "lt;private&gt",
+          "member",
+          "none",
+          "null",
+          "primari",
+          "valu"
+        ],
         "documents_model.html#isNew": [
           "boolean",
           "documents/model#_idfield",
@@ -1114,109 +1144,6 @@ window.lunrData = {
           "queryoperators.$not",
           "query{$not"
         ],
-        "module-documents_probe.updateOperators.html": [
-          "actual",
-          "artifact",
-          "class",
-          "document",
-          "documents/probe.updateoper",
-          "module:documents/probe.updateoper",
-          "system",
-          "updateoper"
-        ],
-        "module-documents_probe.updateOperators.html#.$inc": [
-          "amount",
-          "field",
-          "field1",
-          "form",
-          "inc",
-          "increment",
-          "lt;static&gt",
-          "member",
-          "module:documents/probe.updateoperators.$inc",
-          "specifi",
-          "take",
-          "updateoperators.$inc"
-        ],
-        "module-documents_probe.updateOperators.html#.$dec": [
-          "amount",
-          "dec",
-          "decrement",
-          "field",
-          "field1",
-          "form",
-          "lt;static&gt",
-          "member",
-          "module:documents/probe.updateoperators.$dec",
-          "specifi",
-          "take",
-          "updateoperators.$dec"
-        ],
-        "module-documents_probe.updateOperators.html#.$unset": [
-          "field",
-          "field1",
-          "form",
-          "lt;static&gt",
-          "member",
-          "module:documents/probe.updateoperators.$unset",
-          "object",
-          "quot;&quot",
-          "remov",
-          "take",
-          "unset",
-          "updateoperators.$unset"
-        ],
-        "module-documents_probe.updateOperators.html#.$pop": [
-          "1",
-          "array",
-          "element",
-          "elementin",
-          "field",
-          "first",
-          "last",
-          "lt;static&gt",
-          "member",
-          "module:documents/probe.updateoperators.$pop",
-          "oper",
-          "pass",
-          "pop",
-          "remov",
-          "syntax",
-          "updateoperators.$pop",
-          "valu",
-          "work"
-        ],
-        "module-documents_probe.updateOperators.html#.$push": [
-          "append",
-          "array",
-          "look",
-          "lt;field&gt",
-          "lt;static&gt",
-          "lt;value&gt",
-          "member",
-          "module:documents/probe.updateoperators.$push",
-          "oper",
-          "push",
-          "specifi",
-          "updateoperators.$push",
-          "valu"
-        ],
-        "module-documents_probe.updateOperators.html#.$pull": [
-          "array",
-          "exist",
-          "field",
-          "instanc",
-          "look",
-          "lt;query&gt",
-          "lt;static&gt",
-          "member",
-          "module:documents/probe.updateoperators.$pul",
-          "oper",
-          "pull",
-          "remov",
-          "updateoperators.$pul",
-          "valu"
-        ],
         "base_chains.html": [
           "base/chain",
           "chain",
@@ -1301,6 +1228,42 @@ window.lunrData = {
           "us",
           "way"
         ],
+        "base_chains.html#destroy": [
+          "actual",
+          "ask",
+          "automat",
+          "awayand",
+          "base/chains#destroy",
+          "befor",
+          "betweendestroy",
+          "call",
+          "chain",
+          "clean",
+          "constructor",
+          "counterpart",
+          "defin",
+          "destroy",
+          "differ",
+          "end",
+          "first",
+          "go",
+          "here",
+          "last",
+          "lt;private&gt",
+          "mean",
+          "member",
+          "method",
+          "object",
+          "on",
+          "rais",
+          "think",
+          "up",
+          "us",
+          "verb",
+          "work",
+          "yetnot",
+          "yourself"
+        ],
         "base_chains.html#open": [
           "base/chains#clos",
           "base/chains#open",
@@ -1336,6 +1299,14 @@ window.lunrData = {
           "object",
           "rais",
           "signal"
+        ],
+        "module-mixins_signalable-Signal.html#destroy": [
+          "clean",
+          "destroy",
+          "function",
+          "lt;private&gt",
+          "module:mixins/signalable~signal#destroy",
+          "up"
         ],
         "module-mixins_signalable-Signal.html#on": [
           "function",
@@ -1474,6 +1445,109 @@ window.lunrData = {
           "log",
           "logger#error",
           "utils/logger.logger#error"
+        ],
+        "module-documents_probe.updateOperators.html": [
+          "actual",
+          "artifact",
+          "class",
+          "document",
+          "documents/probe.updateoper",
+          "module:documents/probe.updateoper",
+          "system",
+          "updateoper"
+        ],
+        "module-documents_probe.updateOperators.html#.$inc": [
+          "amount",
+          "field",
+          "field1",
+          "form",
+          "inc",
+          "increment",
+          "lt;static&gt",
+          "member",
+          "module:documents/probe.updateoperators.$inc",
+          "specifi",
+          "take",
+          "updateoperators.$inc"
+        ],
+        "module-documents_probe.updateOperators.html#.$dec": [
+          "amount",
+          "dec",
+          "decrement",
+          "field",
+          "field1",
+          "form",
+          "lt;static&gt",
+          "member",
+          "module:documents/probe.updateoperators.$dec",
+          "specifi",
+          "take",
+          "updateoperators.$dec"
+        ],
+        "module-documents_probe.updateOperators.html#.$unset": [
+          "field",
+          "field1",
+          "form",
+          "lt;static&gt",
+          "member",
+          "module:documents/probe.updateoperators.$unset",
+          "object",
+          "quot;&quot",
+          "remov",
+          "take",
+          "unset",
+          "updateoperators.$unset"
+        ],
+        "module-documents_probe.updateOperators.html#.$pop": [
+          "1",
+          "array",
+          "element",
+          "elementin",
+          "field",
+          "first",
+          "last",
+          "lt;static&gt",
+          "member",
+          "module:documents/probe.updateoperators.$pop",
+          "oper",
+          "pass",
+          "pop",
+          "remov",
+          "syntax",
+          "updateoperators.$pop",
+          "valu",
+          "work"
+        ],
+        "module-documents_probe.updateOperators.html#.$push": [
+          "append",
+          "array",
+          "look",
+          "lt;field&gt",
+          "lt;static&gt",
+          "lt;value&gt",
+          "member",
+          "module:documents/probe.updateoperators.$push",
+          "oper",
+          "push",
+          "specifi",
+          "updateoperators.$push",
+          "valu"
+        ],
+        "module-documents_probe.updateOperators.html#.$pull": [
+          "array",
+          "exist",
+          "field",
+          "instanc",
+          "look",
+          "lt;query&gt",
+          "lt;static&gt",
+          "member",
+          "module:documents/probe.updateoperators.$pul",
+          "oper",
+          "pull",
+          "remov",
+          "updateoperators.$pul",
+          "valu"
         ],
         "documents_schema.html": [
           "access",
@@ -1656,7 +1730,7 @@ window.lunrData = {
           "utils/logg"
         ]
       },
-      "length": 114
+      "length": 118
     },
     "tokenStore": {
       "root": {
@@ -1666,13 +1740,13 @@ window.lunrData = {
               "ref": "base.html#close",
               "tf": 1.0869565217391304
             },
-            "module-documents_probe.updateOperators.html#.$pop": {
-              "ref": "module-documents_probe.updateOperators.html#.$pop",
-              "tf": 6.666666666666667
-            },
             "base_chains.html#close": {
               "ref": "base_chains.html#close",
               "tf": 1.0869565217391304
+            },
+            "module-documents_probe.updateOperators.html#.$pop": {
+              "ref": "module-documents_probe.updateOperators.html#.$pop",
+              "tf": 6.666666666666667
             }
           }
         },
@@ -1933,6 +2007,32 @@ window.lunrData = {
                                     }
                                   }
                                 },
+                                "d": {
+                                  "docs": {},
+                                  "e": {
+                                    "docs": {},
+                                    "s": {
+                                      "docs": {},
+                                      "t": {
+                                        "docs": {},
+                                        "r": {
+                                          "docs": {},
+                                          "o": {
+                                            "docs": {},
+                                            "y": {
+                                              "docs": {
+                                                "base_chains.html#destroy": {
+                                                  "ref": "base_chains.html#destroy",
+                                                  "tf": 1150
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                },
                                 "o": {
                                   "docs": {},
                                   "p": {
@@ -2118,6 +2218,10 @@ window.lunrData = {
                     "base_chains.html#end": {
                       "ref": "base_chains.html#end",
                       "tf": 1.6129032258064515
+                    },
+                    "base_chains.html#destroy": {
+                      "ref": "base_chains.html#destroy",
+                      "tf": 1.282051282051282
                     }
                   }
                 }
@@ -2134,6 +2238,47 @@ window.lunrData = {
                   "module-documents_model.html": {
                     "ref": "module-documents_model.html",
                     "tf": 2.941176470588235
+                  }
+                }
+              }
+            },
+            "t": {
+              "docs": {},
+              "w": {
+                "docs": {},
+                "e": {
+                  "docs": {},
+                  "e": {
+                    "docs": {},
+                    "n": {
+                      "docs": {},
+                      "d": {
+                        "docs": {},
+                        "e": {
+                          "docs": {},
+                          "s": {
+                            "docs": {},
+                            "t": {
+                              "docs": {},
+                              "r": {
+                                "docs": {},
+                                "o": {
+                                  "docs": {},
+                                  "y": {
+                                    "docs": {
+                                      "base_chains.html#destroy": {
+                                        "ref": "base_chains.html#destroy",
+                                        "tf": 1.282051282051282
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
                   }
                 }
               }
@@ -2239,6 +2384,20 @@ window.lunrData = {
                         "ref": "index.html",
                         "tf": 600
                       }
+                    }
+                  }
+                }
+              }
+            },
+            "u": {
+              "docs": {},
+              "n": {
+                "docs": {},
+                "d": {
+                  "docs": {
+                    "documents_model.html#_pkey": {
+                      "ref": "documents_model.html#_pkey",
+                      "tf": 6.25
                     }
                   }
                 }
@@ -2350,10 +2509,6 @@ window.lunrData = {
                       "ref": "documents_model.html#.findOneKey",
                       "tf": 3.125
                     },
-                    "module-documents_probe.updateOperators.html#.$pop": {
-                      "ref": "module-documents_probe.updateOperators.html#.$pop",
-                      "tf": 3.3333333333333335
-                    },
                     "base_chains.html#close": {
                       "ref": "base_chains.html#close",
                       "tf": 1.0869565217391304
@@ -2362,9 +2517,17 @@ window.lunrData = {
                       "ref": "base_chains.html#end",
                       "tf": 1.6129032258064515
                     },
+                    "base_chains.html#destroy": {
+                      "ref": "base_chains.html#destroy",
+                      "tf": 1.282051282051282
+                    },
                     "base_chains.html#open": {
                       "ref": "base_chains.html#open",
                       "tf": 4.3478260869565215
+                    },
+                    "module-documents_probe.updateOperators.html#.$pop": {
+                      "ref": "module-documents_probe.updateOperators.html#.$pop",
+                      "tf": 3.3333333333333335
                     },
                     "module-documents_model.html": {
                       "ref": "module-documents_model.html",
@@ -2479,35 +2642,6 @@ window.lunrData = {
                 }
               }
             },
-            "l": {
-              "docs": {},
-              "l": {
-                "docs": {
-                  "documents_model.html#isNew": {
-                    "ref": "documents_model.html#isNew",
-                    "tf": 8.333333333333332
-                  }
-                }
-              },
-              "t": {
-                "docs": {},
-                "e": {
-                  "docs": {},
-                  "r": {
-                    "docs": {
-                      "documents_model.html#.set": {
-                        "ref": "documents_model.html#.set",
-                        "tf": 2.272727272727273
-                      },
-                      "module-documents_probe.html": {
-                        "ref": "module-documents_probe.html",
-                        "tf": 5
-                      }
-                    }
-                  }
-                }
-              }
-            },
             "e": {
               "docs": {},
               "l": {
@@ -2530,6 +2664,10 @@ window.lunrData = {
                     }
                   },
                   "docs": {
+                    "documents_model.html#_idField": {
+                      "ref": "documents_model.html#_idField",
+                      "tf": 5.555555555555555
+                    },
                     "module-documents_probe.queryOperators.html#.$eq": {
                       "ref": "module-documents_probe.queryOperators.html#.$eq",
                       "tf": 2.1739130434782608
@@ -2630,6 +2768,39 @@ window.lunrData = {
                             }
                           }
                         }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "l": {
+              "docs": {},
+              "l": {
+                "docs": {
+                  "documents_model.html#_pkey": {
+                    "ref": "documents_model.html#_pkey",
+                    "tf": 6.25
+                  },
+                  "documents_model.html#isNew": {
+                    "ref": "documents_model.html#isNew",
+                    "tf": 8.333333333333332
+                  }
+                }
+              },
+              "t": {
+                "docs": {},
+                "e": {
+                  "docs": {},
+                  "r": {
+                    "docs": {
+                      "documents_model.html#.set": {
+                        "ref": "documents_model.html#.set",
+                        "tf": 2.272727272727273
+                      },
+                      "module-documents_probe.html": {
+                        "ref": "module-documents_probe.html",
+                        "tf": 5
                       }
                     }
                   }
@@ -2806,6 +2977,10 @@ window.lunrData = {
                           "base_chains.html": {
                             "ref": "base_chains.html",
                             "tf": 5.555555555555555
+                          },
+                          "module-mixins_signalable-Signal.html#destroy": {
+                            "ref": "module-mixins_signalable-Signal.html#destroy",
+                            "tf": 110
                           },
                           "module-mixins_signalable-Signal.html#on": {
                             "ref": "module-mixins_signalable-Signal.html#on",
@@ -3018,6 +3193,10 @@ window.lunrData = {
                     "ref": "base.html#open",
                     "tf": 2.1739130434782608
                   },
+                  "base_chains.html#destroy": {
+                    "ref": "base_chains.html#destroy",
+                    "tf": 1.282051282051282
+                  },
                   "base_chains.html#open": {
                     "ref": "base_chains.html#open",
                     "tf": 2.1739130434782608
@@ -3224,13 +3403,13 @@ window.lunrData = {
                           "ref": "documents_model.html#isEmpty",
                           "tf": 12.5
                         },
-                        "module-documents_probe.updateOperators.html#.$pull": {
-                          "ref": "module-documents_probe.updateOperators.html#.$pull",
-                          "tf": 4.545454545454546
-                        },
                         "module-mixins_signalable-Signal.html": {
                           "ref": "module-mixins_signalable-Signal.html",
                           "tf": 6.25
+                        },
+                        "module-documents_probe.updateOperators.html#.$pull": {
+                          "ref": "module-documents_probe.updateOperators.html#.$pull",
+                          "tf": 4.545454545454546
                         }
                       }
                     }
@@ -3656,6 +3835,32 @@ window.lunrData = {
               }
             }
           },
+          "d": {
+            "docs": {},
+            "e": {
+              "docs": {},
+              "n": {
+                "docs": {},
+                "t": {
+                  "docs": {},
+                  "i": {
+                    "docs": {},
+                    "f": {
+                      "docs": {},
+                      "i": {
+                        "docs": {
+                          "documents_model.html#_idField": {
+                            "ref": "documents_model.html#_idField",
+                            "tf": 5.555555555555555
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
           "s": {
             "docs": {},
             "n": {
@@ -3944,6 +4149,10 @@ window.lunrData = {
                         "ref": "module-ink_collector-ACollector.html#update",
                         "tf": 5.555555555555555
                       },
+                      "documents_model.html#_idField": {
+                        "ref": "documents_model.html#_idField",
+                        "tf": 5.555555555555555
+                      },
                       "documents_model.html#.get": {
                         "ref": "documents_model.html#.get",
                         "tf": 33.33333333333333
@@ -4227,6 +4436,10 @@ window.lunrData = {
               "docs": {},
               "s": {
                 "docs": {
+                  "base_chains.html#destroy": {
+                    "ref": "base_chains.html#destroy",
+                    "tf": 1.282051282051282
+                  },
                   "module-mixins_signalable-Signal.html": {
                     "ref": "module-mixins_signalable-Signal.html",
                     "tf": 6.25
@@ -4383,6 +4596,10 @@ window.lunrData = {
               "docs": {},
               "e": {
                 "docs": {
+                  "documents_model.html#_idField": {
+                    "ref": "documents_model.html#_idField",
+                    "tf": 5.555555555555555
+                  },
                   "module-documents_probe.updateOperators.html#.$inc": {
                     "ref": "module-documents_probe.updateOperators.html#.$inc",
                     "tf": 5.555555555555555
@@ -4457,6 +4674,17 @@ window.lunrData = {
                           }
                         }
                       }
+                    }
+                  }
+                }
+              },
+              "n": {
+                "docs": {},
+                "k": {
+                  "docs": {
+                    "base_chains.html#destroy": {
+                      "ref": "base_chains.html#destroy",
+                      "tf": 1.282051282051282
                     }
                   }
                 }
@@ -4771,32 +4999,16 @@ window.lunrData = {
             },
             "r": {
               "docs": {},
-              "a": {
-                "docs": {},
-                "i": {
-                  "docs": {},
-                  "g": {
-                    "docs": {},
-                    "h": {
-                      "docs": {},
-                      "t": {
-                        "docs": {
-                          "documents_model.html#.get": {
-                            "ref": "documents_model.html#.get",
-                            "tf": 3.8461538461538463
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              },
               "i": {
                 "docs": {},
                 "n": {
                   "docs": {},
                   "g": {
                     "docs": {
+                      "documents_model.html#_idField": {
+                        "ref": "documents_model.html#_idField",
+                        "tf": 33.33333333333333
+                      },
                       "module-documents_probe.queryOperators.html#.$size": {
                         "ref": "module-documents_probe.queryOperators.html#.$size",
                         "tf": 4.166666666666666
@@ -4839,6 +5051,26 @@ window.lunrData = {
                                 }
                               }
                             }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "a": {
+                "docs": {},
+                "i": {
+                  "docs": {},
+                  "g": {
+                    "docs": {},
+                    "h": {
+                      "docs": {},
+                      "t": {
+                        "docs": {
+                          "documents_model.html#.get": {
+                            "ref": "documents_model.html#.get",
+                            "tf": 3.8461538461538463
                           }
                         }
                       }
@@ -5318,6 +5550,26 @@ window.lunrData = {
               }
             }
           },
+          "o": {
+            "docs": {},
+            "m": {
+              "docs": {},
+              "e": {
+                "docs": {},
+                "t": {
+                  "docs": {},
+                  "h": {
+                    "docs": {
+                      "utils_logger.Logger.html#silent": {
+                        "ref": "utils_logger.Logger.html#silent",
+                        "tf": 5.555555555555555
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
           "p": {
             "docs": {},
             "e": {
@@ -5342,26 +5594,6 @@ window.lunrData = {
                           "ref": "module-documents_probe.updateOperators.html#.$push",
                           "tf": 5
                         }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "o": {
-            "docs": {},
-            "m": {
-              "docs": {},
-              "e": {
-                "docs": {},
-                "t": {
-                  "docs": {},
-                  "h": {
-                    "docs": {
-                      "utils_logger.Logger.html#silent": {
-                        "ref": "utils_logger.Logger.html#silent",
-                        "tf": 5.555555555555555
                       }
                     }
                   }
@@ -5450,6 +5682,10 @@ window.lunrData = {
                   "base_chains.html#end": {
                     "ref": "base_chains.html#end",
                     "tf": 1.6129032258064515
+                  },
+                  "base_chains.html#destroy": {
+                    "ref": "base_chains.html#destroy",
+                    "tf": 2.564102564102564
                   },
                   "utils_logger.Logger.html#trace": {
                     "ref": "utils_logger.Logger.html#trace",
@@ -5567,10 +5803,6 @@ window.lunrData = {
                       "ref": "module-documents_probe.queryOperators.html",
                       "tf": 120
                     },
-                    "module-documents_probe.updateOperators.html": {
-                      "ref": "module-documents_probe.updateOperators.html",
-                      "tf": 120
-                    },
                     "base_chains.html": {
                       "ref": "base_chains.html",
                       "tf": 110
@@ -5582,6 +5814,10 @@ window.lunrData = {
                     "utils_logger.Logger.html": {
                       "ref": "utils_logger.Logger.html",
                       "tf": 121.53846153846153
+                    },
+                    "module-documents_probe.updateOperators.html": {
+                      "ref": "module-documents_probe.updateOperators.html",
+                      "tf": 120
                     },
                     "module-base.html": {
                       "ref": "module-base.html",
@@ -5600,6 +5836,14 @@ window.lunrData = {
                     "base.html": {
                       "ref": "base.html",
                       "tf": 1.4285714285714286
+                    },
+                    "base_chains.html#destroy": {
+                      "ref": "base_chains.html#destroy",
+                      "tf": 2.564102564102564
+                    },
+                    "module-mixins_signalable-Signal.html#destroy": {
+                      "ref": "module-mixins_signalable-Signal.html#destroy",
+                      "tf": 25
                     }
                   }
                 }
@@ -5659,6 +5903,10 @@ window.lunrData = {
                     "base_chains.html#end": {
                       "ref": "base_chains.html#end",
                       "tf": 1.6129032258064515
+                    },
+                    "base_chains.html#destroy": {
+                      "ref": "base_chains.html#destroy",
+                      "tf": 1.282051282051282
                     },
                     "base_chains.html#open": {
                       "ref": "base_chains.html#open",
@@ -5950,6 +6198,35 @@ window.lunrData = {
                     }
                   }
                 }
+              },
+              "s": {
+                "docs": {},
+                "t": {
+                  "docs": {},
+                  "r": {
+                    "docs": {},
+                    "u": {
+                      "docs": {},
+                      "c": {
+                        "docs": {},
+                        "t": {
+                          "docs": {},
+                          "o": {
+                            "docs": {},
+                            "r": {
+                              "docs": {
+                                "base_chains.html#destroy": {
+                                  "ref": "base_chains.html#destroy",
+                                  "tf": 1.282051282051282
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
               }
             },
             "u": {
@@ -5961,6 +6238,29 @@ window.lunrData = {
                     "module-documents_probe.queryOperators.html#.$size": {
                       "ref": "module-documents_probe.queryOperators.html#.$size",
                       "tf": 4.166666666666666
+                    }
+                  },
+                  "e": {
+                    "docs": {},
+                    "r": {
+                      "docs": {},
+                      "p": {
+                        "docs": {},
+                        "a": {
+                          "docs": {},
+                          "r": {
+                            "docs": {},
+                            "t": {
+                              "docs": {
+                                "base_chains.html#destroy": {
+                                  "ref": "base_chains.html#destroy",
+                                  "tf": 1.282051282051282
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
                     }
                   }
                 }
@@ -6106,12 +6406,37 @@ window.lunrData = {
                                                       "docs": {},
                                                       "d": {
                                                         "docs": {
+                                                          "documents_model.html#_idField": {
+                                                            "ref": "documents_model.html#_idField",
+                                                            "tf": 1150
+                                                          },
+                                                          "documents_model.html#_pkey": {
+                                                            "ref": "documents_model.html#_pkey",
+                                                            "tf": 6.25
+                                                          },
                                                           "documents_model.html#isNew": {
                                                             "ref": "documents_model.html#isNew",
                                                             "tf": 8.333333333333332
                                                           }
                                                         }
                                                       }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          },
+                                          "p": {
+                                            "docs": {},
+                                            "k": {
+                                              "docs": {},
+                                              "e": {
+                                                "docs": {},
+                                                "y": {
+                                                  "docs": {
+                                                    "documents_model.html#_pkey": {
+                                                      "ref": "documents_model.html#_pkey",
+                                                      "tf": 1150
                                                     }
                                                   }
                                                 }
@@ -6603,6 +6928,10 @@ window.lunrData = {
                       "ref": "base_chains.html#end",
                       "tf": 1.6129032258064515
                     },
+                    "base_chains.html#destroy": {
+                      "ref": "base_chains.html#destroy",
+                      "tf": 1.282051282051282
+                    },
                     "base_chains.html#open": {
                       "ref": "base_chains.html#open",
                       "tf": 2.1739130434782608
@@ -6664,9 +6993,17 @@ window.lunrData = {
                           "ref": "base_chains.html#end",
                           "tf": 3.225806451612903
                         },
+                        "base_chains.html#destroy": {
+                          "ref": "base_chains.html#destroy",
+                          "tf": 703.8461538461538
+                        },
                         "base_chains.html#open": {
                           "ref": "base_chains.html#open",
                           "tf": 2.1739130434782608
+                        },
+                        "module-mixins_signalable-Signal.html#destroy": {
+                          "ref": "module-mixins_signalable-Signal.html#destroy",
+                          "tf": 700
                         }
                       }
                     }
@@ -6745,48 +7082,6 @@ window.lunrData = {
                 }
               }
             },
-            "c": {
-              "docs": {
-                "module-documents_probe.updateOperators.html#.$dec": {
-                  "ref": "module-documents_probe.updateOperators.html#.$dec",
-                  "tf": 655.5555555555555
-                }
-              },
-              "r": {
-                "docs": {},
-                "e": {
-                  "docs": {},
-                  "m": {
-                    "docs": {},
-                    "e": {
-                      "docs": {},
-                      "n": {
-                        "docs": {},
-                        "t": {
-                          "docs": {
-                            "module-documents_probe.updateOperators.html#.$dec": {
-                              "ref": "module-documents_probe.updateOperators.html#.$dec",
-                              "tf": 5.555555555555555
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              },
-              "o": {
-                "docs": {},
-                "r": {
-                  "docs": {
-                    "module-utils_logger.html": {
-                      "ref": "module-utils_logger.html",
-                      "tf": 7.142857142857142
-                    }
-                  }
-                }
-              }
-            },
             "t": {
               "docs": {},
               "e": {
@@ -6827,6 +7122,48 @@ window.lunrData = {
                     "utils_logger.Logger.html#debug": {
                       "ref": "utils_logger.Logger.html#debug",
                       "tf": 716.6666666666666
+                    }
+                  }
+                }
+              }
+            },
+            "c": {
+              "docs": {
+                "module-documents_probe.updateOperators.html#.$dec": {
+                  "ref": "module-documents_probe.updateOperators.html#.$dec",
+                  "tf": 655.5555555555555
+                }
+              },
+              "r": {
+                "docs": {},
+                "e": {
+                  "docs": {},
+                  "m": {
+                    "docs": {},
+                    "e": {
+                      "docs": {},
+                      "n": {
+                        "docs": {},
+                        "t": {
+                          "docs": {
+                            "module-documents_probe.updateOperators.html#.$dec": {
+                              "ref": "module-documents_probe.updateOperators.html#.$dec",
+                              "tf": 5.555555555555555
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "o": {
+                "docs": {},
+                "r": {
+                  "docs": {
+                    "module-utils_logger.html": {
+                      "ref": "module-utils_logger.html",
+                      "tf": 7.142857142857142
                     }
                   }
                 }
@@ -6916,6 +7253,23 @@ window.lunrData = {
                           "ref": "module-documents_probe.queryOperators.html#.$mod",
                           "tf": 6.25
                         }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "f": {
+              "docs": {},
+              "f": {
+                "docs": {},
+                "e": {
+                  "docs": {},
+                  "r": {
+                    "docs": {
+                      "base_chains.html#destroy": {
+                        "ref": "base_chains.html#destroy",
+                        "tf": 1.282051282051282
                       }
                     }
                   }
@@ -7199,6 +7553,10 @@ window.lunrData = {
                 "base_chains.html#end": {
                   "ref": "base_chains.html#end",
                   "tf": 1.6129032258064515
+                },
+                "base_chains.html#destroy": {
+                  "ref": "base_chains.html#destroy",
+                  "tf": 1.282051282051282
                 }
               }
             },
@@ -7295,6 +7653,29 @@ window.lunrData = {
                   }
                 }
               }
+            },
+            "v": {
+              "docs": {},
+              "a": {
+                "docs": {},
+                "n": {
+                  "docs": {},
+                  "t": {
+                    "docs": {},
+                    "a": {
+                      "docs": {},
+                      "g": {
+                        "docs": {
+                          "documents_model.html#_idField": {
+                            "ref": "documents_model.html#_idField",
+                            "tf": 5.555555555555555
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
             }
           },
           "u": {
@@ -7312,6 +7693,10 @@ window.lunrData = {
                         "base.html#destroy": {
                           "ref": "base.html#destroy",
                           "tf": 2.631578947368421
+                        },
+                        "base_chains.html#destroy": {
+                          "ref": "base_chains.html#destroy",
+                          "tf": 1.282051282051282
                         }
                       }
                     }
@@ -7651,6 +8036,10 @@ window.lunrData = {
                         "ref": "module-documents_probe.queryOperators.html",
                         "tf": 10
                       },
+                      "base_chains.html#destroy": {
+                        "ref": "base_chains.html#destroy",
+                        "tf": 1.282051282051282
+                      },
                       "module-documents_probe.updateOperators.html": {
                         "ref": "module-documents_probe.updateOperators.html",
                         "tf": 10
@@ -7785,6 +8174,29 @@ window.lunrData = {
                       "module-documents_probe.queryOperators.html#.$regex": {
                         "ref": "module-documents_probe.queryOperators.html#.$regex",
                         "tf": 5
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "w": {
+            "docs": {},
+            "a": {
+              "docs": {},
+              "y": {
+                "docs": {},
+                "a": {
+                  "docs": {},
+                  "n": {
+                    "docs": {},
+                    "d": {
+                      "docs": {
+                        "base_chains.html#destroy": {
+                          "ref": "base_chains.html#destroy",
+                          "tf": 1.282051282051282
+                        }
                       }
                     }
                   }
@@ -8154,10 +8566,6 @@ window.lunrData = {
                     "ref": "base.html#close",
                     "tf": 1.0869565217391304
                   },
-                  "module-documents_probe.updateOperators.html#.$pop": {
-                    "ref": "module-documents_probe.updateOperators.html#.$pop",
-                    "tf": 3.3333333333333335
-                  },
                   "base_chains.html#close": {
                     "ref": "base_chains.html#close",
                     "tf": 1.0869565217391304
@@ -8165,6 +8573,14 @@ window.lunrData = {
                   "base_chains.html#end": {
                     "ref": "base_chains.html#end",
                     "tf": 1.6129032258064515
+                  },
+                  "base_chains.html#destroy": {
+                    "ref": "base_chains.html#destroy",
+                    "tf": 1.282051282051282
+                  },
+                  "module-documents_probe.updateOperators.html#.$pop": {
+                    "ref": "module-documents_probe.updateOperators.html#.$pop",
+                    "tf": 3.3333333333333335
                   }
                 }
               }
@@ -8197,6 +8613,53 @@ window.lunrData = {
             },
             ";": {
               "docs": {},
+              "p": {
+                "docs": {},
+                "r": {
+                  "docs": {},
+                  "i": {
+                    "docs": {},
+                    "v": {
+                      "docs": {},
+                      "a": {
+                        "docs": {},
+                        "t": {
+                          "docs": {},
+                          "e": {
+                            "docs": {},
+                            "&": {
+                              "docs": {},
+                              "g": {
+                                "docs": {},
+                                "t": {
+                                  "docs": {
+                                    "documents_model.html#_idField": {
+                                      "ref": "documents_model.html#_idField",
+                                      "tf": 33.33333333333333
+                                    },
+                                    "documents_model.html#_pkey": {
+                                      "ref": "documents_model.html#_pkey",
+                                      "tf": 50
+                                    },
+                                    "base_chains.html#destroy": {
+                                      "ref": "base_chains.html#destroy",
+                                      "tf": 50
+                                    },
+                                    "module-mixins_signalable-Signal.html#destroy": {
+                                      "ref": "module-mixins_signalable-Signal.html#destroy",
+                                      "tf": 50
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
               "s": {
                 "docs": {},
                 "t": {
@@ -10140,6 +10603,32 @@ window.lunrData = {
                                                                       "docs": {},
                                                                       "#": {
                                                                         "docs": {},
+                                                                        "d": {
+                                                                          "docs": {},
+                                                                          "e": {
+                                                                            "docs": {},
+                                                                            "s": {
+                                                                              "docs": {},
+                                                                              "t": {
+                                                                                "docs": {},
+                                                                                "r": {
+                                                                                  "docs": {},
+                                                                                  "o": {
+                                                                                    "docs": {},
+                                                                                    "y": {
+                                                                                      "docs": {
+                                                                                        "module-mixins_signalable-Signal.html#destroy": {
+                                                                                          "ref": "module-mixins_signalable-Signal.html#destroy",
+                                                                                          "tf": 1150
+                                                                                        }
+                                                                                      }
+                                                                                    }
+                                                                                  }
+                                                                                }
+                                                                              }
+                                                                            }
+                                                                          }
+                                                                        },
                                                                         "o": {
                                                                           "docs": {},
                                                                           "n": {
@@ -10655,6 +11144,10 @@ window.lunrData = {
                     "ref": "base_chains.html#end",
                     "tf": 1.6129032258064515
                   },
+                  "base_chains.html#destroy": {
+                    "ref": "base_chains.html#destroy",
+                    "tf": 1.282051282051282
+                  },
                   "base_chains.html#open": {
                     "ref": "base_chains.html#open",
                     "tf": 2.1739130434782608
@@ -10696,6 +11189,14 @@ window.lunrData = {
                       },
                       "module-ink_collector-ACollector.html#length": {
                         "ref": "module-ink_collector-ACollector.html#length",
+                        "tf": 110
+                      },
+                      "documents_model.html#_idField": {
+                        "ref": "documents_model.html#_idField",
+                        "tf": 110
+                      },
+                      "documents_model.html#_pkey": {
+                        "ref": "documents_model.html#_pkey",
                         "tf": 110
                       },
                       "documents_model.html#isNew": {
@@ -10778,6 +11279,26 @@ window.lunrData = {
                         "ref": "module-documents_probe.queryOperators.html#.$not",
                         "tf": 110
                       },
+                      "base_chains.html#close": {
+                        "ref": "base_chains.html#close",
+                        "tf": 110
+                      },
+                      "base_chains.html#end": {
+                        "ref": "base_chains.html#end",
+                        "tf": 110
+                      },
+                      "base_chains.html#destroy": {
+                        "ref": "base_chains.html#destroy",
+                        "tf": 110
+                      },
+                      "base_chains.html#open": {
+                        "ref": "base_chains.html#open",
+                        "tf": 110
+                      },
+                      "utils_logger.Logger.html": {
+                        "ref": "utils_logger.Logger.html",
+                        "tf": 3.8461538461538463
+                      },
                       "module-documents_probe.updateOperators.html#.$inc": {
                         "ref": "module-documents_probe.updateOperators.html#.$inc",
                         "tf": 110
@@ -10801,22 +11322,6 @@ window.lunrData = {
                       "module-documents_probe.updateOperators.html#.$pull": {
                         "ref": "module-documents_probe.updateOperators.html#.$pull",
                         "tf": 110
-                      },
-                      "base_chains.html#close": {
-                        "ref": "base_chains.html#close",
-                        "tf": 110
-                      },
-                      "base_chains.html#end": {
-                        "ref": "base_chains.html#end",
-                        "tf": 110
-                      },
-                      "base_chains.html#open": {
-                        "ref": "base_chains.html#open",
-                        "tf": 110
-                      },
-                      "utils_logger.Logger.html": {
-                        "ref": "utils_logger.Logger.html",
-                        "tf": 3.8461538461538463
                       }
                     }
                   }
@@ -10872,6 +11377,10 @@ window.lunrData = {
                       "base_chains.html#end": {
                         "ref": "base_chains.html#end",
                         "tf": 4.838709677419355
+                      },
+                      "base_chains.html#destroy": {
+                        "ref": "base_chains.html#destroy",
+                        "tf": 1.282051282051282
                       },
                       "mixins_bussable.html": {
                         "ref": "mixins_bussable.html",
@@ -10964,6 +11473,10 @@ window.lunrData = {
               "base_chains.html#end": {
                 "ref": "base_chains.html#end",
                 "tf": 3.225806451612903
+              },
+              "base_chains.html#destroy": {
+                "ref": "base_chains.html#destroy",
+                "tf": 2.564102564102564
               },
               "base_chains.html#open": {
                 "ref": "base_chains.html#open",
@@ -11072,6 +11585,10 @@ window.lunrData = {
                   },
                   "module-ink_collector-ACollector.html#update": {
                     "ref": "module-ink_collector-ACollector.html#update",
+                    "tf": 5.555555555555555
+                  },
+                  "documents_model.html#_idField": {
+                    "ref": "documents_model.html#_idField",
                     "tf": 5.555555555555555
                   },
                   "documents_model.html#.update": {
@@ -11253,10 +11770,6 @@ window.lunrData = {
                         "ref": "module-documents_probe.queryOperators.html#.$elemMatch",
                         "tf": 2.7777777777777777
                       },
-                      "module-documents_probe.updateOperators.html#.$unset": {
-                        "ref": "module-documents_probe.updateOperators.html#.$unset",
-                        "tf": 6.25
-                      },
                       "base_chains.html#close": {
                         "ref": "base_chains.html#close",
                         "tf": 2.1739130434782608
@@ -11264,6 +11777,10 @@ window.lunrData = {
                       "base_chains.html#end": {
                         "ref": "base_chains.html#end",
                         "tf": 3.225806451612903
+                      },
+                      "base_chains.html#destroy": {
+                        "ref": "base_chains.html#destroy",
+                        "tf": 1.282051282051282
                       },
                       "base_chains.html#open": {
                         "ref": "base_chains.html#open",
@@ -11276,6 +11793,10 @@ window.lunrData = {
                       "utils_logger.Logger.html": {
                         "ref": "utils_logger.Logger.html",
                         "tf": 3.8461538461538463
+                      },
+                      "module-documents_probe.updateOperators.html#.$unset": {
+                        "ref": "module-documents_probe.updateOperators.html#.$unset",
+                        "tf": 6.25
                       },
                       "mixins_signalable.html": {
                         "ref": "mixins_signalable.html",
@@ -11520,6 +12041,10 @@ window.lunrData = {
                           "ref": "base.html",
                           "tf": 1.4285714285714286
                         },
+                        "documents_model.html#_pkey": {
+                          "ref": "documents_model.html#_pkey",
+                          "tf": 6.25
+                        },
                         "base_chains.html": {
                           "ref": "base_chains.html",
                           "tf": 5.555555555555555
@@ -11580,6 +12105,32 @@ window.lunrData = {
                   }
                 }
               },
+              "v": {
+                "docs": {},
+                "i": {
+                  "docs": {},
+                  "d": {
+                    "docs": {
+                      "documents_model.html#_idField": {
+                        "ref": "documents_model.html#_idField",
+                        "tf": 5.555555555555555
+                      },
+                      "documents_schema.html": {
+                        "ref": "documents_schema.html",
+                        "tf": 6.25
+                      },
+                      "mixins_bussable.html": {
+                        "ref": "mixins_bussable.html",
+                        "tf": 11.11111111111111
+                      },
+                      "module-mixins_bussable.html": {
+                        "ref": "module-mixins_bussable.html",
+                        "tf": 11.11111111111111
+                      }
+                    }
+                  }
+                }
+              },
               "p": {
                 "docs": {},
                 "e": {
@@ -11595,28 +12146,6 @@ window.lunrData = {
                             "tf": 2.272727272727273
                           }
                         }
-                      }
-                    }
-                  }
-                }
-              },
-              "v": {
-                "docs": {},
-                "i": {
-                  "docs": {},
-                  "d": {
-                    "docs": {
-                      "documents_schema.html": {
-                        "ref": "documents_schema.html",
-                        "tf": 6.25
-                      },
-                      "mixins_bussable.html": {
-                        "ref": "mixins_bussable.html",
-                        "tf": 11.11111111111111
-                      },
-                      "module-mixins_bussable.html": {
-                        "ref": "module-mixins_bussable.html",
-                        "tf": 11.11111111111111
                       }
                     }
                   }
@@ -12715,6 +13244,10 @@ window.lunrData = {
                     "ref": "base.html",
                     "tf": 1.4285714285714286
                   },
+                  "documents_model.html#_pkey": {
+                    "ref": "documents_model.html#_pkey",
+                    "tf": 6.25
+                  },
                   "documents_model.html#isNew": {
                     "ref": "documents_model.html#isNew",
                     "tf": 8.333333333333332
@@ -12907,6 +13440,10 @@ window.lunrData = {
                     "ref": "documents_model.html",
                     "tf": 2.941176470588235
                   },
+                  "base_chains.html#destroy": {
+                    "ref": "base_chains.html#destroy",
+                    "tf": 1.282051282051282
+                  },
                   "module-documents_model.html": {
                     "ref": "module-documents_model.html",
                     "tf": 2.941176470588235
@@ -13080,6 +13617,10 @@ window.lunrData = {
                     "ref": "module-documents_probe.queryOperators.html#.$elemMatch",
                     "tf": 2.7777777777777777
                   },
+                  "base_chains.html#destroy": {
+                    "ref": "base_chains.html#destroy",
+                    "tf": 1.282051282051282
+                  },
                   "module-documents_probe.updateOperators.html#.$pop": {
                     "ref": "module-documents_probe.updateOperators.html#.$pop",
                     "tf": 1.6666666666666667
@@ -13141,6 +13682,10 @@ window.lunrData = {
                 },
                 "module-ink_collector-ACollector.html#findKeys": {
                   "ref": "module-ink_collector-ACollector.html#findKeys",
+                  "tf": 6.25
+                },
+                "documents_model.html#_pkey": {
+                  "ref": "documents_model.html#_pkey",
                   "tf": 6.25
                 },
                 "documents_model.html#.findOneKey": {
@@ -13281,20 +13826,10 @@ window.lunrData = {
                     "module-ink_collector-ACollector.html#unique": {
                       "ref": "module-ink_collector-ACollector.html#unique",
                       "tf": 691.6666666666667
-                    }
-                  }
-                }
-              }
-            },
-            "s": {
-              "docs": {},
-              "e": {
-                "docs": {},
-                "t": {
-                  "docs": {
-                    "module-documents_probe.updateOperators.html#.$unset": {
-                      "ref": "module-documents_probe.updateOperators.html#.$unset",
-                      "tf": 656.25
+                    },
+                    "documents_model.html#_idField": {
+                      "ref": "documents_model.html#_idField",
+                      "tf": 5.555555555555555
                     }
                   }
                 }
@@ -13312,6 +13847,20 @@ window.lunrData = {
                         "ref": "module-mixins_signalable-Signal.html#off",
                         "tf": 16.666666666666664
                       }
+                    }
+                  }
+                }
+              }
+            },
+            "s": {
+              "docs": {},
+              "e": {
+                "docs": {},
+                "t": {
+                  "docs": {
+                    "module-documents_probe.updateOperators.html#.$unset": {
+                      "ref": "module-documents_probe.updateOperators.html#.$unset",
+                      "tf": 656.25
                     }
                   }
                 }
@@ -13348,6 +13897,10 @@ window.lunrData = {
                 "ref": "base_chains.html#end",
                 "tf": 1.6129032258064515
               },
+              "base_chains.html#destroy": {
+                "ref": "base_chains.html#destroy",
+                "tf": 1.282051282051282
+              },
               "base_chains.html#open": {
                 "ref": "base_chains.html#open",
                 "tf": 4.3478260869565215
@@ -13377,7 +13930,16 @@ window.lunrData = {
             }
           },
           "p": {
-            "docs": {},
+            "docs": {
+              "base_chains.html#destroy": {
+                "ref": "base_chains.html#destroy",
+                "tf": 2.564102564102564
+              },
+              "module-mixins_signalable-Signal.html#destroy": {
+                "ref": "module-mixins_signalable-Signal.html#destroy",
+                "tf": 25
+              }
+            },
             "d": {
               "docs": {},
               "a": {
@@ -13746,6 +14308,10 @@ window.lunrData = {
                 "ref": "base.html#open",
                 "tf": 4.3478260869565215
               },
+              "base_chains.html#destroy": {
+                "ref": "base_chains.html#destroy",
+                "tf": 1.282051282051282
+              },
               "base_chains.html#open": {
                 "ref": "base_chains.html#open",
                 "tf": 4.3478260869565215
@@ -13929,6 +14495,10 @@ window.lunrData = {
                 "base_chains.html#end": {
                   "ref": "base_chains.html#end",
                   "tf": 751.6129032258065
+                },
+                "base_chains.html#destroy": {
+                  "ref": "base_chains.html#destroy",
+                  "tf": 3.8461538461538463
                 }
               }
             },
@@ -14076,13 +14646,13 @@ window.lunrData = {
                     "docs": {},
                     "t": {
                       "docs": {
-                        "module-documents_probe.updateOperators.html#.$pop": {
-                          "ref": "module-documents_probe.updateOperators.html#.$pop",
-                          "tf": 3.3333333333333335
-                        },
                         "base_chains.html": {
                           "ref": "base_chains.html",
                           "tf": 5.555555555555555
+                        },
+                        "module-documents_probe.updateOperators.html#.$pop": {
+                          "ref": "module-documents_probe.updateOperators.html#.$pop",
+                          "tf": 3.3333333333333335
                         },
                         "module-base_chains.html": {
                           "ref": "module-base_chains.html",
@@ -14200,6 +14770,43 @@ window.lunrData = {
                       }
                     }
                   }
+                },
+                "s": {
+                  "docs": {},
+                  "e": {
+                    "docs": {},
+                    "l": {
+                      "docs": {},
+                      "f": {
+                        "docs": {
+                          "base_chains.html#destroy": {
+                            "ref": "base_chains.html#destroy",
+                            "tf": 1.282051282051282
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "e": {
+            "docs": {},
+            "t": {
+              "docs": {},
+              "n": {
+                "docs": {},
+                "o": {
+                  "docs": {},
+                  "t": {
+                    "docs": {
+                      "base_chains.html#destroy": {
+                        "ref": "base_chains.html#destroy",
+                        "tf": 1.282051282051282
+                      }
+                    }
+                  }
                 }
               }
             }
@@ -14225,6 +14832,67 @@ window.lunrData = {
                         "ref": "module-ink_collector-ACollector.html#length",
                         "tf": 50
                       }
+                    }
+                  }
+                }
+              }
+            },
+            "l": {
+              "docs": {},
+              "l": {
+                "docs": {
+                  "documents_model.html#_pkey": {
+                    "ref": "documents_model.html#_pkey",
+                    "tf": 6.25
+                  }
+                }
+              }
+            }
+          },
+          "a": {
+            "docs": {},
+            "m": {
+              "docs": {},
+              "e": {
+                "docs": {
+                  "documents_model.html#_idField": {
+                    "ref": "documents_model.html#_idField",
+                    "tf": 5.555555555555555
+                  }
+                }
+              }
+            }
+          },
+          "o": {
+            "docs": {},
+            "n": {
+              "docs": {},
+              "e": {
+                "docs": {
+                  "documents_model.html#_pkey": {
+                    "ref": "documents_model.html#_pkey",
+                    "tf": 6.25
+                  },
+                  "module-documents_probe.queryOperators.html#.$nin": {
+                    "ref": "module-documents_probe.queryOperators.html#.$nin",
+                    "tf": 5
+                  },
+                  "module-documents_probe.queryOperators.html#.$nor": {
+                    "ref": "module-documents_probe.queryOperators.html#.$nor",
+                    "tf": 5.555555555555555
+                  }
+                }
+              }
+            },
+            "t": {
+              "docs": {},
+              "a": {
+                "docs": {},
+                "t": {
+                  "docs": {
+                    "module-documents_probe.html": {
+                      "ref": "module-documents_probe.html",
+                      "tf": 5
                     }
                   }
                 }
@@ -14291,33 +14959,47 @@ window.lunrData = {
                 }
               }
             }
-          },
-          "o": {
+          }
+        },
+        "_": {
+          "docs": {},
+          "i": {
             "docs": {},
-            "n": {
+            "d": {
               "docs": {},
-              "e": {
-                "docs": {
-                  "module-documents_probe.queryOperators.html#.$nin": {
-                    "ref": "module-documents_probe.queryOperators.html#.$nin",
-                    "tf": 5
-                  },
-                  "module-documents_probe.queryOperators.html#.$nor": {
-                    "ref": "module-documents_probe.queryOperators.html#.$nor",
-                    "tf": 5.555555555555555
+              "f": {
+                "docs": {},
+                "i": {
+                  "docs": {},
+                  "e": {
+                    "docs": {},
+                    "l": {
+                      "docs": {},
+                      "d": {
+                        "docs": {
+                          "documents_model.html#_idField": {
+                            "ref": "documents_model.html#_idField",
+                            "tf": 683.3333333333334
+                          }
+                        }
+                      }
+                    }
                   }
                 }
               }
-            },
-            "t": {
+            }
+          },
+          "p": {
+            "docs": {},
+            "k": {
               "docs": {},
-              "a": {
+              "e": {
                 "docs": {},
-                "t": {
+                "y": {
                   "docs": {
-                    "module-documents_probe.html": {
-                      "ref": "module-documents_probe.html",
-                      "tf": 5
+                    "documents_model.html#_pkey": {
+                      "ref": "documents_model.html#_pkey",
+                      "tf": 700
                     }
                   }
                 }
@@ -14326,12 +15008,14 @@ window.lunrData = {
           }
         }
       },
-      "length": 1396
+      "length": 1462
     },
     "corpusTokens": [
       "1",
       "2",
       "3",
+      "_idfield",
+      "_pkey",
       "abil",
       "access",
       "acollector",
@@ -14339,6 +15023,7 @@ window.lunrData = {
       "add",
       "adddefaultopt",
       "addopt",
+      "advantag",
       "againt",
       "alias",
       "allof",
@@ -14365,6 +15050,7 @@ window.lunrData = {
       "automat",
       "avail",
       "avalu",
+      "awayand",
       "bar",
       "base",
       "base#adddefaultopt",
@@ -14375,11 +15061,13 @@ window.lunrData = {
       "base#open",
       "base/chain",
       "base/chains#clos",
+      "base/chains#destroy",
       "base/chains#end",
       "base/chains#open",
       "basi",
       "bear",
       "befor",
+      "betweendestroy",
       "bind",
       "boolean",
       "bootstrap",
@@ -14406,9 +15094,11 @@ window.lunrData = {
       "compos",
       "composit",
       "condit",
+      "constructor",
       "contain",
       "core",
       "count",
+      "counterpart",
       "creat",
       "cycl",
       "data",
@@ -14425,6 +15115,7 @@ window.lunrData = {
       "depth",
       "destroy",
       "determin",
+      "differ",
       "directli",
       "disciplin",
       "dispos",
@@ -14434,6 +15125,7 @@ window.lunrData = {
       "documents/bind",
       "documents/model",
       "documents/model#_idfield",
+      "documents/model#_pkey",
       "documents/model#isempti",
       "documents/model#isnew",
       "documents/model.al",
@@ -14492,6 +15184,7 @@ window.lunrData = {
       "food",
       "foodoc",
       "form",
+      "found",
       "function",
       "go",
       "greater",
@@ -14507,6 +15200,7 @@ window.lunrData = {
       "here",
       "highlight",
       "http://pimterry.github.io/loglevel",
+      "identifi",
       "inc",
       "includ",
       "increment",
@@ -14562,6 +15256,7 @@ window.lunrData = {
       "look",
       "lt",
       "lt;field&gt",
+      "lt;private&gt",
       "lt;query&gt",
       "lt;static&gt",
       "lt;value&gt",
@@ -14652,6 +15347,7 @@ window.lunrData = {
       "module:mixins/buss",
       "module:mixins/signal",
       "module:mixins/signalable~sign",
+      "module:mixins/signalable~signal#destroy",
       "module:mixins/signalable~signal#ha",
       "module:mixins/signalable~signal#off",
       "module:mixins/signalable~signal#on",
@@ -14662,6 +15358,7 @@ window.lunrData = {
       "modulu",
       "mongo",
       "multipl",
+      "name",
       "ne",
       "nest",
       "newvalu",
@@ -14669,6 +15366,7 @@ window.lunrData = {
       "nin",
       "none",
       "notat",
+      "null",
       "number",
       "obj",
       "object",
@@ -14789,6 +15487,7 @@ window.lunrData = {
       "test3",
       "theclos",
       "theend",
+      "think",
       "this.opt",
       "those",
       "ti",
@@ -14804,6 +15503,7 @@ window.lunrData = {
       "unlik",
       "unset",
       "unus",
+      "up",
       "updat",
       "updateoper",
       "updateoperators.$dec",
@@ -14843,7 +15543,9 @@ window.lunrData = {
       "without",
       "work",
       "write",
-      "yourown"
+      "yetnot",
+      "yourown",
+      "yourself"
     ],
     "pipeline": [
       "trimmer",
@@ -15272,6 +15974,26 @@ window.lunrData = {
       "description": "A model is the first level if usable data-bearing entity in the system. It does NOT include any verbs for saving or anything likethat, it is a pure, in memory data container",
       "body": ""
     },
+    "documents_model.html#_idField": {
+      "id": "documents_model.html#_idField",
+      "kind": "member",
+      "title": "&lt;private&gt; _idField :string",
+      "longname": "documents/model#_idField",
+      "name": "_idField",
+      "tags": "documents/model#_idField _idField",
+      "summary": "",
+      "description": "The name of the field that uniquely identifies a record. When provided, some operations will take advantage of it"
+    },
+    "documents_model.html#_pkey": {
+      "id": "documents_model.html#_pkey",
+      "kind": "member",
+      "title": "&lt;private&gt; _pkey :*",
+      "longname": "documents/model#_pkey",
+      "name": "_pkey",
+      "tags": "documents/model#_pkey _pkey",
+      "summary": "",
+      "description": "The value of the primary key if documents/model#_idField is filled in. It will be null if none found"
+    },
     "documents_model.html#isNew": {
       "id": "documents_model.html#isNew",
       "kind": "member",
@@ -15603,77 +16325,6 @@ window.lunrData = {
       "summary": "",
       "description": "Logical NOT on the conditions of the query{$not: [query1, query2, query3]}"
     },
-    "module-documents_probe.updateOperators.html": {
-      "id": "module-documents_probe.updateOperators.html",
-      "kind": "class",
-      "title": "documents/probe.updateOperators",
-      "longname": "module:documents/probe.updateOperators",
-      "name": "updateOperators",
-      "tags": "module:documents/probe.updateOperators updateOperators",
-      "summary": "",
-      "description": "This is not actually a class, but an artifact of the documentation system",
-      "body": ""
-    },
-    "module-documents_probe.updateOperators.html#.$inc": {
-      "id": "module-documents_probe.updateOperators.html#.$inc",
-      "kind": "member",
-      "title": "&lt;static&gt; $inc",
-      "longname": "module:documents/probe.updateOperators.$inc",
-      "name": "$inc",
-      "tags": "module:documents/probe.updateOperators.$inc updateOperators.$inc $inc",
-      "summary": "",
-      "description": "Increments a field by the amount you specify. It takes the form{ $inc: { field1: amount } }"
-    },
-    "module-documents_probe.updateOperators.html#.$dec": {
-      "id": "module-documents_probe.updateOperators.html#.$dec",
-      "kind": "member",
-      "title": "&lt;static&gt; $dec",
-      "longname": "module:documents/probe.updateOperators.$dec",
-      "name": "$dec",
-      "tags": "module:documents/probe.updateOperators.$dec updateOperators.$dec $dec",
-      "summary": "",
-      "description": "Decrements a field by the amount you specify. It takes the form{ $dec: { field1: amount }"
-    },
-    "module-documents_probe.updateOperators.html#.$unset": {
-      "id": "module-documents_probe.updateOperators.html#.$unset",
-      "kind": "member",
-      "title": "&lt;static&gt; $unset",
-      "longname": "module:documents/probe.updateOperators.$unset",
-      "name": "$unset",
-      "tags": "module:documents/probe.updateOperators.$unset updateOperators.$unset $unset",
-      "summary": "",
-      "description": "Removes the field from the object. It takes the form{ $unset: { field1: &quot;&quot; } }"
-    },
-    "module-documents_probe.updateOperators.html#.$pop": {
-      "id": "module-documents_probe.updateOperators.html#.$pop",
-      "kind": "member",
-      "title": "&lt;static&gt; $pop",
-      "longname": "module:documents/probe.updateOperators.$pop",
-      "name": "$pop",
-      "tags": "module:documents/probe.updateOperators.$pop updateOperators.$pop $pop",
-      "summary": "",
-      "description": "The $pop operator removes the first or last element of an array. Pass $pop a value of 1 to remove the last elementin an array and a value of -1 to remove the first element of an array. This will only work on arrays. Syntax:{ $pop: { field: 1 } } or { $pop: { field: -1 } }"
-    },
-    "module-documents_probe.updateOperators.html#.$push": {
-      "id": "module-documents_probe.updateOperators.html#.$push",
-      "kind": "member",
-      "title": "&lt;static&gt; $push",
-      "longname": "module:documents/probe.updateOperators.$push",
-      "name": "$push",
-      "tags": "module:documents/probe.updateOperators.$push updateOperators.$push $push",
-      "summary": "",
-      "description": "The $push operator appends a specified value to an array. It looks like this:{ $push: { &lt;field&gt;: &lt;value&gt; } }"
-    },
-    "module-documents_probe.updateOperators.html#.$pull": {
-      "id": "module-documents_probe.updateOperators.html#.$pull",
-      "kind": "member",
-      "title": "&lt;static&gt; $pull",
-      "longname": "module:documents/probe.updateOperators.$pull",
-      "name": "$pull",
-      "tags": "module:documents/probe.updateOperators.$pull updateOperators.$pull $pull",
-      "summary": "",
-      "description": "The $pull operator removes all instances of a value from an existing array. It looks like this:{ $pull: { field: &lt;query&gt; } }"
-    },
     "base_chains.html": {
       "id": "base_chains.html",
       "kind": "class",
@@ -15705,6 +16356,16 @@ window.lunrData = {
       "summary": "",
       "description": "The end method will call the destroy method which should make the object unusable anddevoid of all resources, unlike theclose method asks an object to shut itself down in a way that will allow it to be reopened. This uses the before chain which means the last one defined in the first one destroyed"
     },
+    "base_chains.html#destroy": {
+      "id": "base_chains.html#destroy",
+      "kind": "member",
+      "title": "&lt;private&gt; destroy",
+      "longname": "base/chains#destroy",
+      "name": "destroy",
+      "tags": "base/chains#destroy destroy",
+      "summary": "",
+      "description": "Destroy is called by the end method and it is here that you should clean up after yourself. The difference betweendestroy and end is the end is the verb that you raise on an object to ask it to go awayand destroy is where you actually do the work to clean up. Think of this as the counterpart of constructor yetnot called automatically. This uses the before chain which means the last one defined is the first one destroyed"
+    },
     "base_chains.html#open": {
       "id": "base_chains.html#open",
       "kind": "member",
@@ -15725,6 +16386,16 @@ window.lunrData = {
       "summary": "",
       "description": "A signal that can be raised on an object. When you deploy the Signalable mixin, itcreates instances of these for you.",
       "body": ""
+    },
+    "module-mixins_signalable-Signal.html#destroy": {
+      "id": "module-mixins_signalable-Signal.html#destroy",
+      "kind": "function",
+      "title": "&lt;private&gt; destroy()",
+      "longname": "module:mixins/signalable~Signal#destroy",
+      "name": "destroy",
+      "tags": "module:mixins/signalable~Signal#destroy destroy",
+      "summary": "",
+      "description": "Cleans up"
     },
     "module-mixins_signalable-Signal.html#on": {
       "id": "module-mixins_signalable-Signal.html#on",
@@ -15866,6 +16537,77 @@ window.lunrData = {
       "tags": "utils/logger.Logger#error Logger#error error",
       "summary": "",
       "description": "Log a error call"
+    },
+    "module-documents_probe.updateOperators.html": {
+      "id": "module-documents_probe.updateOperators.html",
+      "kind": "class",
+      "title": "documents/probe.updateOperators",
+      "longname": "module:documents/probe.updateOperators",
+      "name": "updateOperators",
+      "tags": "module:documents/probe.updateOperators updateOperators",
+      "summary": "",
+      "description": "This is not actually a class, but an artifact of the documentation system",
+      "body": ""
+    },
+    "module-documents_probe.updateOperators.html#.$inc": {
+      "id": "module-documents_probe.updateOperators.html#.$inc",
+      "kind": "member",
+      "title": "&lt;static&gt; $inc",
+      "longname": "module:documents/probe.updateOperators.$inc",
+      "name": "$inc",
+      "tags": "module:documents/probe.updateOperators.$inc updateOperators.$inc $inc",
+      "summary": "",
+      "description": "Increments a field by the amount you specify. It takes the form{ $inc: { field1: amount } }"
+    },
+    "module-documents_probe.updateOperators.html#.$dec": {
+      "id": "module-documents_probe.updateOperators.html#.$dec",
+      "kind": "member",
+      "title": "&lt;static&gt; $dec",
+      "longname": "module:documents/probe.updateOperators.$dec",
+      "name": "$dec",
+      "tags": "module:documents/probe.updateOperators.$dec updateOperators.$dec $dec",
+      "summary": "",
+      "description": "Decrements a field by the amount you specify. It takes the form{ $dec: { field1: amount }"
+    },
+    "module-documents_probe.updateOperators.html#.$unset": {
+      "id": "module-documents_probe.updateOperators.html#.$unset",
+      "kind": "member",
+      "title": "&lt;static&gt; $unset",
+      "longname": "module:documents/probe.updateOperators.$unset",
+      "name": "$unset",
+      "tags": "module:documents/probe.updateOperators.$unset updateOperators.$unset $unset",
+      "summary": "",
+      "description": "Removes the field from the object. It takes the form{ $unset: { field1: &quot;&quot; } }"
+    },
+    "module-documents_probe.updateOperators.html#.$pop": {
+      "id": "module-documents_probe.updateOperators.html#.$pop",
+      "kind": "member",
+      "title": "&lt;static&gt; $pop",
+      "longname": "module:documents/probe.updateOperators.$pop",
+      "name": "$pop",
+      "tags": "module:documents/probe.updateOperators.$pop updateOperators.$pop $pop",
+      "summary": "",
+      "description": "The $pop operator removes the first or last element of an array. Pass $pop a value of 1 to remove the last elementin an array and a value of -1 to remove the first element of an array. This will only work on arrays. Syntax:{ $pop: { field: 1 } } or { $pop: { field: -1 } }"
+    },
+    "module-documents_probe.updateOperators.html#.$push": {
+      "id": "module-documents_probe.updateOperators.html#.$push",
+      "kind": "member",
+      "title": "&lt;static&gt; $push",
+      "longname": "module:documents/probe.updateOperators.$push",
+      "name": "$push",
+      "tags": "module:documents/probe.updateOperators.$push updateOperators.$push $push",
+      "summary": "",
+      "description": "The $push operator appends a specified value to an array. It looks like this:{ $push: { &lt;field&gt;: &lt;value&gt; } }"
+    },
+    "module-documents_probe.updateOperators.html#.$pull": {
+      "id": "module-documents_probe.updateOperators.html#.$pull",
+      "kind": "member",
+      "title": "&lt;static&gt; $pull",
+      "longname": "module:documents/probe.updateOperators.$pull",
+      "name": "$pull",
+      "tags": "module:documents/probe.updateOperators.$pull updateOperators.$pull $pull",
+      "summary": "",
+      "description": "The $pull operator removes all instances of a value from an existing array. It looks like this:{ $pull: { field: &lt;query&gt; } }"
     },
     "documents_schema.html": {
       "id": "documents_schema.html",

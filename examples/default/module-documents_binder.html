@@ -9,11 +9,12 @@
 		<![endif]-->
 		<link href="https://fonts.googleapis.com/css?family=PT+Mono" rel="stylesheet">
 		<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
-		<link type="text/css" rel="stylesheet" href="css/prism.css">
+		<link type="text/css" rel="stylesheet" href="css/prism.min.css">
 		<link type="text/css" rel="stylesheet" href="css/template.min.css">
 		<script type="text/javascript">
-			window.TEMPLATE_OPTIONS = {"includeDate":true,"dateFormat":"Do MMM YYYY","systemName":"FooDoc","systemSummary":"A Bootstrap and Handlebars based template for JSDoc3.","systemLogo":"","systemColor":"","navMembers":[{"kind":"class","title":"Classes","summary":"All documented classes."},{"kind":"external","title":"Externals","summary":"All documented external members."},{"kind":"global","title":"Globals","summary":"All documented globals."},{"kind":"mixin","title":"Mixins","summary":"All documented mixins."},{"kind":"interface","title":"Interfaces","summary":"All documented interfaces."},{"kind":"module","title":"Modules","summary":"All documented modules."},{"kind":"namespace","title":"Namespaces","summary":"All documented namespaces."},{"kind":"tutorial","title":"Tutorials","summary":"All available tutorials."}],"footer":"","copyright":"FooDoc Copyright © 2016 The contributors to the JSDoc3 and FooDoc projects.","linenums":true,"collapseSymbols":true,"inverseNav":true,"inlineNav":false,"outputSourceFiles":true,"sourceRootPath":null,"disablePackagePath":true,"outputSourcePath":false,"showTableOfContents":true,"analytics":null,"methodHeadingReturns":true,"sort":"linenum, longname, version, since","search":true,"readmeTargets":[],"stylesheets":[],"scripts":[],"monospaceLinks":false,"cleverLinks":false};
+			window.TEMPLATE_OPTIONS = {"includeDate":true,"dateFormat":"Do MMM YYYY","systemName":"FooDoc","systemSummary":"A Bootstrap and Handlebars based template for JSDoc3.","systemLogo":"","systemColor":"","navMembers":[{"kind":"class","title":"Classes","summary":"All documented classes."},{"kind":"external","title":"Externals","summary":"All documented external members."},{"kind":"global","title":"Globals","summary":"All documented globals."},{"kind":"mixin","title":"Mixins","summary":"All documented mixins."},{"kind":"interface","title":"Interfaces","summary":"All documented interfaces."},{"kind":"module","title":"Modules","summary":"All documented modules."},{"kind":"namespace","title":"Namespaces","summary":"All documented namespaces."},{"kind":"tutorial","title":"Tutorials","summary":"All available tutorials."}],"footer":"","copyright":"FooDoc Copyright © 2016 The contributors to the JSDoc3 and FooDoc projects.","linenums":true,"collapseSymbols":true,"inverseNav":true,"inlineNav":false,"outputSourceFiles":true,"sourceRootPath":null,"disablePackagePath":true,"outputSourcePath":false,"showTableOfContents":true,"showAccessFilter":true,"analytics":null,"methodHeadingReturns":true,"sort":"linenum, longname, version, since","search":true,"favicon":null,"stylesheets":[],"scripts":[],"monospaceLinks":false,"cleverLinks":false};
 			window.DOCLET_TOC_ENABLED = true;
+			window.DOCLET_AFILTER_ENABLED = true;
 		</script>
 </head>
 <body>
@@ -108,6 +109,16 @@
 							<li><a href="list_module.html">Modules</a></li>
 							<li class="active">documents/binder</li>
 						</ol>
+						<div class="access-filter">
+								<label class="checkbox-inline">
+									<input class="toggle-public" type="checkbox" value="" checked>
+									Public
+								</label>
+								<label class="checkbox-inline">
+									<input class="toggle-private" type="checkbox" value="" checked>
+									Private
+								</label>
+						</div>
 					<section>
 		<dl class="symbol">
 			<dt class="symbol-title "></dt>
@@ -172,13 +183,60 @@
 			</dd>
 		</dl>
 							<article class="secondary">
+									<h3>Members</h3>
+									<dl class="symbol">
+											<hr/>
+											<dt class="symbol-title member private collapsible-symbol">
+			<h4 id="~dataBinderOptions" class="member private"><span class="signature-attribs">&lt;private, inner> </span><span class="name">dataBinderOptions</span><span class="signature-type"> :Object</span></h4>
+		</dt>
+<dd class="symbol-details member private  collapsible-symbol">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Identifies the properties that the binder expects</p></div>
+			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+							<!-- type -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Type</label>
+								<div class="col-sm-9">
+									<div class="form-control-static type-names"><span class="param-type">Object</span></div>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+							<!-- source -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Source</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="documents_binder.js.html">documents/binder.js</a>, <a href="documents_binder.js.html#line-21">line 21</a></p>
+								</div>
+							</div>
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+									</dl>
 									<h3>Methods</h3>
 									<dl class="symbol">
 											<hr/>
-											<dt class="symbol-title function collapsible-symbol">
-			<h4 id=".unbind" class="function"><span class="signature-attribs">&lt;static> </span><span class="name">unbind</span><span class="signature-params">( <span class="signature-param">path</span>, <span class="signature-param">record</span>&nbsp;)</span><span class="signature-type"></span></h4>
+											<dt class="symbol-title function public collapsible-symbol">
+			<h4 id=".unbind" class="function public"><span class="signature-attribs">&lt;static> </span><span class="name">unbind</span><span class="signature-params">( <span class="signature-param">path</span>, <span class="signature-param">record</span>&nbsp;)</span><span class="signature-type"></span></h4>
 		</dt>
-<dd class="symbol-details function  collapsible-symbol">
+<dd class="symbol-details function public  collapsible-symbol">
 	<div class="symbol-details-inner">
 			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>You can unbind previously bound objects from here.</p></div>
 			</div>			<div class="callout callout-info">
@@ -240,10 +298,10 @@
 			</div>	</div>
 </dd>
 											<hr/>
-											<dt class="symbol-title function collapsible-symbol">
-			<h4 id=".bind" class="function"><span class="signature-attribs">&lt;static> </span><span class="name">bind</span><span class="signature-params">( <span class="signature-param">path</span>, <span class="signature-param">record</span>, <span class="signature-param">options</span>&nbsp;)</span><span class="signature-type"> &rarr;&nbsp;{*}</span></h4>
+											<dt class="symbol-title function public collapsible-symbol">
+			<h4 id=".bind" class="function public"><span class="signature-attribs">&lt;static> </span><span class="name">bind</span><span class="signature-params">( <span class="signature-param">path</span>, <span class="signature-param">record</span>, <span class="signature-param">options</span>&nbsp;)</span><span class="signature-type"> &rarr;&nbsp;{*}</span></h4>
 		</dt>
-<dd class="symbol-details function  collapsible-symbol">
+<dd class="symbol-details function public  collapsible-symbol">
 	<div class="symbol-details-inner">
 			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Bind to a property somewhere in an object. The property is found using dot notation and can be arbitrarily deep.</p></div>
 			</div>			<div class="callout callout-info">
@@ -486,12 +544,12 @@
 	</div>
 	<footer>
 				<div class="copyright">FooDoc Copyright © 2016 The contributors to the JSDoc3 and FooDoc projects.</div>
-			<div class="generated-by">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.3</a> on 16th Nov 2016 using the <a href="https://github.com/steveush/foodoc">FooDoc template</a>.</div>
+			<div class="generated-by">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.3</a> on 17th Jun 2017 using the <a href="https://github.com/steveush/foodoc">FooDoc template</a>.</div>
 	</footer>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/clipboard.min.js"></script>
-	<script src="js/prism.js"></script>
+	<script src="js/prism.min.js"></script>
 	<script src="js/template.min.js"></script>
 		<!-- start:lunr-search-modal.hbs -->
 		<div class="modal fade" id="lunr-search-modal">
@@ -510,5 +568,6 @@
 			</div><!-- /.modal-dialog -->
 		</div>
 		<!-- end:lunr-search-modal.hbs -->		<script src="js/lunr.min.js"></script>
+	
 </body>
 </html>

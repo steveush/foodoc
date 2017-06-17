@@ -9,11 +9,12 @@
 		<![endif]-->
 		<link href="https://fonts.googleapis.com/css?family=PT+Mono" rel="stylesheet">
 		<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
-		<link type="text/css" rel="stylesheet" href="css/prism.css">
+		<link type="text/css" rel="stylesheet" href="css/prism.min.css">
 		<link type="text/css" rel="stylesheet" href="css/template.min.css">
 		<script type="text/javascript">
-			window.TEMPLATE_OPTIONS = {"includeDate":true,"dateFormat":"Do MMM YYYY","systemName":"FooDoc","systemSummary":"A Bootstrap and Handlebars based template for JSDoc3.","systemLogo":"","systemColor":"","navMembers":[{"kind":"class","title":"Classes","summary":"All documented classes."},{"kind":"external","title":"Externals","summary":"All documented external members."},{"kind":"global","title":"Globals","summary":"All documented globals."},{"kind":"mixin","title":"Mixins","summary":"All documented mixins."},{"kind":"interface","title":"Interfaces","summary":"All documented interfaces."},{"kind":"module","title":"Modules","summary":"All documented modules."},{"kind":"namespace","title":"Namespaces","summary":"All documented namespaces."},{"kind":"tutorial","title":"Tutorials","summary":"All available tutorials."}],"footer":"","copyright":"FooDoc Copyright © 2016 The contributors to the JSDoc3 and FooDoc projects.","linenums":true,"collapseSymbols":false,"inverseNav":true,"inlineNav":false,"outputSourceFiles":true,"sourceRootPath":null,"disablePackagePath":true,"outputSourcePath":false,"showTableOfContents":true,"analytics":null,"methodHeadingReturns":true,"sort":"linenum, longname, version, since","search":true,"readmeTargets":[],"stylesheets":[],"scripts":[],"monospaceLinks":false,"cleverLinks":false};
+			window.TEMPLATE_OPTIONS = {"includeDate":true,"dateFormat":"Do MMM YYYY","systemName":"FooDoc","systemSummary":"A Bootstrap and Handlebars based template for JSDoc3.","systemLogo":"","systemColor":"","navMembers":[{"kind":"class","title":"Classes","summary":"All documented classes."},{"kind":"external","title":"Externals","summary":"All documented external members."},{"kind":"global","title":"Globals","summary":"All documented globals."},{"kind":"mixin","title":"Mixins","summary":"All documented mixins."},{"kind":"interface","title":"Interfaces","summary":"All documented interfaces."},{"kind":"module","title":"Modules","summary":"All documented modules."},{"kind":"namespace","title":"Namespaces","summary":"All documented namespaces."},{"kind":"tutorial","title":"Tutorials","summary":"All available tutorials."}],"footer":"","copyright":"FooDoc Copyright © 2016 The contributors to the JSDoc3 and FooDoc projects.","linenums":true,"collapseSymbols":false,"inverseNav":true,"inlineNav":false,"outputSourceFiles":true,"sourceRootPath":null,"disablePackagePath":true,"outputSourcePath":false,"showTableOfContents":true,"showAccessFilter":true,"analytics":null,"methodHeadingReturns":true,"sort":"linenum, longname, version, since","search":true,"favicon":null,"stylesheets":[],"scripts":[],"monospaceLinks":false,"cleverLinks":false};
 			window.DOCLET_TOC_ENABLED = true;
+			window.DOCLET_AFILTER_ENABLED = false;
 		</script>
 </head>
 <body>
@@ -151,10 +152,10 @@
 									<h3>Members</h3>
 									<dl class="symbol">
 											<hr/>
-											<dt class="symbol-title member">
-			<h4 id=".$eq" class="member"><span class="signature-attribs">&lt;static> </span><span class="name">$eq</span><span class="signature-type"></span></h4>
+											<dt class="symbol-title member public">
+			<h4 id=".$eq" class="member public"><span class="signature-attribs">&lt;static> </span><span class="name">$eq</span><span class="signature-type"></span></h4>
 		</dt>
-<dd class="symbol-details member">
+<dd class="symbol-details member public">
 	<div class="symbol-details-inner">
 			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p><code>$eq</code> performs a <code>===</code> comparison by comparing the value directly if it is an atomic value.<br>otherwise if it is an array, it checks to see if the value looked for is in the array.<br><code>{field: value}</code> or <code>{field: {$eq : value}}</code> or <code>{array: value}</code> or <code>{array: {$eq : value}}</code></p></div>
 			</div>			<div class="callout callout-example"><h5>Examples</h5>		<div class="example-code">
@@ -191,10 +192,10 @@
 			</div>	</div>
 </dd>
 											<hr/>
-											<dt class="symbol-title member">
-			<h4 id=".$ne" class="member"><span class="signature-attribs">&lt;static> </span><span class="name">$ne</span><span class="signature-type"></span></h4>
+											<dt class="symbol-title member public">
+			<h4 id=".$ne" class="member public"><span class="signature-attribs">&lt;static> </span><span class="name">$ne</span><span class="signature-type"></span></h4>
 		</dt>
-<dd class="symbol-details member">
+<dd class="symbol-details member public">
 	<div class="symbol-details-inner">
 			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p><code>$ne</code> performs a <code>!==</code> comparison by comparing the value directly if it is an atomic value. Otherwise, if it is an array<br>this is performs a &quot;not in array&quot;.<br>'{field: {$ne : value}}<code>or '{array: {$ne : value}}</code></p></div>
 			</div>			<div class="callout callout-example"><h5>Examples</h5>		<div class="example-code">
@@ -231,10 +232,10 @@
 			</div>	</div>
 </dd>
 											<hr/>
-											<dt class="symbol-title member">
-			<h4 id=".$all" class="member"><span class="signature-attribs">&lt;static> </span><span class="name">$all</span><span class="signature-type"></span></h4>
+											<dt class="symbol-title member public">
+			<h4 id=".$all" class="member public"><span class="signature-attribs">&lt;static> </span><span class="name">$all</span><span class="signature-type"></span></h4>
 		</dt>
-<dd class="symbol-details member">
+<dd class="symbol-details member public">
 	<div class="symbol-details-inner">
 			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p><code>$all</code> checks to see if all of the members of the query are included in an array<br><code>{array: {$all: [val1, val2, val3]}}</code></p></div>
 			</div>			<div class="callout callout-example"><h5>Examples</h5>		<div class="example-code">
@@ -271,10 +272,10 @@
 			</div>	</div>
 </dd>
 											<hr/>
-											<dt class="symbol-title member">
-			<h4 id=".$gt" class="member"><span class="signature-attribs">&lt;static> </span><span class="name">$gt</span><span class="signature-type"></span></h4>
+											<dt class="symbol-title member public">
+			<h4 id=".$gt" class="member public"><span class="signature-attribs">&lt;static> </span><span class="name">$gt</span><span class="signature-type"></span></h4>
 		</dt>
-<dd class="symbol-details member">
+<dd class="symbol-details member public">
 	<div class="symbol-details-inner">
 			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p><code>$gt</code> Sees if a field is greater than the value<br><code>{field: {$gt: value}}</code></p></div>
 			</div>			<div class="callout callout-example"><h5>Examples</h5>		<div class="example-code">
@@ -311,10 +312,10 @@
 			</div>	</div>
 </dd>
 											<hr/>
-											<dt class="symbol-title member">
-			<h4 id=".$gte" class="member"><span class="signature-attribs">&lt;static> </span><span class="name">$gte</span><span class="signature-type"></span></h4>
+											<dt class="symbol-title member public">
+			<h4 id=".$gte" class="member public"><span class="signature-attribs">&lt;static> </span><span class="name">$gte</span><span class="signature-type"></span></h4>
 		</dt>
-<dd class="symbol-details member">
+<dd class="symbol-details member public">
 	<div class="symbol-details-inner">
 			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p><code>$gte</code> Sees if a field is greater than or equal to the value<br><code>{field: {$gte: value}}</code></p></div>
 			</div>			<div class="callout callout-example"><h5>Examples</h5>		<div class="example-code">
@@ -351,10 +352,10 @@
 			</div>	</div>
 </dd>
 											<hr/>
-											<dt class="symbol-title member">
-			<h4 id=".$lt" class="member"><span class="signature-attribs">&lt;static> </span><span class="name">$lt</span><span class="signature-type"></span></h4>
+											<dt class="symbol-title member public">
+			<h4 id=".$lt" class="member public"><span class="signature-attribs">&lt;static> </span><span class="name">$lt</span><span class="signature-type"></span></h4>
 		</dt>
-<dd class="symbol-details member">
+<dd class="symbol-details member public">
 	<div class="symbol-details-inner">
 			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p><code>$lt</code> Sees if a field is less than the value<br><code>{field: {$lt: value}}</code></p></div>
 			</div>			<div class="callout callout-example"><h5>Examples</h5>		<div class="example-code">
@@ -391,10 +392,10 @@
 			</div>	</div>
 </dd>
 											<hr/>
-											<dt class="symbol-title member">
-			<h4 id=".$lte" class="member"><span class="signature-attribs">&lt;static> </span><span class="name">$lte</span><span class="signature-type"></span></h4>
+											<dt class="symbol-title member public">
+			<h4 id=".$lte" class="member public"><span class="signature-attribs">&lt;static> </span><span class="name">$lte</span><span class="signature-type"></span></h4>
 		</dt>
-<dd class="symbol-details member">
+<dd class="symbol-details member public">
 	<div class="symbol-details-inner">
 			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p><code>$lte</code> Sees if a field is less than or equal to the value<br><code>{field: {$lte: value}}</code></p></div>
 			</div>			<div class="callout callout-example"><h5>Examples</h5>		<div class="example-code">
@@ -431,10 +432,10 @@
 			</div>	</div>
 </dd>
 											<hr/>
-											<dt class="symbol-title member">
-			<h4 id=".$in" class="member"><span class="signature-attribs">&lt;static> </span><span class="name">$in</span><span class="signature-type"></span></h4>
+											<dt class="symbol-title member public">
+			<h4 id=".$in" class="member public"><span class="signature-attribs">&lt;static> </span><span class="name">$in</span><span class="signature-type"></span></h4>
 		</dt>
-<dd class="symbol-details member">
+<dd class="symbol-details member public">
 	<div class="symbol-details-inner">
 			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p><code>$in</code> Sees if a field has one of the values in the query<br><code>{field: {$in: [test1, test2, test3,...]}}</code></p></div>
 			</div>			<div class="callout callout-example"><h5>Examples</h5>		<div class="example-code">
@@ -471,10 +472,10 @@
 			</div>	</div>
 </dd>
 											<hr/>
-											<dt class="symbol-title member">
-			<h4 id=".$nin" class="member"><span class="signature-attribs">&lt;static> </span><span class="name">$nin</span><span class="signature-type"></span></h4>
+											<dt class="symbol-title member public">
+			<h4 id=".$nin" class="member public"><span class="signature-attribs">&lt;static> </span><span class="name">$nin</span><span class="signature-type"></span></h4>
 		</dt>
-<dd class="symbol-details member">
+<dd class="symbol-details member public">
 	<div class="symbol-details-inner">
 			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p><code>$nin</code> Sees if a field has none of the values in the query<br><code>{field: {$nin: [test1, test2, test3,...]}}</code></p></div>
 			</div>			<div class="callout callout-example"><h5>Examples</h5>		<div class="example-code">
@@ -511,10 +512,10 @@
 			</div>	</div>
 </dd>
 											<hr/>
-											<dt class="symbol-title member">
-			<h4 id=".$exists" class="member"><span class="signature-attribs">&lt;static> </span><span class="name">$exists</span><span class="signature-type"></span></h4>
+											<dt class="symbol-title member public">
+			<h4 id=".$exists" class="member public"><span class="signature-attribs">&lt;static> </span><span class="name">$exists</span><span class="signature-type"></span></h4>
 		</dt>
-<dd class="symbol-details member">
+<dd class="symbol-details member public">
 	<div class="symbol-details-inner">
 			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p><code>$exists</code> Sees if a field exists.<br><code>{field: {$exists: true|false}}</code></p></div>
 			</div>			<div class="callout callout-example"><h5>Examples</h5>		<div class="example-code">
@@ -551,10 +552,10 @@
 			</div>	</div>
 </dd>
 											<hr/>
-											<dt class="symbol-title member">
-			<h4 id=".$mod" class="member"><span class="signature-attribs">&lt;static> </span><span class="name">$mod</span><span class="signature-type"></span></h4>
+											<dt class="symbol-title member public">
+			<h4 id=".$mod" class="member public"><span class="signature-attribs">&lt;static> </span><span class="name">$mod</span><span class="signature-type"></span></h4>
 		</dt>
-<dd class="symbol-details member">
+<dd class="symbol-details member public">
 	<div class="symbol-details-inner">
 			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Checks equality to a modulus operation on a field<br><code>{field: {$mod: [divisor, remainder]}}</code></p></div>
 			</div>			<div class="callout callout-example"><h5>Examples</h5>		<div class="example-code">
@@ -591,10 +592,10 @@
 			</div>	</div>
 </dd>
 											<hr/>
-											<dt class="symbol-title member">
-			<h4 id=".$size" class="member"><span class="signature-attribs">&lt;static> </span><span class="name">$size</span><span class="signature-type"></span></h4>
+											<dt class="symbol-title member public">
+			<h4 id=".$size" class="member public"><span class="signature-attribs">&lt;static> </span><span class="name">$size</span><span class="signature-type"></span></h4>
 		</dt>
-<dd class="symbol-details member">
+<dd class="symbol-details member public">
 	<div class="symbol-details-inner">
 			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Compares the size of the field/array to the query. This can be used on arrays, strings and objects (where it will count keys)<br><code>{'field|array</code>: {$size: value}}`</p></div>
 			</div>			<div class="callout callout-example"><h5>Examples</h5>		<div class="example-code">
@@ -631,10 +632,10 @@
 			</div>	</div>
 </dd>
 											<hr/>
-											<dt class="symbol-title member">
-			<h4 id=".$regex" class="member"><span class="signature-attribs">&lt;static> </span><span class="name">$regex</span><span class="signature-type"></span></h4>
+											<dt class="symbol-title member public">
+			<h4 id=".$regex" class="member public"><span class="signature-attribs">&lt;static> </span><span class="name">$regex</span><span class="signature-type"></span></h4>
 		</dt>
-<dd class="symbol-details member">
+<dd class="symbol-details member public">
 	<div class="symbol-details-inner">
 			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Performs a regular expression test againts the field<br><code>{field: {$regex: re, $options: reOptions}}</code></p></div>
 			</div>			<div class="callout callout-example"><h5>Examples</h5>		<div class="example-code">
@@ -671,10 +672,10 @@
 			</div>	</div>
 </dd>
 											<hr/>
-											<dt class="symbol-title member">
-			<h4 id=".$elemMatch" class="member"><span class="signature-attribs">&lt;static> </span><span class="name">$elemMatch</span><span class="signature-type"></span></h4>
+											<dt class="symbol-title member public">
+			<h4 id=".$elemMatch" class="member public"><span class="signature-attribs">&lt;static> </span><span class="name">$elemMatch</span><span class="signature-type"></span></h4>
 		</dt>
-<dd class="symbol-details member">
+<dd class="symbol-details member public">
 	<div class="symbol-details-inner">
 			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>This is like $all except that it works with an array of objects or value. It checks to see the array matches all<br>of the conditions of the query<br><code>{array: {$elemMatch: {path: value, path: {$operation: value2}}}</code></p></div>
 			</div>			<div class="callout callout-example"><h5>Examples</h5>		<div class="example-code">
@@ -711,10 +712,10 @@
 			</div>	</div>
 </dd>
 											<hr/>
-											<dt class="symbol-title member">
-			<h4 id=".$and" class="member"><span class="signature-attribs">&lt;static> </span><span class="name">$and</span><span class="signature-type"></span></h4>
+											<dt class="symbol-title member public">
+			<h4 id=".$and" class="member public"><span class="signature-attribs">&lt;static> </span><span class="name">$and</span><span class="signature-type"></span></h4>
 		</dt>
-<dd class="symbol-details member">
+<dd class="symbol-details member public">
 	<div class="symbol-details-inner">
 			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Returns true if all of the conditions of the query are met<br><code>{$and: [query1, query2, query3]}</code></p></div>
 			</div>			<div class="callout callout-example"><h5>Examples</h5>		<div class="example-code">
@@ -751,10 +752,10 @@
 			</div>	</div>
 </dd>
 											<hr/>
-											<dt class="symbol-title member">
-			<h4 id=".$or" class="member"><span class="signature-attribs">&lt;static> </span><span class="name">$or</span><span class="signature-type"></span></h4>
+											<dt class="symbol-title member public">
+			<h4 id=".$or" class="member public"><span class="signature-attribs">&lt;static> </span><span class="name">$or</span><span class="signature-type"></span></h4>
 		</dt>
-<dd class="symbol-details member">
+<dd class="symbol-details member public">
 	<div class="symbol-details-inner">
 			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Returns true if any of the conditions of the query are met<br><code>{$or: [query1, query2, query3]}</code></p></div>
 			</div>			<div class="callout callout-example"><h5>Examples</h5>		<div class="example-code">
@@ -791,10 +792,10 @@
 			</div>	</div>
 </dd>
 											<hr/>
-											<dt class="symbol-title member">
-			<h4 id=".$nor" class="member"><span class="signature-attribs">&lt;static> </span><span class="name">$nor</span><span class="signature-type"></span></h4>
+											<dt class="symbol-title member public">
+			<h4 id=".$nor" class="member public"><span class="signature-attribs">&lt;static> </span><span class="name">$nor</span><span class="signature-type"></span></h4>
 		</dt>
-<dd class="symbol-details member">
+<dd class="symbol-details member public">
 	<div class="symbol-details-inner">
 			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Returns true if none of the conditions of the query are met<br><code>{$nor: [query1, query2, query3]}</code></p></div>
 			</div>			<div class="callout callout-example"><h5>Examples</h5>		<div class="example-code">
@@ -831,10 +832,10 @@
 			</div>	</div>
 </dd>
 											<hr/>
-											<dt class="symbol-title member">
-			<h4 id=".$not" class="member"><span class="signature-attribs">&lt;static> </span><span class="name">$not</span><span class="signature-type"></span></h4>
+											<dt class="symbol-title member public">
+			<h4 id=".$not" class="member public"><span class="signature-attribs">&lt;static> </span><span class="name">$not</span><span class="signature-type"></span></h4>
 		</dt>
-<dd class="symbol-details member">
+<dd class="symbol-details member public">
 	<div class="symbol-details-inner">
 			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Logical NOT on the conditions of the query<br><code>{$not: [query1, query2, query3]}</code></p></div>
 			</div>			<div class="callout callout-example"><h5>Examples</h5>		<div class="example-code">
@@ -881,12 +882,12 @@
 	</div>
 	<footer>
 				<div class="copyright">FooDoc Copyright © 2016 The contributors to the JSDoc3 and FooDoc projects.</div>
-			<div class="generated-by">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.3</a> on 16th Nov 2016 using the <a href="https://github.com/steveush/foodoc">FooDoc template</a>.</div>
+			<div class="generated-by">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.3</a> on 17th Jun 2017 using the <a href="https://github.com/steveush/foodoc">FooDoc template</a>.</div>
 	</footer>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/clipboard.min.js"></script>
-	<script src="js/prism.js"></script>
+	<script src="js/prism.min.js"></script>
 	<script src="js/template.min.js"></script>
 		<!-- start:lunr-search-modal.hbs -->
 		<div class="modal fade" id="lunr-search-modal">
@@ -905,5 +906,6 @@
 			</div><!-- /.modal-dialog -->
 		</div>
 		<!-- end:lunr-search-modal.hbs -->		<script src="js/lunr.min.js"></script>
+	
 </body>
 </html>

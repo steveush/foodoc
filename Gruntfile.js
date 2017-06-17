@@ -138,7 +138,7 @@ module.exports = function(grunt) {
 				options: {
 					destination: './.test',
 					template : './template',
-					configure : './template/conf.json',
+					configure : './test-src/default.conf.json',
 					tutorials: './test-src/fixtures/tutorials/',
 					private: true
 				}

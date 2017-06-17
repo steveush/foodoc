@@ -9,11 +9,12 @@
 		<![endif]-->
 		<link href="https://fonts.googleapis.com/css?family=PT+Mono" rel="stylesheet">
 		<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
-		<link type="text/css" rel="stylesheet" href="css/prism.css">
+		<link type="text/css" rel="stylesheet" href="css/prism.min.css">
 		<link type="text/css" rel="stylesheet" href="css/template.min.css">
 		<script type="text/javascript">
-			window.TEMPLATE_OPTIONS = {"includeDate":true,"dateFormat":"Do MMM YYYY","systemName":"FooDoc","systemSummary":"A Bootstrap and Handlebars based template for JSDoc3.","systemLogo":"","systemColor":"","navMembers":[{"kind":"class","title":"Classes","summary":"All documented classes."},{"kind":"external","title":"Externals","summary":"All documented external members."},{"kind":"global","title":"Globals","summary":"All documented globals."},{"kind":"mixin","title":"Mixins","summary":"All documented mixins."},{"kind":"interface","title":"Interfaces","summary":"All documented interfaces."},{"kind":"module","title":"Modules","summary":"All documented modules."},{"kind":"namespace","title":"Namespaces","summary":"All documented namespaces."},{"kind":"tutorial","title":"Tutorials","summary":"All available tutorials."}],"footer":"","copyright":"FooDoc Copyright © 2016 The contributors to the JSDoc3 and FooDoc projects.","linenums":true,"collapseSymbols":true,"inverseNav":true,"inlineNav":false,"outputSourceFiles":true,"sourceRootPath":null,"disablePackagePath":true,"outputSourcePath":false,"showTableOfContents":true,"analytics":null,"methodHeadingReturns":true,"sort":"linenum, longname, version, since","search":true,"readmeTargets":[],"stylesheets":[],"scripts":[],"monospaceLinks":false,"cleverLinks":false};
+			window.TEMPLATE_OPTIONS = {"includeDate":true,"dateFormat":"Do MMM YYYY","systemName":"FooDoc","systemSummary":"A Bootstrap and Handlebars based template for JSDoc3.","systemLogo":"","systemColor":"","navMembers":[{"kind":"class","title":"Classes","summary":"All documented classes."},{"kind":"external","title":"Externals","summary":"All documented external members."},{"kind":"global","title":"Globals","summary":"All documented globals."},{"kind":"mixin","title":"Mixins","summary":"All documented mixins."},{"kind":"interface","title":"Interfaces","summary":"All documented interfaces."},{"kind":"module","title":"Modules","summary":"All documented modules."},{"kind":"namespace","title":"Namespaces","summary":"All documented namespaces."},{"kind":"tutorial","title":"Tutorials","summary":"All available tutorials."}],"footer":"","copyright":"FooDoc Copyright © 2016 The contributors to the JSDoc3 and FooDoc projects.","linenums":true,"collapseSymbols":true,"inverseNav":true,"inlineNav":false,"outputSourceFiles":true,"sourceRootPath":null,"disablePackagePath":true,"outputSourcePath":false,"showTableOfContents":true,"showAccessFilter":true,"analytics":null,"methodHeadingReturns":true,"sort":"linenum, longname, version, since","search":true,"favicon":null,"stylesheets":[],"scripts":[],"monospaceLinks":false,"cleverLinks":false};
 			window.DOCLET_TOC_ENABLED = true;
+			window.DOCLET_AFILTER_ENABLED = true;
 		</script>
 </head>
 <body>
@@ -108,6 +109,16 @@
 							<li><a href="list_mixin.html">Mixins</a></li>
 							<li class="active">mixins/bussable</li>
 						</ol>
+						<div class="access-filter">
+								<label class="checkbox-inline">
+									<input class="toggle-public" type="checkbox" value="" checked>
+									Public
+								</label>
+								<label class="checkbox-inline">
+									<input class="toggle-private" type="checkbox" value="" checked>
+									Private
+								</label>
+						</div>
 					<section>
 							<dl class="symbol primary">
 								<dt class="symbol-title mixin collapsible-symbol expanded">
@@ -148,13 +159,60 @@
 </dd>
 							</dl>
 							<article class="secondary">
+									<h3>Members</h3>
+									<dl class="symbol">
+											<hr/>
+											<dt class="symbol-title member private collapsible-symbol">
+			<h4 id="_subscriptions" class="member private"><span class="signature-attribs">&lt;private> </span><span class="name">_subscriptions</span><span class="signature-type"> :Array</span></h4>
+		</dt>
+<dd class="symbol-details member private  collapsible-symbol">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>The list of subscriptions maintained by the mixin</p></div>
+			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+							<!-- type -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Type</label>
+								<div class="col-sm-9">
+									<div class="form-control-static type-names"><span class="param-type">Array</span></div>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+							<!-- source -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Source</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="mixins_bussable.js.html">mixins/bussable.js</a>, <a href="mixins_bussable.js.html#line-21">line 21</a></p>
+								</div>
+							</div>
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+									</dl>
 									<h3>Methods</h3>
 									<dl class="symbol">
 											<hr/>
-											<dt class="symbol-title function collapsible-symbol">
-			<h4 id="subscribe" class="function"><span class="name">subscribe</span><span class="signature-params">( <span class="signature-param">channel</span>, <span class="signature-param">topic</span> [,&nbsp;<span class="signature-param">callback</span>&nbsp;]&nbsp;)</span><span class="signature-type"> &rarr;&nbsp;{object}</span></h4>
+											<dt class="symbol-title function public collapsible-symbol">
+			<h4 id="subscribe" class="function public"><span class="name">subscribe</span><span class="signature-params">( <span class="signature-param">channel</span>, <span class="signature-param">topic</span> [,&nbsp;<span class="signature-param">callback</span>&nbsp;]&nbsp;)</span><span class="signature-type"> &rarr;&nbsp;{object}</span></h4>
 		</dt>
-<dd class="symbol-details function  collapsible-symbol">
+<dd class="symbol-details function public  collapsible-symbol">
 	<div class="symbol-details-inner">
 			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Subscribe to an event</p></div>
 			</div>			<div class="callout callout-info">
@@ -235,10 +293,10 @@
 			</div>	</div>
 </dd>
 											<hr/>
-											<dt class="symbol-title function collapsible-symbol">
-			<h4 id="once" class="function"><span class="name">once</span><span class="signature-params">( <span class="signature-param">channel</span> [,&nbsp;<span class="signature-param">topic</span> [,&nbsp;<span class="signature-param">callback</span>&nbsp;]&nbsp;]&nbsp;)</span><span class="signature-type"> &rarr;&nbsp;{object}</span></h4>
+											<dt class="symbol-title function public collapsible-symbol">
+			<h4 id="once" class="function public"><span class="name">once</span><span class="signature-params">( <span class="signature-param">channel</span> [,&nbsp;<span class="signature-param">topic</span> [,&nbsp;<span class="signature-param">callback</span>&nbsp;]&nbsp;]&nbsp;)</span><span class="signature-type"> &rarr;&nbsp;{object}</span></h4>
 		</dt>
-<dd class="symbol-details function  collapsible-symbol">
+<dd class="symbol-details function public  collapsible-symbol">
 	<div class="symbol-details-inner">
 			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Subscribe to an event once</p></div>
 			</div>			<div class="callout callout-info">
@@ -319,10 +377,10 @@
 			</div>	</div>
 </dd>
 											<hr/>
-											<dt class="symbol-title function collapsible-symbol">
-			<h4 id="publish" class="function"><span class="name">publish</span><span class="signature-params">( [&nbsp;<span class="signature-param">channel</span> [,&nbsp;<span class="signature-param">topic</span> [,&nbsp;<span class="signature-param">options</span>&nbsp;]&nbsp;]&nbsp;]&nbsp;)</span><span class="signature-type"></span></h4>
+											<dt class="symbol-title function public collapsible-symbol">
+			<h4 id="publish" class="function public"><span class="name">publish</span><span class="signature-params">( [&nbsp;<span class="signature-param">channel</span> [,&nbsp;<span class="signature-param">topic</span> [,&nbsp;<span class="signature-param">options</span>&nbsp;]&nbsp;]&nbsp;]&nbsp;)</span><span class="signature-type"></span></h4>
 		</dt>
-<dd class="symbol-details function  collapsible-symbol">
+<dd class="symbol-details function public  collapsible-symbol">
 	<div class="symbol-details-inner">
 			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Publish an event on the system bus</p></div>
 			</div>			<div class="callout callout-info">
@@ -421,10 +479,10 @@
 			</div>	</div>
 </dd>
 											<hr/>
-											<dt class="symbol-title function collapsible-symbol">
-			<h4 id="getSubscription" class="function"><span class="name">getSubscription</span><span class="signature-params">( <span class="signature-param">channel</span>, <span class="signature-param">topic</span>&nbsp;)</span><span class="signature-type"> &rarr;&nbsp;{object}</span></h4>
+											<dt class="symbol-title function public collapsible-symbol">
+			<h4 id="getSubscription" class="function public"><span class="name">getSubscription</span><span class="signature-params">( <span class="signature-param">channel</span>, <span class="signature-param">topic</span>&nbsp;)</span><span class="signature-type"> &rarr;&nbsp;{object}</span></h4>
 		</dt>
-<dd class="symbol-details function  collapsible-symbol">
+<dd class="symbol-details function public  collapsible-symbol">
 	<div class="symbol-details-inner">
 			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Get a subscription definition</p></div>
 			</div>			<div class="callout callout-info">
@@ -491,6 +549,43 @@
 					</form>
 			</div>	</div>
 </dd>
+											<hr/>
+											<dt class="symbol-title function private collapsible-symbol">
+			<h4 id="destroy" class="function private"><span class="signature-attribs">&lt;private> </span><span class="name">destroy</span><span class="signature-params">()</span><span class="signature-type"></span></h4>
+		</dt>
+<dd class="symbol-details function private  collapsible-symbol">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Gets rid of all subscriptions for this object.</p></div>
+			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+							<!-- source -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Source</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="mixins_bussable.js.html">mixins/bussable.js</a>, <a href="mixins_bussable.js.html#line-90">line 90</a></p>
+								</div>
+							</div>
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
 									</dl>
 							</article>
 					</section>
@@ -502,12 +597,12 @@
 	</div>
 	<footer>
 				<div class="copyright">FooDoc Copyright © 2016 The contributors to the JSDoc3 and FooDoc projects.</div>
-			<div class="generated-by">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.3</a> on 16th Nov 2016 using the <a href="https://github.com/steveush/foodoc">FooDoc template</a>.</div>
+			<div class="generated-by">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.3</a> on 17th Jun 2017 using the <a href="https://github.com/steveush/foodoc">FooDoc template</a>.</div>
 	</footer>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/clipboard.min.js"></script>
-	<script src="js/prism.js"></script>
+	<script src="js/prism.min.js"></script>
 	<script src="js/template.min.js"></script>
 		<!-- start:lunr-search-modal.hbs -->
 		<div class="modal fade" id="lunr-search-modal">
@@ -526,5 +621,6 @@
 			</div><!-- /.modal-dialog -->
 		</div>
 		<!-- end:lunr-search-modal.hbs -->		<script src="js/lunr.min.js"></script>
+	
 </body>
 </html>

@@ -77,6 +77,7 @@ FooDoc ships with a `conf.json` file in the template/ directory. It is just a re
 	"navMembers"            : "{array.<object>}",
 	"linenums"              : "{boolean}",
 	"showTableOfContents"   : "{boolean}",
+	"showAccessFilter"      : "{boolean}",
 	"analytics"             : "{object}",
 	"collapseSymbols"       : "{boolean}",
 	"methodHeadingReturns"  : "{boolean}",
@@ -134,6 +135,8 @@ FooDoc ships with a `conf.json` file in the template/ directory. It is just a re
     When `true`, line numbers will appear in any pretty printed source code blocks. If `outputSourceFiles` is `true` this will add an additional link to all documented members pointing to the exact line number in the pretty printed source file the documentation was pulled from.
 *   __showTableOfContents - `true`__
     When `true`, a TOC is generated from all `H1`, `H2`, `H3` and `H4` headings in the generated pages, this includes the README and tutorial pages. If you want to disable this for specific tutorial pages you can set this same option per tutorial in the extended tutorial configuration.
+*   __showAccessFilter - `true`__
+    When `true`, a checkbox list is displayed allowing the user to toggle the visibility of inherited, public, protected and private symbols of the current doclet. Each checkbox will only be displayed if the doclet contains at least one symbol of that type. If there is only a single type available across the entire doclet the filter is not displayed at all.
 *   __analytics - `null`__
     Adds a [Google Analytics](http://www.google.com/analytics) code block to the template output
     _e.g._ `"analytics":{"ua":"UA-XXXXX-XXX", "domain":"XXXX"}`
@@ -271,6 +274,13 @@ Quite simply Sunlight is no longer maintained and while it does work I prefer Pr
 ## Changelog
 
 All releases prior to 1.0.0 are considered pre-release, i.e. I'm not finished changing stuff yet so anything can happen ;)
+
+### 0.0.8
+
+*   Updated the navbar dropdowns and the table of contents to handle long lists. If the list exceeds the viewport it now displays a scrollbar. (@mistic100)
+*   Fixed missing Google Analytics code in the `_layout.hbs`. (@mistic100)
+*   Added the `favicon` option allowing you to supply a path to an image or icon to use as the favicon for the documentation. (@mistic100)
+*   Added the `showAccessFilter` option which allows users to filter the symbols of a doclet in real-time by if they are inherited, public, protected or private.
 
 ### 0.0.7
 

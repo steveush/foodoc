@@ -4,12 +4,13 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
 		<title>base</title>
+		<link rel="icon" type="image/png" href="favicon.png"/>
 		<!--[if lt IE 9]>
 		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
 		<link href="https://fonts.googleapis.com/css?family=PT+Mono" rel="stylesheet">
 		<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
-		<link type="text/css" rel="stylesheet" href="css/prism.css">
+		<link type="text/css" rel="stylesheet" href="css/prism.min.css">
 		<link type="text/css" rel="stylesheet" href="css/template.min.css">
 			<style>
 				.page-header,
@@ -40,8 +41,9 @@
 				}
 			</style>
 		<script type="text/javascript">
-			window.TEMPLATE_OPTIONS = {"includeDate":true,"dateFormat":"Do MMM YYYY","systemName":"FooDoc","systemSummary":"A Bootstrap and Handlebars based template for JSDoc3.","systemLogo":"img/foobot-40x40.png","systemColor":"#5233b7","navMembers":[{"kind":"class","title":"Classes","summary":"All documented classes."},{"kind":"external","title":"Externals","summary":"All documented external members."},{"kind":"global","title":"Globals","summary":"All documented globals."},{"kind":"mixin","title":"Mixins","summary":"All documented mixins."},{"kind":"interface","title":"Interfaces","summary":"All documented interfaces."},{"kind":"module","title":"Modules","summary":"All documented modules."},{"kind":"namespace","title":"Namespaces","summary":"All documented namespaces."},{"kind":"tutorial","title":"Tutorials","summary":"All available tutorials."}],"footer":"","copyright":"FooDoc Copyright © 2016 The contributors to the JSDoc3 and FooDoc projects.","linenums":true,"collapseSymbols":true,"inverseNav":true,"inlineNav":false,"outputSourceFiles":true,"sourceRootPath":null,"disablePackagePath":true,"outputSourcePath":false,"showTableOfContents":true,"analytics":null,"methodHeadingReturns":true,"sort":"linenum, longname, version, since","search":true,"readmeTargets":[],"stylesheets":[],"scripts":[],"monospaceLinks":false,"cleverLinks":false};
+			window.TEMPLATE_OPTIONS = {"includeDate":true,"dateFormat":"Do MMM YYYY","systemName":"FooDoc","systemSummary":"A Bootstrap and Handlebars based template for JSDoc3.","systemLogo":"img/foobot-40x40.png","systemColor":"#5233b7","navMembers":[{"kind":"class","title":"Classes","summary":"All documented classes."},{"kind":"external","title":"Externals","summary":"All documented external members."},{"kind":"global","title":"Globals","summary":"All documented globals."},{"kind":"mixin","title":"Mixins","summary":"All documented mixins."},{"kind":"interface","title":"Interfaces","summary":"All documented interfaces."},{"kind":"module","title":"Modules","summary":"All documented modules."},{"kind":"namespace","title":"Namespaces","summary":"All documented namespaces."},{"kind":"tutorial","title":"Tutorials","summary":"All available tutorials."}],"footer":"","copyright":"FooDoc Copyright © 2016 The contributors to the JSDoc3 and FooDoc projects.","linenums":true,"collapseSymbols":true,"inverseNav":true,"inlineNav":false,"outputSourceFiles":true,"sourceRootPath":null,"disablePackagePath":true,"outputSourcePath":false,"showTableOfContents":true,"showAccessFilter":true,"analytics":null,"methodHeadingReturns":true,"sort":"linenum, longname, version, since","search":true,"favicon":"favicon.png","stylesheets":[],"scripts":[],"monospaceLinks":false,"cleverLinks":false};
 			window.DOCLET_TOC_ENABLED = true;
+			window.DOCLET_AFILTER_ENABLED = true;
 		</script>
 </head>
 <body>
@@ -136,6 +138,16 @@
 							<li><a href="list_class.html">Classes</a></li>
 							<li class="active">base</li>
 						</ol>
+						<div class="access-filter">
+								<label class="checkbox-inline">
+									<input class="toggle-inherited" type="checkbox" value="" checked>
+									Inherited
+								</label>
+								<label class="checkbox-inline">
+									<input class="toggle-public" type="checkbox" value="" checked>
+									Public
+								</label>
+						</div>
 					<section>
 							<dl class="symbol primary">
 								<dt class="symbol-title class collapsible-symbol expanded">
@@ -186,10 +198,10 @@
 									<h3>Members</h3>
 									<dl class="symbol">
 											<hr/>
-											<dt class="symbol-title member collapsible-symbol">
-			<h4 id="close" class="member"><span class="name">close</span><span class="signature-type"></span></h4>
+											<dt class="symbol-title member public inherited collapsible-symbol">
+			<h4 id="close" class="member public inherited"><span class="name">close</span><span class="signature-type"></span></h4>
 		</dt>
-<dd class="symbol-details member  collapsible-symbol">
+<dd class="symbol-details member public inherited  collapsible-symbol">
 	<div class="symbol-details-inner">
 			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>The <code>close</code> method asks an object to shut itself down in a way that will allow it to be reopened, unlike the<br><a href="base_chains.html#end">end method</a> which will call the destroy method which should make the object unusable, but also<br>devoid of all resources whereas <code>close</code> may still keep some resources open.</p>
 			<table>
@@ -254,10 +266,10 @@
 			</div>	</div>
 </dd>
 											<hr/>
-											<dt class="symbol-title member collapsible-symbol">
-			<h4 id="open" class="member"><span class="name">open</span><span class="signature-type"></span></h4>
+											<dt class="symbol-title member public inherited collapsible-symbol">
+			<h4 id="open" class="member public inherited"><span class="name">open</span><span class="signature-type"></span></h4>
 		</dt>
-<dd class="symbol-details member  collapsible-symbol">
+<dd class="symbol-details member public inherited  collapsible-symbol">
 	<div class="symbol-details-inner">
 			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>If you are using the open/close paradigm for an object that can kind of go dormant on <a href="base_chains.html#close">base/chains#close</a> and can be &quot;reopened&quot;<br>again later, here is where the &quot;open&quot; code will go.</p>
 			<p>This used the <code>after</code> chain which means that the first one defined is the first one destroyed.</p></div>
@@ -309,10 +321,10 @@
 									<h3>Methods</h3>
 									<dl class="symbol">
 											<hr/>
-											<dt class="symbol-title function collapsible-symbol">
-			<h4 id="addOptions" class="function"><span class="name">addOptions</span><span class="signature-params">( <span class="signature-param">options</span>&nbsp;)</span><span class="signature-type"></span></h4>
+											<dt class="symbol-title function public collapsible-symbol">
+			<h4 id="addOptions" class="function public"><span class="name">addOptions</span><span class="signature-params">( <span class="signature-param">options</span>&nbsp;)</span><span class="signature-type"></span></h4>
 		</dt>
-<dd class="symbol-details function  collapsible-symbol">
+<dd class="symbol-details function public  collapsible-symbol">
 	<div class="symbol-details-inner">
 			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Add an option to a class. If any members of the hash already exist in <code>this.options</code>, they will be overwritten.</p></div>
 			</div>			<div class="callout callout-info">
@@ -374,10 +386,10 @@
 			</div>	</div>
 </dd>
 											<hr/>
-											<dt class="symbol-title function collapsible-symbol">
-			<h4 id="addDefaultOptions" class="function"><span class="name">addDefaultOptions</span><span class="signature-params">( <span class="signature-param">options</span>&nbsp;)</span><span class="signature-type"></span></h4>
+											<dt class="symbol-title function public collapsible-symbol">
+			<h4 id="addDefaultOptions" class="function public"><span class="name">addDefaultOptions</span><span class="signature-params">( <span class="signature-param">options</span>&nbsp;)</span><span class="signature-type"></span></h4>
 		</dt>
-<dd class="symbol-details function  collapsible-symbol">
+<dd class="symbol-details function public  collapsible-symbol">
 	<div class="symbol-details-inner">
 			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Add a default option to a class. The default options are only set if there is not already a<br>value for the option.</p></div>
 			</div>			<div class="callout callout-info">
@@ -439,10 +451,10 @@
 			</div>	</div>
 </dd>
 											<hr/>
-											<dt class="symbol-title function collapsible-symbol">
-			<h4 id="end" class="function"><span class="name">end</span><span class="signature-params">()</span><span class="signature-type"></span></h4>
+											<dt class="symbol-title function public collapsible-symbol">
+			<h4 id="end" class="function public"><span class="name">end</span><span class="signature-params">()</span><span class="signature-type"></span></h4>
 		</dt>
-<dd class="symbol-details function  collapsible-symbol">
+<dd class="symbol-details function public  collapsible-symbol">
 	<div class="symbol-details-inner">
 			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Call this to close your object and dispose of all maintained resources. You can define this method on your<br>own classes without having to call the superclass instance, however it is reccomended that you put<br>all disposal code in <code>destroy()</code>. You must be disciplined about calling this on your instances.</p></div>
 			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
@@ -483,7 +495,7 @@
 								<div class="col-sm-9">
 										<ul class="form-control-static">
 												<li>{<a href="base_chains.html#end">base/chains#end</a>}</li>
-												<li>{base/chains#destroy}</li>
+												<li>{<a href="base_chains.html#destroy">base/chains#destroy</a>}</li>
 										</ul>
 								</div>
 							</div>
@@ -493,10 +505,10 @@
 			</div>	</div>
 </dd>
 											<hr/>
-											<dt class="symbol-title function collapsible-symbol">
-			<h4 id="destroy" class="function"><span class="name">destroy</span><span class="signature-params">()</span><span class="signature-type"></span></h4>
+											<dt class="symbol-title function public collapsible-symbol">
+			<h4 id="destroy" class="function public"><span class="name">destroy</span><span class="signature-params">()</span><span class="signature-type"></span></h4>
 		</dt>
-<dd class="symbol-details function  collapsible-symbol">
+<dd class="symbol-details function public  collapsible-symbol">
 	<div class="symbol-details-inner">
 			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Called when it is time to get rid of all of your instance level references and objects and events. You can<br>define this method on your own classes without having to call the superclass instance. It is called by<br><code>instance.end()</code> automatically</p></div>
 			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
@@ -511,7 +523,7 @@
 							<div class="form-group">
 								<label class="col-sm-3 control-label">Overrides</label>
 								<div class="col-sm-9">
-									<p class="form-control-static">base/chains#destroy</p>
+									<p class="form-control-static"><a href="base_chains.html#destroy">base/chains#destroy</a></p>
 								</div>
 							</div>
 			
@@ -537,7 +549,7 @@
 								<div class="col-sm-9">
 										<ul class="form-control-static">
 												<li>{<a href="base_chains.html#end">base/chains#end</a>}</li>
-												<li>{base/chains#destroy}</li>
+												<li>{<a href="base_chains.html#destroy">base/chains#destroy</a>}</li>
 										</ul>
 								</div>
 							</div>
@@ -557,12 +569,12 @@
 	</div>
 	<footer>
 				<div class="copyright">FooDoc Copyright © 2016 The contributors to the JSDoc3 and FooDoc projects.</div>
-			<div class="generated-by">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.3</a> on 16th Nov 2016 using the <a href="https://github.com/steveush/foodoc">FooDoc template</a>.</div>
+			<div class="generated-by">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.3</a> on 17th Jun 2017 using the <a href="https://github.com/steveush/foodoc">FooDoc template</a>.</div>
 	</footer>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/clipboard.min.js"></script>
-	<script src="js/prism.js"></script>
+	<script src="js/prism.min.js"></script>
 	<script src="js/template.min.js"></script>
 		<!-- start:lunr-search-modal.hbs -->
 		<div class="modal fade" id="lunr-search-modal">
@@ -581,5 +593,6 @@
 			</div><!-- /.modal-dialog -->
 		</div>
 		<!-- end:lunr-search-modal.hbs -->		<script src="js/lunr.min.js"></script>
+	
 </body>
 </html>

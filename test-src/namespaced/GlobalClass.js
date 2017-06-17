@@ -16,7 +16,23 @@
  * </head>
  */
 function GlobalClass(arg1, arg2){
+	/**
+	 * @summary The name of the class.
+	 * @memberof GlobalClass#
+	 * @name name
+	 * @type {string}
+	 * @default "Test Global"
+	 */
 	this.name = "Test Global";
+	/**
+	 * @summary A private member of the class.
+	 * @memberof GlobalClass#
+	 * @name _privateMember
+	 * @type {string}
+	 * @private
+	 * @default "Test Global"
+	 */
+	this._privateMember = "Private Member";
 }
 
 /**

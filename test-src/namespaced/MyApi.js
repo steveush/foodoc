@@ -44,11 +44,29 @@ MyApi.Class = function(arg1, arg2){
 	/**
 	 * @summary I'm a member of the class.
 	 * @memberof MyApi.Class#
-	 * @name name
+	 * @name publicMember
 	 * @type {string}
-	 * @default I'm an instance member.
+	 * @default "I'm an instance member."
 	 */
-	this.name = "I'm an instance member.";
+	this.publicMember = "I'm an instance member.";
+	/**
+	 * @summary I'm a protected member of the class.
+	 * @memberof MyApi.Class#
+	 * @name protectedMember
+	 * @type {string}
+	 * @default "I'm a protected member."
+	 * @protected
+	 */
+	this.protectedMember = "I'm a protected member.";
+	/**
+	 * @summary I'm a private member of the class.
+	 * @memberof MyApi.Class#
+	 * @name _privateMember
+	 * @type {string}
+	 * @default "I'm a private member."
+	 * @private
+	 */
+	this._privateMember = "I'm a private member.";
 };
 
 /**
@@ -114,7 +132,15 @@ MyApi.Class.prototype.anotherMethod = function(value, obj, objN){
  * @extends MyApi.Class
  */
 MyApi.Child = function(){
-
+	/**
+	 * @summary I'm a protected member of the class.
+	 * @memberof MyApi.Child#
+	 * @name protectedMember
+	 * @type {string}
+	 * @default "I'm a protected member."
+	 * @protected
+	 */
+	this.protectedMember = "I'm a protected member.";
 };
 
 /**

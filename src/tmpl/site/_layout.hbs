@@ -51,6 +51,7 @@
 		<script type="text/javascript">
 			window.TEMPLATE_OPTIONS = {{{json options}}};
 			window.DOCLET_TOC_ENABLED = {{{json doclet.showTableOfContents}}};
+			window.DOCLET_AFILTER_ENABLED = {{{json doclet.showAccessFilter}}};
 		</script>
 	{{/block}}
 </head>
@@ -68,13 +69,41 @@
 	<div class="container content">
 		<div class="row">
 			<div class="{{#if doclet.showTableOfContents}}col-md-9{{else}}col-md-12{{/if}} main-content">
-				{{#block "crumbs"}}
+				{{#block "controls"}}
 					{{#if crumbs}}
 						<ol class="breadcrumb">
 							{{#each crumbs}}
 							<li{{#if @last}} class="active"{{/if}}>{{{.}}}</li>
 							{{/each}}
 						</ol>
+					{{/if}}
+					{{#if doclet.showAccessFilter}}
+						<div class="access-filter">
+							{{#if doclet.has.inherited}}
+								<label class="checkbox-inline">
+									<input class="toggle-inherited" type="checkbox" value="" checked>
+									Inherited
+								</label>
+							{{/if}}
+							{{#if doclet.has.public}}
+								<label class="checkbox-inline">
+									<input class="toggle-public" type="checkbox" value="" checked>
+									Public
+								</label>
+							{{/if}}
+							{{#if doclet.has.protected}}
+								<label class="checkbox-inline">
+									<input class="toggle-protected" type="checkbox" value="" checked>
+									Protected
+								</label>
+							{{/if}}
+							{{#if doclet.has.private}}
+								<label class="checkbox-inline">
+									<input class="toggle-private" type="checkbox" value="" checked>
+									Private
+								</label>
+							{{/if}}
+						</div>
 					{{/if}}
 				{{/block}}
 				{{#block "content"}}
@@ -192,6 +221,7 @@
 	</footer>
 	{{#if config.debug}}
 		<div>
+			<pre class="prettyprint source language-javascript"><code class="language-javascript">{{{json config pretty=true}}}</code></pre>
 			<pre class="prettyprint source language-javascript"><code class="language-javascript">{{{json doclet pretty=true}}}</code></pre>
 		</div>
 	{{/if}}

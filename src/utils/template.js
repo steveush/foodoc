@@ -34,6 +34,7 @@ var options = exports.options = extend({
 	disablePackagePath: true,
 	outputSourcePath: false,
 	showTableOfContents: true,
+	showAccessFilter: true,
 	analytics: null,
 	methodHeadingReturns: true,
 	sort: "linenum, longname, version, since",
@@ -65,6 +66,7 @@ var faviconTypes = {
 
 var config = exports.config = {
 	debug: false,
+	raw: env.opts,
 	version: env.version.number,
 	date: moment().format(options.dateFormat),
 	faviconType: options.favicon ? faviconTypes[path.extname(options.favicon)] : null,

@@ -17,7 +17,7 @@
 			.on('click', function(e){
 				// if the origin of the click is an anchor do nothing and let the browser handle it
 				var $target = $(e.target);
-				if ($target.is('a') || $target.closest('a').length != 0) return;
+				if ($target.is('a') || $target.closest('a').length != 0 || $target.is('.checkbox,.checkbox-inline') || $target.closest('.checkbox,.checkbox-inline').length != 0) return;
 
 				// otherwise toggle the current state of the details
 				e.preventDefault();

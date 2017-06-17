@@ -33,6 +33,8 @@ exports.process = function(){
 		doclet.listTitle = doc.getListTitle(doclet, true);
 		doclet.listTitleHTML = doc.getListTitle(doclet, false);
 		doclet.hasDetails = doc.hasDetails(doclet);
+		doclet.inherited = doc.isInherited(doclet);
+		doclet.access = typeof doclet.access == 'string' ? doclet.access : "public";
 		// todo: maybe expose this as an additional option, basically switches the description to a summary if no summary was supplied and the descriptions text is shorter than 120 characters
 		//if (!doclet.summary.length && doclet.description && template.sanitize(doclet.description).length <= 120){
 		//	doclet.summary = doclet.description;
@@ -45,6 +47,7 @@ exports.process = function(){
 
 	template.raw.data().each(function(doclet){
 		doclet.symbols = doc.getSymbols(doclet);
+		doclet.showAccessFilter = doc.getShowAccessFilter(doclet);
 	});
 };
 
@@ -279,6 +282,7 @@ exports.registerLists = function(){
 			name: member.title,
 			summary: member.summary,
 			showTableOfContents: true,
+			showAccessFilter: false,
 			members: template.find({kind: member.kind}, "longname, version, since")
 		};
 		if (member.kind == 'tutorial'){

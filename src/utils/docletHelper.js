@@ -340,18 +340,25 @@ exports.getSymbols = function(doclet){
 	return symbols;
 };
 
-exports.getCrumbs = function(doclet){
-	var crumbs = [];
-	if (doclet.kind === 'readme') return crumbs;
-	crumbs.push(template.linkto("index", "Home"));
-	if (doclet.kind !== 'list'){
-		crumbs.push(template.linkto("list:"+doclet.kind));
+exports.getShowAccessFilter = function(doclet){
+	var result = typeof doclet.showAccessFilter != 'boolean' ? template.options.showAccessFilter : doclet.showAccessFilter;
+	if (result){
+		// if we can show the filter check if we should actually show it
+		doclet.has = {
+			inherited: template.find({kind: template.kinds.symbols, memberof: doclet.longname, inherited: true}).length > 0,
+			public: template.find({kind: template.kinds.symbols, memberof: doclet.longname, access: "public"}).length > 0,
+			protected: template.find({kind: template.kinds.symbols, memberof: doclet.longname, access: "protected"}).length > 0,
+			private: template.find({kind: template.kinds.symbols, memberof: doclet.longname, access: "private"}).length > 0
+		};
+		var count = (doclet.has.inherited ? 1 : 0) + (doclet.has.public ? 1 : 0) + (doclet.has.protected ? 1 : 0) + (doclet.has.private ? 1 : 0);
+		// only show the filter if there are two or more accessors available
+		result = count > 1;
 	}
-	helper.getAncestors(template.raw.data, doclet).forEach(function(ancestor){
-		crumbs.push(linkto(ancestor.longname));
-	});
-	crumbs.push(doclet.title || doclet.name);
-	return crumbs;
+	return result;
+};
+
+exports.isInherited = function(doclet){
+	return !!doclet.inherited;
 };
 
 exports.hasDetails = function (doclet) {

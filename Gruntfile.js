@@ -94,6 +94,7 @@ module.exports = function(grunt) {
 						'src/static/js/markdown-helpers.js',
 						'src/static/js/symbols.js',
 						'src/static/js/table-of-contents.js',
+						'src/static/js/access-filter.js',
 						'src/static/js/lunr-search.js',
 						'src/static/js/example-run.js',
 						'src/static/js/google-analytics.js'
@@ -125,7 +126,8 @@ module.exports = function(grunt) {
 						'src/static/css/dummy-console.css',
 						'src/static/css/lunr-search.css',
 						'src/static/css/related-tutorials.css',
-						'src/static/css/toc.css'
+						'src/static/css/toc.css',
+						'src/static/css/access-filter.css'
 					]
 				}
 			}
@@ -136,7 +138,9 @@ module.exports = function(grunt) {
 				options: {
 					destination: './.test',
 					template : './template',
-					configure : './template/conf.json'
+					configure : './template/conf.json',
+					tutorials: './test-src/fixtures/tutorials/',
+					private: true
 				}
 			},
 			default: {
@@ -145,7 +149,8 @@ module.exports = function(grunt) {
 					destination: './examples/default',
 					template : './template',
 					configure : './test-src/default.conf.json',
-					tutorials: './test-src/fixtures/tutorials/'
+					tutorials: './test-src/fixtures/tutorials/',
+					private: true
 				}
 			},
 			inline: {
@@ -154,7 +159,8 @@ module.exports = function(grunt) {
 					destination: './examples/inline',
 					template : './template',
 					configure : './test-src/inline.conf.json',
-					tutorials: './test-src/fixtures/tutorials/'
+					tutorials: './test-src/fixtures/tutorials/',
+					private: true
 				}
 			},
 			"logo-color": {
@@ -163,7 +169,8 @@ module.exports = function(grunt) {
 					destination: './examples/logo-color',
 					template : './template',
 					configure : './test-src/logo-color.conf.json',
-					tutorials: './test-src/fixtures/tutorials/'
+					tutorials: './test-src/fixtures/tutorials/',
+					private: true
 				}
 			},
 			collapse: {
@@ -172,7 +179,8 @@ module.exports = function(grunt) {
 					destination: './examples/collapse',
 					template : './template',
 					configure : './test-src/collapse.conf.json',
-					tutorials: './test-src/fixtures/tutorials/'
+					tutorials: './test-src/fixtures/tutorials/',
+					private: true
 				}
 			}
 		}

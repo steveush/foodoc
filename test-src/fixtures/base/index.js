@@ -23,7 +23,7 @@ var Base = dcl( [chains], /** @lends base# */{
 	declaredClass     : "Base",
 	/**
 	 * Add an option to a class. If any members of the hash already exist in `this.options`, they will be overwritten.
-	 * @param {hash} options A hash of options you want to set
+	 * @param {ChainOptions} options A hash of options you want to set
 	 * @see {base#addDefaultOptions}
 	 */
 	addOptions        : function ( options ) {
@@ -34,7 +34,7 @@ var Base = dcl( [chains], /** @lends base# */{
 	/**
 	 * Add a default option to a class. The default options are only set if there is not already a
 	 * value for the option.
-	 * @param {hash} options A hash of options you want to set
+	 * @param {ChainOptions} options A hash of options you want to set
 	 * @see {base#addOptions}
 	 */
 	addDefaultOptions : function ( options ) {
@@ -71,3 +71,9 @@ var Base = dcl( [chains], /** @lends base# */{
 Base.compose = dcl;
 Base.mixin = dcl.mix;
 module.exports = Base;
+
+/** 
+ * @typedef {Object} ChainOptions
+ * @property {string} mode valid modes are 'chained', 'block' or 'async'
+ * @property {Boolean} recursive
+ */

@@ -1,6 +1,6 @@
 window.lunrData = {
   "index": {
-    "version": "0.7.2",
+    "version": "1.0.0",
     "fields": [
       {
         "name": "longname",
@@ -1144,6 +1144,109 @@ window.lunrData = {
           "queryoperators.$not",
           "query{$not"
         ],
+        "module-documents_probe.updateOperators.html": [
+          "actual",
+          "artifact",
+          "class",
+          "document",
+          "documents/probe.updateoper",
+          "module:documents/probe.updateoper",
+          "system",
+          "updateoper"
+        ],
+        "module-documents_probe.updateOperators.html#.$inc": [
+          "amount",
+          "field",
+          "field1",
+          "form",
+          "inc",
+          "increment",
+          "lt;static&gt",
+          "member",
+          "module:documents/probe.updateoperators.$inc",
+          "specifi",
+          "take",
+          "updateoperators.$inc"
+        ],
+        "module-documents_probe.updateOperators.html#.$dec": [
+          "amount",
+          "dec",
+          "decrement",
+          "field",
+          "field1",
+          "form",
+          "lt;static&gt",
+          "member",
+          "module:documents/probe.updateoperators.$dec",
+          "specifi",
+          "take",
+          "updateoperators.$dec"
+        ],
+        "module-documents_probe.updateOperators.html#.$unset": [
+          "field",
+          "field1",
+          "form",
+          "lt;static&gt",
+          "member",
+          "module:documents/probe.updateoperators.$unset",
+          "object",
+          "quot;&quot",
+          "remov",
+          "take",
+          "unset",
+          "updateoperators.$unset"
+        ],
+        "module-documents_probe.updateOperators.html#.$pop": [
+          "1",
+          "array",
+          "element",
+          "elementin",
+          "field",
+          "first",
+          "last",
+          "lt;static&gt",
+          "member",
+          "module:documents/probe.updateoperators.$pop",
+          "oper",
+          "pass",
+          "pop",
+          "remov",
+          "syntax",
+          "updateoperators.$pop",
+          "valu",
+          "work"
+        ],
+        "module-documents_probe.updateOperators.html#.$push": [
+          "append",
+          "array",
+          "look",
+          "lt;field&gt",
+          "lt;static&gt",
+          "lt;value&gt",
+          "member",
+          "module:documents/probe.updateoperators.$push",
+          "oper",
+          "push",
+          "specifi",
+          "updateoperators.$push",
+          "valu"
+        ],
+        "module-documents_probe.updateOperators.html#.$pull": [
+          "array",
+          "exist",
+          "field",
+          "instanc",
+          "look",
+          "lt;query&gt",
+          "lt;static&gt",
+          "member",
+          "module:documents/probe.updateoperators.$pul",
+          "oper",
+          "pull",
+          "remov",
+          "updateoperators.$pul",
+          "valu"
+        ],
         "base_chains.html": [
           "base/chain",
           "chain",
@@ -1446,109 +1549,6 @@ window.lunrData = {
           "logger#error",
           "utils/logger.logger#error"
         ],
-        "module-documents_probe.updateOperators.html": [
-          "actual",
-          "artifact",
-          "class",
-          "document",
-          "documents/probe.updateoper",
-          "module:documents/probe.updateoper",
-          "system",
-          "updateoper"
-        ],
-        "module-documents_probe.updateOperators.html#.$inc": [
-          "amount",
-          "field",
-          "field1",
-          "form",
-          "inc",
-          "increment",
-          "lt;static&gt",
-          "member",
-          "module:documents/probe.updateoperators.$inc",
-          "specifi",
-          "take",
-          "updateoperators.$inc"
-        ],
-        "module-documents_probe.updateOperators.html#.$dec": [
-          "amount",
-          "dec",
-          "decrement",
-          "field",
-          "field1",
-          "form",
-          "lt;static&gt",
-          "member",
-          "module:documents/probe.updateoperators.$dec",
-          "specifi",
-          "take",
-          "updateoperators.$dec"
-        ],
-        "module-documents_probe.updateOperators.html#.$unset": [
-          "field",
-          "field1",
-          "form",
-          "lt;static&gt",
-          "member",
-          "module:documents/probe.updateoperators.$unset",
-          "object",
-          "quot;&quot",
-          "remov",
-          "take",
-          "unset",
-          "updateoperators.$unset"
-        ],
-        "module-documents_probe.updateOperators.html#.$pop": [
-          "1",
-          "array",
-          "element",
-          "elementin",
-          "field",
-          "first",
-          "last",
-          "lt;static&gt",
-          "member",
-          "module:documents/probe.updateoperators.$pop",
-          "oper",
-          "pass",
-          "pop",
-          "remov",
-          "syntax",
-          "updateoperators.$pop",
-          "valu",
-          "work"
-        ],
-        "module-documents_probe.updateOperators.html#.$push": [
-          "append",
-          "array",
-          "look",
-          "lt;field&gt",
-          "lt;static&gt",
-          "lt;value&gt",
-          "member",
-          "module:documents/probe.updateoperators.$push",
-          "oper",
-          "push",
-          "specifi",
-          "updateoperators.$push",
-          "valu"
-        ],
-        "module-documents_probe.updateOperators.html#.$pull": [
-          "array",
-          "exist",
-          "field",
-          "instanc",
-          "look",
-          "lt;query&gt",
-          "lt;static&gt",
-          "member",
-          "module:documents/probe.updateoperators.$pul",
-          "oper",
-          "pull",
-          "remov",
-          "updateoperators.$pul",
-          "valu"
-        ],
         "documents_schema.html": [
           "access",
           "documents/schema",
@@ -1740,13 +1740,13 @@ window.lunrData = {
               "ref": "base.html#close",
               "tf": 1.0869565217391304
             },
-            "base_chains.html#close": {
-              "ref": "base_chains.html#close",
-              "tf": 1.0869565217391304
-            },
             "module-documents_probe.updateOperators.html#.$pop": {
               "ref": "module-documents_probe.updateOperators.html#.$pop",
               "tf": 6.666666666666667
+            },
+            "base_chains.html#close": {
+              "ref": "base_chains.html#close",
+              "tf": 1.0869565217391304
             }
           }
         },
@@ -2509,6 +2509,10 @@ window.lunrData = {
                       "ref": "documents_model.html#.findOneKey",
                       "tf": 3.125
                     },
+                    "module-documents_probe.updateOperators.html#.$pop": {
+                      "ref": "module-documents_probe.updateOperators.html#.$pop",
+                      "tf": 3.3333333333333335
+                    },
                     "base_chains.html#close": {
                       "ref": "base_chains.html#close",
                       "tf": 1.0869565217391304
@@ -2524,10 +2528,6 @@ window.lunrData = {
                     "base_chains.html#open": {
                       "ref": "base_chains.html#open",
                       "tf": 4.3478260869565215
-                    },
-                    "module-documents_probe.updateOperators.html#.$pop": {
-                      "ref": "module-documents_probe.updateOperators.html#.$pop",
-                      "tf": 3.3333333333333335
                     },
                     "module-documents_model.html": {
                       "ref": "module-documents_model.html",
@@ -3403,13 +3403,13 @@ window.lunrData = {
                           "ref": "documents_model.html#isEmpty",
                           "tf": 12.5
                         },
-                        "module-mixins_signalable-Signal.html": {
-                          "ref": "module-mixins_signalable-Signal.html",
-                          "tf": 6.25
-                        },
                         "module-documents_probe.updateOperators.html#.$pull": {
                           "ref": "module-documents_probe.updateOperators.html#.$pull",
                           "tf": 4.545454545454546
+                        },
+                        "module-mixins_signalable-Signal.html": {
+                          "ref": "module-mixins_signalable-Signal.html",
+                          "tf": 6.25
                         }
                       }
                     }
@@ -5550,26 +5550,6 @@ window.lunrData = {
               }
             }
           },
-          "o": {
-            "docs": {},
-            "m": {
-              "docs": {},
-              "e": {
-                "docs": {},
-                "t": {
-                  "docs": {},
-                  "h": {
-                    "docs": {
-                      "utils_logger.Logger.html#silent": {
-                        "ref": "utils_logger.Logger.html#silent",
-                        "tf": 5.555555555555555
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          },
           "p": {
             "docs": {},
             "e": {
@@ -5594,6 +5574,26 @@ window.lunrData = {
                           "ref": "module-documents_probe.updateOperators.html#.$push",
                           "tf": 5
                         }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "o": {
+            "docs": {},
+            "m": {
+              "docs": {},
+              "e": {
+                "docs": {},
+                "t": {
+                  "docs": {},
+                  "h": {
+                    "docs": {
+                      "utils_logger.Logger.html#silent": {
+                        "ref": "utils_logger.Logger.html#silent",
+                        "tf": 5.555555555555555
                       }
                     }
                   }
@@ -5803,6 +5803,10 @@ window.lunrData = {
                       "ref": "module-documents_probe.queryOperators.html",
                       "tf": 120
                     },
+                    "module-documents_probe.updateOperators.html": {
+                      "ref": "module-documents_probe.updateOperators.html",
+                      "tf": 120
+                    },
                     "base_chains.html": {
                       "ref": "base_chains.html",
                       "tf": 110
@@ -5814,10 +5818,6 @@ window.lunrData = {
                     "utils_logger.Logger.html": {
                       "ref": "utils_logger.Logger.html",
                       "tf": 121.53846153846153
-                    },
-                    "module-documents_probe.updateOperators.html": {
-                      "ref": "module-documents_probe.updateOperators.html",
-                      "tf": 120
                     },
                     "module-base.html": {
                       "ref": "module-base.html",
@@ -7082,6 +7082,48 @@ window.lunrData = {
                 }
               }
             },
+            "c": {
+              "docs": {
+                "module-documents_probe.updateOperators.html#.$dec": {
+                  "ref": "module-documents_probe.updateOperators.html#.$dec",
+                  "tf": 655.5555555555555
+                }
+              },
+              "r": {
+                "docs": {},
+                "e": {
+                  "docs": {},
+                  "m": {
+                    "docs": {},
+                    "e": {
+                      "docs": {},
+                      "n": {
+                        "docs": {},
+                        "t": {
+                          "docs": {
+                            "module-documents_probe.updateOperators.html#.$dec": {
+                              "ref": "module-documents_probe.updateOperators.html#.$dec",
+                              "tf": 5.555555555555555
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "o": {
+                "docs": {},
+                "r": {
+                  "docs": {
+                    "module-utils_logger.html": {
+                      "ref": "module-utils_logger.html",
+                      "tf": 7.142857142857142
+                    }
+                  }
+                }
+              }
+            },
             "t": {
               "docs": {},
               "e": {
@@ -7122,48 +7164,6 @@ window.lunrData = {
                     "utils_logger.Logger.html#debug": {
                       "ref": "utils_logger.Logger.html#debug",
                       "tf": 716.6666666666666
-                    }
-                  }
-                }
-              }
-            },
-            "c": {
-              "docs": {
-                "module-documents_probe.updateOperators.html#.$dec": {
-                  "ref": "module-documents_probe.updateOperators.html#.$dec",
-                  "tf": 655.5555555555555
-                }
-              },
-              "r": {
-                "docs": {},
-                "e": {
-                  "docs": {},
-                  "m": {
-                    "docs": {},
-                    "e": {
-                      "docs": {},
-                      "n": {
-                        "docs": {},
-                        "t": {
-                          "docs": {
-                            "module-documents_probe.updateOperators.html#.$dec": {
-                              "ref": "module-documents_probe.updateOperators.html#.$dec",
-                              "tf": 5.555555555555555
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              },
-              "o": {
-                "docs": {},
-                "r": {
-                  "docs": {
-                    "module-utils_logger.html": {
-                      "ref": "module-utils_logger.html",
-                      "tf": 7.142857142857142
                     }
                   }
                 }
@@ -8036,13 +8036,13 @@ window.lunrData = {
                         "ref": "module-documents_probe.queryOperators.html",
                         "tf": 10
                       },
-                      "base_chains.html#destroy": {
-                        "ref": "base_chains.html#destroy",
-                        "tf": 1.282051282051282
-                      },
                       "module-documents_probe.updateOperators.html": {
                         "ref": "module-documents_probe.updateOperators.html",
                         "tf": 10
+                      },
+                      "base_chains.html#destroy": {
+                        "ref": "base_chains.html#destroy",
+                        "tf": 1.282051282051282
                       }
                     }
                   }
@@ -8181,29 +8181,6 @@ window.lunrData = {
               }
             }
           },
-          "w": {
-            "docs": {},
-            "a": {
-              "docs": {},
-              "y": {
-                "docs": {},
-                "a": {
-                  "docs": {},
-                  "n": {
-                    "docs": {},
-                    "d": {
-                      "docs": {
-                        "base_chains.html#destroy": {
-                          "ref": "base_chains.html#destroy",
-                          "tf": 1.282051282051282
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          },
           "m": {
             "docs": {},
             "o": {
@@ -8221,6 +8198,29 @@ window.lunrData = {
                       "module-documents_probe.updateOperators.html#.$dec": {
                         "ref": "module-documents_probe.updateOperators.html#.$dec",
                         "tf": 11.11111111111111
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "w": {
+            "docs": {},
+            "a": {
+              "docs": {},
+              "y": {
+                "docs": {},
+                "a": {
+                  "docs": {},
+                  "n": {
+                    "docs": {},
+                    "d": {
+                      "docs": {
+                        "base_chains.html#destroy": {
+                          "ref": "base_chains.html#destroy",
+                          "tf": 1.282051282051282
+                        }
                       }
                     }
                   }
@@ -8566,6 +8566,10 @@ window.lunrData = {
                     "ref": "base.html#close",
                     "tf": 1.0869565217391304
                   },
+                  "module-documents_probe.updateOperators.html#.$pop": {
+                    "ref": "module-documents_probe.updateOperators.html#.$pop",
+                    "tf": 3.3333333333333335
+                  },
                   "base_chains.html#close": {
                     "ref": "base_chains.html#close",
                     "tf": 1.0869565217391304
@@ -8577,10 +8581,6 @@ window.lunrData = {
                   "base_chains.html#destroy": {
                     "ref": "base_chains.html#destroy",
                     "tf": 1.282051282051282
-                  },
-                  "module-documents_probe.updateOperators.html#.$pop": {
-                    "ref": "module-documents_probe.updateOperators.html#.$pop",
-                    "tf": 3.3333333333333335
                   }
                 }
               }
@@ -11279,26 +11279,6 @@ window.lunrData = {
                         "ref": "module-documents_probe.queryOperators.html#.$not",
                         "tf": 110
                       },
-                      "base_chains.html#close": {
-                        "ref": "base_chains.html#close",
-                        "tf": 110
-                      },
-                      "base_chains.html#end": {
-                        "ref": "base_chains.html#end",
-                        "tf": 110
-                      },
-                      "base_chains.html#destroy": {
-                        "ref": "base_chains.html#destroy",
-                        "tf": 110
-                      },
-                      "base_chains.html#open": {
-                        "ref": "base_chains.html#open",
-                        "tf": 110
-                      },
-                      "utils_logger.Logger.html": {
-                        "ref": "utils_logger.Logger.html",
-                        "tf": 3.8461538461538463
-                      },
                       "module-documents_probe.updateOperators.html#.$inc": {
                         "ref": "module-documents_probe.updateOperators.html#.$inc",
                         "tf": 110
@@ -11322,6 +11302,26 @@ window.lunrData = {
                       "module-documents_probe.updateOperators.html#.$pull": {
                         "ref": "module-documents_probe.updateOperators.html#.$pull",
                         "tf": 110
+                      },
+                      "base_chains.html#close": {
+                        "ref": "base_chains.html#close",
+                        "tf": 110
+                      },
+                      "base_chains.html#end": {
+                        "ref": "base_chains.html#end",
+                        "tf": 110
+                      },
+                      "base_chains.html#destroy": {
+                        "ref": "base_chains.html#destroy",
+                        "tf": 110
+                      },
+                      "base_chains.html#open": {
+                        "ref": "base_chains.html#open",
+                        "tf": 110
+                      },
+                      "utils_logger.Logger.html": {
+                        "ref": "utils_logger.Logger.html",
+                        "tf": 3.8461538461538463
                       }
                     }
                   }
@@ -11770,6 +11770,10 @@ window.lunrData = {
                         "ref": "module-documents_probe.queryOperators.html#.$elemMatch",
                         "tf": 2.7777777777777777
                       },
+                      "module-documents_probe.updateOperators.html#.$unset": {
+                        "ref": "module-documents_probe.updateOperators.html#.$unset",
+                        "tf": 6.25
+                      },
                       "base_chains.html#close": {
                         "ref": "base_chains.html#close",
                         "tf": 2.1739130434782608
@@ -11793,10 +11797,6 @@ window.lunrData = {
                       "utils_logger.Logger.html": {
                         "ref": "utils_logger.Logger.html",
                         "tf": 3.8461538461538463
-                      },
-                      "module-documents_probe.updateOperators.html#.$unset": {
-                        "ref": "module-documents_probe.updateOperators.html#.$unset",
-                        "tf": 6.25
                       },
                       "mixins_signalable.html": {
                         "ref": "mixins_signalable.html",
@@ -13617,13 +13617,13 @@ window.lunrData = {
                     "ref": "module-documents_probe.queryOperators.html#.$elemMatch",
                     "tf": 2.7777777777777777
                   },
-                  "base_chains.html#destroy": {
-                    "ref": "base_chains.html#destroy",
-                    "tf": 1.282051282051282
-                  },
                   "module-documents_probe.updateOperators.html#.$pop": {
                     "ref": "module-documents_probe.updateOperators.html#.$pop",
                     "tf": 1.6666666666666667
+                  },
+                  "base_chains.html#destroy": {
+                    "ref": "base_chains.html#destroy",
+                    "tf": 1.282051282051282
                   }
                 }
               }
@@ -13835,6 +13835,20 @@ window.lunrData = {
                 }
               }
             },
+            "s": {
+              "docs": {},
+              "e": {
+                "docs": {},
+                "t": {
+                  "docs": {
+                    "module-documents_probe.updateOperators.html#.$unset": {
+                      "ref": "module-documents_probe.updateOperators.html#.$unset",
+                      "tf": 656.25
+                    }
+                  }
+                }
+              }
+            },
             "b": {
               "docs": {},
               "i": {
@@ -13847,20 +13861,6 @@ window.lunrData = {
                         "ref": "module-mixins_signalable-Signal.html#off",
                         "tf": 16.666666666666664
                       }
-                    }
-                  }
-                }
-              }
-            },
-            "s": {
-              "docs": {},
-              "e": {
-                "docs": {},
-                "t": {
-                  "docs": {
-                    "module-documents_probe.updateOperators.html#.$unset": {
-                      "ref": "module-documents_probe.updateOperators.html#.$unset",
-                      "tf": 656.25
                     }
                   }
                 }
@@ -14646,13 +14646,13 @@ window.lunrData = {
                     "docs": {},
                     "t": {
                       "docs": {
-                        "base_chains.html": {
-                          "ref": "base_chains.html",
-                          "tf": 5.555555555555555
-                        },
                         "module-documents_probe.updateOperators.html#.$pop": {
                           "ref": "module-documents_probe.updateOperators.html#.$pop",
                           "tf": 3.3333333333333335
+                        },
+                        "base_chains.html": {
+                          "ref": "base_chains.html",
+                          "tf": 5.555555555555555
                         },
                         "module-base_chains.html": {
                           "ref": "module-base_chains.html",
@@ -16325,6 +16325,77 @@ window.lunrData = {
       "summary": "",
       "description": "Logical NOT on the conditions of the query{$not: [query1, query2, query3]}"
     },
+    "module-documents_probe.updateOperators.html": {
+      "id": "module-documents_probe.updateOperators.html",
+      "kind": "class",
+      "title": "documents/probe.updateOperators",
+      "longname": "module:documents/probe.updateOperators",
+      "name": "updateOperators",
+      "tags": "module:documents/probe.updateOperators updateOperators",
+      "summary": "",
+      "description": "This is not actually a class, but an artifact of the documentation system",
+      "body": ""
+    },
+    "module-documents_probe.updateOperators.html#.$inc": {
+      "id": "module-documents_probe.updateOperators.html#.$inc",
+      "kind": "member",
+      "title": "&lt;static&gt; $inc",
+      "longname": "module:documents/probe.updateOperators.$inc",
+      "name": "$inc",
+      "tags": "module:documents/probe.updateOperators.$inc updateOperators.$inc $inc",
+      "summary": "",
+      "description": "Increments a field by the amount you specify. It takes the form{ $inc: { field1: amount } }"
+    },
+    "module-documents_probe.updateOperators.html#.$dec": {
+      "id": "module-documents_probe.updateOperators.html#.$dec",
+      "kind": "member",
+      "title": "&lt;static&gt; $dec",
+      "longname": "module:documents/probe.updateOperators.$dec",
+      "name": "$dec",
+      "tags": "module:documents/probe.updateOperators.$dec updateOperators.$dec $dec",
+      "summary": "",
+      "description": "Decrements a field by the amount you specify. It takes the form{ $dec: { field1: amount }"
+    },
+    "module-documents_probe.updateOperators.html#.$unset": {
+      "id": "module-documents_probe.updateOperators.html#.$unset",
+      "kind": "member",
+      "title": "&lt;static&gt; $unset",
+      "longname": "module:documents/probe.updateOperators.$unset",
+      "name": "$unset",
+      "tags": "module:documents/probe.updateOperators.$unset updateOperators.$unset $unset",
+      "summary": "",
+      "description": "Removes the field from the object. It takes the form{ $unset: { field1: &quot;&quot; } }"
+    },
+    "module-documents_probe.updateOperators.html#.$pop": {
+      "id": "module-documents_probe.updateOperators.html#.$pop",
+      "kind": "member",
+      "title": "&lt;static&gt; $pop",
+      "longname": "module:documents/probe.updateOperators.$pop",
+      "name": "$pop",
+      "tags": "module:documents/probe.updateOperators.$pop updateOperators.$pop $pop",
+      "summary": "",
+      "description": "The $pop operator removes the first or last element of an array. Pass $pop a value of 1 to remove the last elementin an array and a value of -1 to remove the first element of an array. This will only work on arrays. Syntax:{ $pop: { field: 1 } } or { $pop: { field: -1 } }"
+    },
+    "module-documents_probe.updateOperators.html#.$push": {
+      "id": "module-documents_probe.updateOperators.html#.$push",
+      "kind": "member",
+      "title": "&lt;static&gt; $push",
+      "longname": "module:documents/probe.updateOperators.$push",
+      "name": "$push",
+      "tags": "module:documents/probe.updateOperators.$push updateOperators.$push $push",
+      "summary": "",
+      "description": "The $push operator appends a specified value to an array. It looks like this:{ $push: { &lt;field&gt;: &lt;value&gt; } }"
+    },
+    "module-documents_probe.updateOperators.html#.$pull": {
+      "id": "module-documents_probe.updateOperators.html#.$pull",
+      "kind": "member",
+      "title": "&lt;static&gt; $pull",
+      "longname": "module:documents/probe.updateOperators.$pull",
+      "name": "$pull",
+      "tags": "module:documents/probe.updateOperators.$pull updateOperators.$pull $pull",
+      "summary": "",
+      "description": "The $pull operator removes all instances of a value from an existing array. It looks like this:{ $pull: { field: &lt;query&gt; } }"
+    },
     "base_chains.html": {
       "id": "base_chains.html",
       "kind": "class",
@@ -16537,77 +16608,6 @@ window.lunrData = {
       "tags": "utils/logger.Logger#error Logger#error error",
       "summary": "",
       "description": "Log a error call"
-    },
-    "module-documents_probe.updateOperators.html": {
-      "id": "module-documents_probe.updateOperators.html",
-      "kind": "class",
-      "title": "documents/probe.updateOperators",
-      "longname": "module:documents/probe.updateOperators",
-      "name": "updateOperators",
-      "tags": "module:documents/probe.updateOperators updateOperators",
-      "summary": "",
-      "description": "This is not actually a class, but an artifact of the documentation system",
-      "body": ""
-    },
-    "module-documents_probe.updateOperators.html#.$inc": {
-      "id": "module-documents_probe.updateOperators.html#.$inc",
-      "kind": "member",
-      "title": "&lt;static&gt; $inc",
-      "longname": "module:documents/probe.updateOperators.$inc",
-      "name": "$inc",
-      "tags": "module:documents/probe.updateOperators.$inc updateOperators.$inc $inc",
-      "summary": "",
-      "description": "Increments a field by the amount you specify. It takes the form{ $inc: { field1: amount } }"
-    },
-    "module-documents_probe.updateOperators.html#.$dec": {
-      "id": "module-documents_probe.updateOperators.html#.$dec",
-      "kind": "member",
-      "title": "&lt;static&gt; $dec",
-      "longname": "module:documents/probe.updateOperators.$dec",
-      "name": "$dec",
-      "tags": "module:documents/probe.updateOperators.$dec updateOperators.$dec $dec",
-      "summary": "",
-      "description": "Decrements a field by the amount you specify. It takes the form{ $dec: { field1: amount }"
-    },
-    "module-documents_probe.updateOperators.html#.$unset": {
-      "id": "module-documents_probe.updateOperators.html#.$unset",
-      "kind": "member",
-      "title": "&lt;static&gt; $unset",
-      "longname": "module:documents/probe.updateOperators.$unset",
-      "name": "$unset",
-      "tags": "module:documents/probe.updateOperators.$unset updateOperators.$unset $unset",
-      "summary": "",
-      "description": "Removes the field from the object. It takes the form{ $unset: { field1: &quot;&quot; } }"
-    },
-    "module-documents_probe.updateOperators.html#.$pop": {
-      "id": "module-documents_probe.updateOperators.html#.$pop",
-      "kind": "member",
-      "title": "&lt;static&gt; $pop",
-      "longname": "module:documents/probe.updateOperators.$pop",
-      "name": "$pop",
-      "tags": "module:documents/probe.updateOperators.$pop updateOperators.$pop $pop",
-      "summary": "",
-      "description": "The $pop operator removes the first or last element of an array. Pass $pop a value of 1 to remove the last elementin an array and a value of -1 to remove the first element of an array. This will only work on arrays. Syntax:{ $pop: { field: 1 } } or { $pop: { field: -1 } }"
-    },
-    "module-documents_probe.updateOperators.html#.$push": {
-      "id": "module-documents_probe.updateOperators.html#.$push",
-      "kind": "member",
-      "title": "&lt;static&gt; $push",
-      "longname": "module:documents/probe.updateOperators.$push",
-      "name": "$push",
-      "tags": "module:documents/probe.updateOperators.$push updateOperators.$push $push",
-      "summary": "",
-      "description": "The $push operator appends a specified value to an array. It looks like this:{ $push: { &lt;field&gt;: &lt;value&gt; } }"
-    },
-    "module-documents_probe.updateOperators.html#.$pull": {
-      "id": "module-documents_probe.updateOperators.html#.$pull",
-      "kind": "member",
-      "title": "&lt;static&gt; $pull",
-      "longname": "module:documents/probe.updateOperators.$pull",
-      "name": "$pull",
-      "tags": "module:documents/probe.updateOperators.$pull updateOperators.$pull $pull",
-      "summary": "",
-      "description": "The $pull operator removes all instances of a value from an existing array. It looks like this:{ $pull: { field: &lt;query&gt; } }"
     },
     "documents_schema.html": {
       "id": "documents_schema.html",

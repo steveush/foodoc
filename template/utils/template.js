@@ -228,6 +228,28 @@ var generateDocs = exports.generateDocs = function(){
 			});
 		}
 	});
+
+	// last we write globals. See https://github.com/steveush/foodoc/issues/5 . 
+	// TODO. make this better - have no time to understand this architecture 
+	var doclet = {
+		members: raw.data().get()
+			.filter(function(n){return n.scope === 'global' && ['function', 'typedef'].indexOf(n.kind)!==-1}),
+		ancestors: [],
+		primaryTitleHTML: 'Globals'
+	}
+	var templateContext = {
+		// crumbs: exports.createCrumbs(doclet),
+		doclet: doclet,
+		// config: config,
+		options: Object.assign({}, options, {collapseSymbols: false, showTableOfContents: false}),
+		// navbar: exports.navbar,
+		// showTableOfContents: true
+	}
+	var html = require('../tmpl').list(templateContext)
+	html = helper.resolveLinks(html);
+
+	var output = path.join(config.dir.output, 'global.html')
+	fs.writeFileSync(output, html)
 };
 
 exports.createCrumbs = function(doclet){

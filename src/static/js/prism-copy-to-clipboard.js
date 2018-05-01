@@ -9,7 +9,7 @@
 		return;
 	}
 
-	var Clipboard = window.Clipboard || undefined;
+	var Clipboard = window.ClipboardJS || undefined;
 
 	if (!Clipboard && typeof require === 'function') {
 		Clipboard = require('clipboard');
@@ -22,7 +22,7 @@
 		var head = document.querySelector('head');
 
 		script.onload = function() {
-			Clipboard = window.Clipboard;
+			Clipboard = window.ClipboardJS;
 
 			if (Clipboard) {
 				while (callbacks.length) {
@@ -31,7 +31,7 @@
 			}
 		};
 
-		script.src = 'https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.8/clipboard.min.js';
+		script.src = 'https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.1/clipboard.min.js';
 		head.appendChild(script);
 	}
 
@@ -39,13 +39,11 @@
 		var linkCopy = document.createElement('a');
 		linkCopy.textContent = 'Copy';
 
-		if (!Clipboard) {
-			callbacks.push(registerClipboard);
-		} else {
-			registerClipboard();
+		function resetText() {
+			setTimeout(function () {
+				linkCopy.textContent = 'Copy';
+			}, 5000);
 		}
-
-		return linkCopy;
 
 		function registerClipboard() {
 			var clip = new Clipboard(linkCopy, {
@@ -66,10 +64,12 @@
 			});
 		}
 
-		function resetText() {
-			setTimeout(function () {
-				linkCopy.textContent = 'Copy';
-			}, 5000);
+		if (!Clipboard) {
+			callbacks.push(registerClipboard);
+		} else {
+			registerClipboard();
 		}
+
+		return linkCopy;
 	});
 })();

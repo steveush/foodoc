@@ -113,6 +113,30 @@ exports.registerReadme = function () {
 	template.raw.data.insert(doclet);
 };
 
+exports.registerGlobals = function(){
+	var options = template.options.navMembers.find(function(member){ return member.kind === "global"; });
+	if (!options){
+		options = {
+			title: "Globals",
+			summary: "All documented globals."
+		};
+	}
+	var doclet = {
+		kind: 'global',
+		longname: helper.globalName,
+		name: options.title,
+		summary: options.summary,
+		members: template.find({
+			kind: template.kinds.global,
+			memberof: { isUndefined: true }
+		}, "longname, version, since"),
+		showTableOfContents: true,
+		showAccessFilter: false
+	};
+	registerDoclet(doclet);
+	template.raw.data.insert(doclet);
+};
+
 exports.registerListeners = function(){
 	helper.addEventListeners(template.raw.data);
 };
@@ -275,6 +299,9 @@ exports.registerTutorials = function(){
 
 exports.registerLists = function(){
 	template.options.navMembers.forEach(function(member){
+		// the global kind is register just after the index to reserve it's name so don't do it again
+		if (member.kind == "global") return;
+
 		var doclet = {
 			kind: 'list',
 			longname: "list:" + member.kind,
@@ -301,14 +328,14 @@ exports.buildNavbar = function(navbar){
 		summary: template.options.systemSummary,
 		members: []
 	};
-	navbar.topLevel = template.find({kind:'list'}, "longname, name").filter(function(list){
-		return list.members.length > 0;
-	}).map(function(list){
+	navbar.topLevel = template.find({kind:['list','global']}, "longname, name").filter(function(doclet){
+		return doclet.members.length > 0 && (doclet.kind == 'list' || template.hasNavMember(doclet.kind));
+	}).map(function(doclet){
 		return {
-			title: list.name,
-			summary: list.summary,
-			link: helper.longnameToUrl[list.longname],
-			members: list.members.map(function(member){
+			title: doclet.name,
+			summary: doclet.summary,
+			link: helper.longnameToUrl[doclet.longname],
+			members: doclet.members.map(function(member){
 				return template.linkto(member.longname);
 			})
 		};

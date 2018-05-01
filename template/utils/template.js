@@ -10,9 +10,10 @@ var extend = require('extend');
 var moment = require('moment');
 
 var kinds = exports.kinds = {
-	custom: ['readme','source', 'tutorial', 'list'],
-	pages: ['readme', 'source', 'tutorial', 'list', 'class', 'external', 'mixin', 'module', 'namespace', 'interface'],
-	symbols: ['tutorial', 'class', 'external', 'event', 'mixin', 'module', 'namespace', 'interface', 'member', 'function', 'constant', 'typedef']
+	custom: ['readme', 'global', 'source', 'tutorial', 'list'],
+	pages: ['readme', 'global', 'source', 'tutorial', 'list', 'class', 'external', 'mixin', 'module', 'namespace', 'interface'],
+	symbols: ['tutorial', 'class', 'external', 'event', 'mixin', 'module', 'namespace', 'interface', 'member', 'function', 'constant', 'typedef'],
+	global: ['member', 'function', 'constant', 'typedef']
 };
 
 var options = exports.options = extend({
@@ -103,6 +104,7 @@ var navbar = exports.navbar = {};
 exports.postProcess = function(){
 	processor.registerReadme();
 	processor.registerModules();
+	processor.registerGlobals();
 	processor.registerDoclets();
 	processor.registerSources();
 	processor.registerTutorials();
@@ -230,11 +232,17 @@ var generateDocs = exports.generateDocs = function(){
 	});
 };
 
+var hasNavMember = exports.hasNavMember = function(kind){
+	return options.navMembers.findIndex(function(member){
+		return member.kind == kind;
+	}) != -1;
+};
+
 exports.createCrumbs = function(doclet){
 	var crumbs = [];
 	if (doclet.kind === 'readme' || doclet.kind === 'source') return crumbs;
 	crumbs.push(linkto("index", "Home"));
-	if (doclet.kind !== 'list'){
+	if (doclet.kind !== 'list' && doclet.kind !== 'global' && hasNavMember(doclet.kind)){
 		crumbs.push(linkto("list:"+doclet.kind));
 	}
 	if (doclet.kind === 'tutorial'){

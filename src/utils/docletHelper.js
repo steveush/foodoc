@@ -334,9 +334,15 @@ exports.getPrimaryTitle = function(doclet, sanitized){
 
 exports.getSymbols = function(doclet){
 	var symbols = {};
-	template.kinds.symbols.forEach(function(kind){
-		symbols[kind] = template.find({kind: kind, memberof: doclet.longname});
-	});
+	if (doclet.longname == helper.globalName){
+		template.kinds.global.forEach(function(kind){
+			symbols[kind] = template.find({kind: kind, memberof: { isUndefined: true }});
+		});
+	} else {
+		template.kinds.symbols.forEach(function(kind){
+			symbols[kind] = template.find({kind: kind, memberof: doclet.longname});
+		});
+	}
 	return symbols;
 };
 

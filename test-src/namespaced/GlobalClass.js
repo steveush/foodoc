@@ -48,4 +48,22 @@ GlobalClass.prototype.testMethod = function(value, obj, objN){
 
 };
 
+/**
+ * @summary This is a test instance method of the global test class to check that global type definitions are documented.
+ * @memberof GlobalClass#
+ * @function testMethod
+ * @param {SomeType} type - The parameter which is of type SomeType
+ */
+GlobalClass.prototype.testTypeDefMethod = function(type){
+
+};
+
 window.GlobalClass = GlobalClass;
+
+
+/**
+ * Some global type.
+ * @global
+ * @typedef {Object} SomeType
+ * @property {string} someProp
+ */

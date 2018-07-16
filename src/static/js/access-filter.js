@@ -16,18 +16,22 @@
 		init: function(){
 			var self = this;
 			self.$toggleInherited = $(".access-filter .toggle-inherited").on('change', {self: self}, self.onInheritedChanged);
+			self.$toggleInherited.prop("checked", self.getState("inherited"));
 			self.setInherited();
 			self.$togglePublic = $(".access-filter .toggle-public").on('change', {self: self}, self.onPublicChanged);
+			self.$togglePublic.prop("checked", self.getState("public"));
 			self.setPublic();
 			self.$toggleProtected = $(".access-filter .toggle-protected").on('change', {self: self}, self.onProtectedChanged);
+			self.$toggleProtected.prop("checked", self.getState("protected"));
 			self.setProtected();
 			self.$togglePrivate = $(".access-filter .toggle-private").on('change', {self: self}, self.onPrivateChanged);
+			self.$togglePrivate.prop("checked", self.getState("private"));
 			self.setPrivate();
 		},
 		setInherited: function(){
 			var self = this;
 			if (self.$toggleInherited.length > 0){
-				self.inherited = self.$toggleInherited.prop("checked");
+				self.setState("inherited", self.$toggleInherited.prop("checked"));
 				var $elem = $(".symbol-title.inherited,.symbol-details.inherited,li.inherited");
 				if (self.inherited && !self.public){
 					$elem = $elem.not('.public');
@@ -46,7 +50,7 @@
 		setPublic: function(){
 			var self = this;
 			if (self.$togglePublic.length > 0){
-				self.public = self.$togglePublic.prop("checked");
+				self.setState("public", self.$togglePublic.prop("checked"));
 				var $elem = $(".symbol-title.public,.symbol-details.public,li.public");
 				if (!self.inherited){
 					$elem = $elem.not('.inherited');
@@ -59,7 +63,7 @@
 		setProtected: function(){
 			var self = this;
 			if (self.$toggleProtected.length > 0){
-				self.protected = self.$toggleProtected.prop("checked");
+				self.setState("protected", self.$toggleProtected.prop("checked"));
 				var $elem = $(".symbol-title.protected,.symbol-details.protected,li.protected");
 				if (!self.inherited){
 					$elem = $elem.not('.inherited');
@@ -72,7 +76,7 @@
 		setPrivate: function(){
 			var self = this;
 			if (self.$togglePrivate.length > 0){
-				self.private = self.$togglePrivate.prop("checked");
+				self.setState("private", self.$togglePrivate.prop("checked"));
 				var $elem = $(".symbol-title.private,.symbol-details.private,li.private");
 				if (!self.inherited){
 					$elem = $elem.not('.inherited');
@@ -93,6 +97,17 @@
 		},
 		onPrivateChanged: function(e){
 			e.data.self.setPrivate();
+		},
+		getState: function (item) {
+			var value = window.localStorage.getItem( 'toggle-' + item );
+			// Default to true if localStorage has nothing
+			return (value === 'true' || value === null) ? true : false;
+		},
+		setState: function (item,state) {
+			this[item] = state;
+			// No booleans in localStorage
+			window.localStorage.setItem( 'toggle-' + item, state.toString() );
+			return state
 		}
 	});
 

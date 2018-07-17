@@ -100,6 +100,7 @@
 	 * @private
 	 */
 	LunrDatabase.prototype._search = function(query){
+		query += "*"; // Add wildcard to get better results
 		var self = this, results = [], raw = this.index.search(query);
 		$.each(raw, function(i, result){
 			results.push(self.store[result.ref]);

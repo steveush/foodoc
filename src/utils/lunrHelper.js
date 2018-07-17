@@ -6,18 +6,8 @@ var lunr = require('lunr'),
 	fs = require('jsdoc/fs'),
 	helper = require('jsdoc/util/templateHelper');
 
+var documents = [];
 var store = exports.store = {};
-var index = exports.index = lunr(function(){
-	this.field('longname', {boost: 1000});
-	this.field('name', {boost: 500});
-	this.field('tags', {boost: 300});
-	this.field('kind', {boost: 110});
-	this.field('title', {boost: 100});
-	this.field('summary', {boost: 70});
-	this.field('description', {boost: 50});
-	this.field('body');
-	this.ref('id');
-});
 
 var sanitize = function(html){
 	if (typeof html !== 'string') return void 0;
@@ -60,7 +50,7 @@ var parseBody = function(html){
 
 var add = exports.add = function(doclet, html){
 	var id = helper.longnameToUrl[doclet.longname];
-	index.add(store[id] = {
+	documents.push(store[id] = {
 		"id": id,
 		"kind": doclet.kind,
 		"title": doclet.pageTitle,
@@ -84,9 +74,30 @@ var add = exports.add = function(doclet, html){
 	}
 };
 
+var makeIndex = function (documents) {
+	var index = exports.index = lunr(function(){
+		this.field('longname', {boost: 1000});
+		this.field('name', {boost: 500});
+		this.field('tags', {boost: 300});
+		this.field('kind', {boost: 110});
+		this.field('title', {boost: 100});
+		this.field('summary', {boost: 70});
+		this.field('description', {boost: 50});
+		this.field('body');
+		this.ref('id');
+
+		documents.forEach(function (doc) {
+			this.add(doc)
+		}, this)
+	});
+
+	return index;
+}
+
 exports.writeFilesSync = function(pretty){
 	var jsonFile = path.join(template.config.dir.output, 'js/lunr-data.json'),
 		dataFile = path.join(template.config.dir.output, 'js/lunr-data.js'),
+		index = makeIndex(documents),
 		data = {index: index, store: store},
 		json = pretty ? JSON.stringify(data, null, 2) : JSON.stringify(data);
 	fs.writeFileSync(jsonFile, json, "utf8");

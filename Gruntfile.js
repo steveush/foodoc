@@ -72,7 +72,7 @@ module.exports = function(grunt) {
 			},
 			lunr: {
 				files : [
-					{expand: true, flatten: true, src: ['node_modules/lunr/lunr.min.js'], dest: 'template/static/js/', filter: 'isFile'}
+					{expand: true, flatten: true, src: ['node_modules/lunr/lunr.js'], dest: 'template/static/js/', filter: 'isFile'}
 				]
 			}
 		},

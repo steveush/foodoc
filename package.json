@@ -42,7 +42,7 @@
     "handlebars": "^4.0.11",
     "handlebars-layouts": "^3.1.4",
     "jsdoc": "^3.5.5",
-    "lunr": "^1.0.0",
+    "lunr": "^2.3.0",
     "sanitize-html": "^1.18.2"
   }
 }

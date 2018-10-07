@@ -29,6 +29,9 @@ var getLinkText = exports.getLinkText = function(doclet){
 exports.getAttribs = function (doclet) {
 	if (supportsParams(doclet) || doclet.kind === 'member' || doclet.kind === 'constant') {
 		var attribs = helper.getAttribs(doclet);
+		if (doclet.inherited && attribs.indexOf('inherited') === -1) {
+			attribs.push('inherited');
+		}
 		return attribs.length ? '<span class="signature-attribs">' + helper.htmlsafe('<' + attribs.join(', ') + '> ') + '</span>' : '';
 	}
 	return '';

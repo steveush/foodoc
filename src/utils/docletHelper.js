@@ -64,8 +64,7 @@ exports.getSignature = function (doclet) {
 	} else if (doclet.kind === 'member' || doclet.kind === 'constant') {
 		var types = helper.getSignatureTypes(doclet);
 		signature += '<span class="signature-type">' + (types.length ? ' :' + types.join('|') : '') + '</span>';
-		//todo: check if this is required
-		//doclet.kind = 'member';
+		doclet.kind = 'member';
 	}
 	return signature;
 };
